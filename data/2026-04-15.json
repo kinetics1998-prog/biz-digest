@@ -4708,5 +4708,665 @@
     "summary": "<p>\n            Select text, hit (⌥ space), get AI explanations\n          </p>\n          <p>\n            <a href=\"https://www.producthunt.com/products/miniai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a>\n            |",
     "published": "2026-04-15T00:44:36",
     "fetched": "2026-04-15T13:44:31.496903"
+  },
+  {
+    "id": "f394f0a08e38",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Виторг українського офісу Google впав майже на чверть. Яка причина?",
+    "link": "https://ain.ua/2026/04/15/vitorg-ukrayinskogo-ofisu-google-vpav-maize-na-cvert-iaka-pricina/",
+    "summary": "У 2025 році ТОВ «Гугл» (дочірня компанія Alphabet в Україні) отримала 1,87 млрд грн виторгу. Це на 24% менше ніж у 2024 році.",
+    "published": "2026-04-15T13:45:00",
+    "fetched": "2026-04-15T14:24:32.569835"
+  },
+  {
+    "id": "afb2d074417c",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "ЄС запускає застосунок для перевірки віку в інтернеті. Як це працюватиме?",
+    "link": "https://ain.ua/2026/04/15/jes-predstaviv-zastosunok-dlia-perevirki-viku-v-merezi/",
+    "summary": "Його планують використати для захисту дітей від шкідливого контенту та онлайн-загроз.",
+    "published": "2026-04-15T12:35:00",
+    "fetched": "2026-04-15T14:24:32.569851"
+  },
+  {
+    "id": "5cb71f305108",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Чому компанії дізнаються про свій злом уже з новин? Що відбувається на ринку кібербезпеки — колонка",
+    "link": "https://ain.ua/2026/04/07/shho-vidbuvajetsia-na-rinku-kiberbezpeki-kolonka/",
+    "summary": "Олег Полігенько, експерт у сфері кібербезпеки та член наглядової ради CISO Club Ukraine, у колонці для AIN розповідає, як змінилися кіберзагрози для бізнесів, як можна від них вберегтися, а також як протидіяти цим багатоетапним операціям.",
+    "published": "2026-04-15T12:15:30",
+    "fetched": "2026-04-15T14:24:32.569862"
+  },
+  {
+    "id": "7b020b016d6e",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "«Найбільший в історії». Велика Британія передасть Україні пакет допомоги зі 120 тисяч дронів",
+    "link": "https://ain.ua/2026/04/15/velika-britaniia-peredast-ukrayini-paket-dopomogi-zi-120-tisiac-droniv/",
+    "summary": "До пакету увійдуть тисячі ударних дронів великої дальності, розвідувальні та логістичні безпілотники, а також морські системи.",
+    "published": "2026-04-15T12:10:00",
+    "fetched": "2026-04-15T14:24:32.569877"
+  },
+  {
+    "id": "127597223f24",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "У десятках плагінів для WordPress знайшли бекдори. Які в цьому можуть бути ризики?",
+    "link": "https://ain.ua/2026/04/15/u-desiatkax-plaginiv-dlia-wordpress-znaisli-bekdori/",
+    "summary": "Проблемні плагіни вже видалили з каталогу платформи, однак вони могли залишитися встановленими на тисячах ресурсів.",
+    "published": "2026-04-15T11:05:00",
+    "fetched": "2026-04-15T14:24:32.569886"
+  },
+  {
+    "id": "bbd9cc6cf4b1",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Google запускає функцію Personal Intelligence для Gemini в Україні",
+    "link": "https://ain.ua/2026/04/15/google-zapuskaje-funkciiu-personalizovanii-intelekt-dlia-gemini-v-ukrayini/",
+    "summary": "Інструмент дозволяє інтегрувати дані з Gmail, Google Фото, YouTube та пошуковика для отримання персоналізованих відповідей.",
+    "published": "2026-04-15T10:40:00",
+    "fetched": "2026-04-15T14:24:32.569895"
+  },
+  {
+    "id": "65ab8a00b14e",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Ексміністру енергетики Герману Галущенку продовжили тримання під вартою на два місяці — рішення ВАКС",
+    "link": "https://ain.ua/2026/04/15/galushhenku-prodovzili-arest/",
+    "summary": "Як альтернативу суд залишив заставу в розмірі 200 млн грн. Якщо її внесуть, на Галущенка покладуть низку процесуальних обов'язків.",
+    "published": "2026-04-15T09:40:00",
+    "fetched": "2026-04-15T14:24:32.569904"
+  },
+  {
+    "id": "436fec84c27e",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Українська Defense Tech компанія Aerobavovna залучила інвестиції від Pravo Ventures",
+    "link": "https://ain.ua/2026/04/15/aerobavovna-zalucila-investiciyi-vid-pravo-ventures/",
+    "summary": "Aerobavovna виробляє аеростати. Вони необхідні для підсилення сигналу дронів і можуть триматись у повітрі кілька днів.",
+    "published": "2026-04-15T08:30:00",
+    "fetched": "2026-04-15T14:24:32.569920"
+  },
+  {
+    "id": "d122e7c82845",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Україна та Німеччина підписали шість нових оборонних угод у сфері дронів і ракетних систем",
+    "link": "https://ain.ua/2026/04/15/6-ugod-miz-ukrayinskimi-ta-nimeckimi-kompaniiami/",
+    "summary": "Йдеться про створення спільних підприємств, виробництво дронів і розвиток ракетно-авіаційних систем.",
+    "published": "2026-04-15T08:10:00",
+    "fetched": "2026-04-15T14:24:32.569930"
+  },
+  {
+    "id": "c6f780ce302c",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Курс валют на 15 квітня 2026 року: скільки коштує долар і євро",
+    "link": "https://ain.ua/2026/04/14/currency-exchange-rate-apr-15-2026/",
+    "summary": "Актуальний курс гривні щодо іноземних валют у банках та обмінниках.",
+    "published": "2026-04-15T06:25:00",
+    "fetched": "2026-04-15T14:24:32.569939"
+  },
+  {
+    "id": "4a9628f6bea0",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "«Люди ігноруватимуть ваш товар». Чому локалізація важлива для українських брендів за кордоном",
+    "link": "https://mc.today/uk/lyudi-ignoruvatimut-vash-tovar-chomu-lokalizatsiya-vazhliva-dlya-ukrayinskih-brendiv-za-kordonom/",
+    "summary": "<p>Помилково робити ставку лише на українців за кордоном, якщо ви відкриваєте свій бізнес за межами України. Для успіху потрібно орієнтуватися на місцевий ринок, зазначила Катерина Глазкова, виконавча директорка Спілки українських підприємців (СУП) в інтервʼю The Page.</p>\nThe post <a href=\"https://",
+    "published": "2026-04-15T13:31:23",
+    "fetched": "2026-04-15T14:24:36.864666"
+  },
+  {
+    "id": "81eaf0f39a9b",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "«ПриватБанк» та Visa запускають картку «Kатка24» разом із NAVI: кешбек, знижки та промокоди для геймерів",
+    "link": "https://mc.today/uk/privatbank-ta-visa-zapuskayut-kartku-katka24-razom-iz-navi-keshbek-znizhki-ta-promokodi-dlya-gejmeriv/",
+    "summary": "<p>«ПриватБанк», Visa та NAVI об&#8217;єдналися, щоб створити не просто банківську картку, а справжній артефакт для інвентарю геймера. Для партнерів продукту ця співпраця стає місією з розвитку української геймерської спільноти. Адже картка «Катка24» відкриває доступ до ексклюзивних переваг, подій т",
+    "published": "2026-04-15T13:23:07",
+    "fetched": "2026-04-15T14:24:36.864682"
+  },
+  {
+    "id": "3cf95ac5e579",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Кінець дешевим товарам? Як зміняться ціни після запровадження податків на посилки",
+    "link": "https://mc.today/uk/kinets-deshevim-tovaram-yak-zminyatsya-tsini-pislya-zaprovadzhennya-podatkiv-na-posilki/",
+    "summary": "<p>Перший віцепрезидент Торгово-промислової палати України Михайло Непран пояснив, що змінить для українців оподаткування посилок із закордонних маркетплейсів, чи подорожчають товари й чому за впровадження оподаткування виступають українські бізнеси.</p>\nThe post <a href=\"https://mc.today/uk/kinets-",
+    "published": "2026-04-15T12:40:43",
+    "fetched": "2026-04-15T14:24:36.864693"
+  },
+  {
+    "id": "dad777eca41b",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Уроки Латвії для кредитного ринку: як одна країна приборкала мікрокредити – аналіз Банкрейт",
+    "link": "https://mc.today/uk/uroki-latviyi-dlya-kreditnogo-rinku-yak-odna-krayina-priborkala-mikrokrediti-analiz-bankrejt/",
+    "summary": "<p>Латвія – країна з населенням 1,8 мільйона, яка у 2010-х переживала той самий кредитний бум, що зараз триває в Україні. Десятки мікрокредитних компаній, агресивна реклама, боргові спіралі серед населення. Потім Рига запровадила одне з найжорсткіших обмежень у Європі: максимум 0,07% на день, що від",
+    "published": "2026-04-15T12:30:35",
+    "fetched": "2026-04-15T14:24:36.864704"
+  },
+  {
+    "id": "65fd62073802",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Чому оренда в Києві дешевшає, але житло не стає доступнішим – Шуляк",
+    "link": "https://mc.today/uk/chomu-orenda-v-kiyevi-deshevshaye-ale-zhitlo-ne-staye-dostupnishim-shulyak/",
+    "summary": "<p>Голова парламентського комітету з питань організації державної влади, місцевого самоврядування, регіонального розвитку та містобудування Олена Шуляк прокоментувала зниження цін на оренду квартир у Києві й пояснила, чи справді наймане житло в столиці стало доступнішим для українців.</p>\nThe post <",
+    "published": "2026-04-15T11:04:13",
+    "fetched": "2026-04-15T14:24:36.864713"
+  },
+  {
+    "id": "b13bfa7f225b",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Допоможе в карʼєрних рішеннях. Fractal запустила безплатний застосунок: які є функції",
+    "link": "https://mc.today/uk/dopomozhe-v-kar-yernih-rishennyah-fractal-zapustila-bezplatnij-zastosunok-yaki-ye-funktsiyi/",
+    "summary": "<p>Група компаній Fractal запустила безплатний застосунок для самопізнання та професійного зростання Fractal Plus. Він допоможе українцям знайти свої сильні сторони, визначити кар&#8217;єрний напрямок і отримати підтримку ШІ-коуча. Про це у Fractal повідомили редакції MC: Money &#38; Career.</p>\nThe",
+    "published": "2026-04-15T10:53:23",
+    "fetched": "2026-04-15T14:24:36.864724"
+  },
+  {
+    "id": "cc86a9b38e94",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Як накопичити велику суму й не зійти з дистанції: поради щодо інструментів та контролю прогресу",
+    "link": "https://mc.today/uk/yak-nakopichiti-veliku-sumu-j-ne-zijti-z-distantsiyi-poradi-shhodo-instrumentiv-ta-kontrolyu-progresu/",
+    "summary": "<p>Для того щоб накопичити гроші на велику покупку, потрібно не лише почати, а й обрати правильний спосіб та не зійти з дистанції. Фінансова планерка iPlan.ua Юлія Бабенко пояснила MC: Money &#38; Career, на який інструмент звернути увагу та як контролювати свій прогрес і не зійти з дистанції, якщо",
+    "published": "2026-04-15T09:07:04",
+    "fetched": "2026-04-15T14:24:36.864733"
+  },
+  {
+    "id": "c2daea82139e",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Чому дорожчає мобільний зв’язок – пояснення гендиректорки Vodafone Ольги Устинової",
+    "link": "https://mc.today/uk/chomu-dorozhchaye-mobilnij-zv-yazok-poyasnennya-gendirektorki-vodafone-olgi-ustinovoyi/",
+    "summary": "<p>Генеральна директорка «Vodafone Україна» Ольга Устинова розповіла в інтерв’ю виданню The Page, чому дорожчають послуги мобільного зв’язку.</p>\nThe post <a href=\"https://mc.today/uk/chomu-dorozhchaye-mobilnij-zv-yazok-poyasnennya-gendirektorki-vodafone-olgi-ustinovoyi/\">Чому дорожчає мобільний зв’",
+    "published": "2026-04-15T07:21:53",
+    "fetched": "2026-04-15T14:24:36.864743"
+  },
+  {
+    "id": "cab222746763",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "«Кібербезпека — це не лише про ІТ, це інвестиція в бізнес-модель»: враження від Cybersecurity Dialogue",
+    "link": "https://mc.today/uk/kiberbezpeka-tse-ne-lishe-pro-it-tse-investitsiya-v-biznes-model-vrazhennya-vid-cybersecurity-dialogue/",
+    "summary": "<p>Більшість компаній дізнаються про свої проблеми з кібербезпекою лише в момент інциденту — і конференція Cybersecurity Dialogue в Києві була саме про те, як перестати жити за цією логікою і куди інвестувати, щоб бізнес був готовий до наступного виклику.</p>\nThe post <a href=\"https://mc.today/uk/ki",
+    "published": "2026-04-15T06:50:52",
+    "fetched": "2026-04-15T14:24:36.864752"
+  },
+  {
+    "id": "c2ef85b937ff",
+    "source": "🇺🇦 DOU.ua",
+    "category": "UA_TECH",
+    "title": "KSE надає гранти на навчання українцям, які повертаються з-за кордону",
+    "link": "https://dou.ua/lenta/news/kse-come-back-home-grant/",
+    "summary": "<p>Київська школа економіки відкрила новий набір на грантову програму Come Back Home для українців, які виїхали за кордон після 24 лютого 2022 року. Про це для DOU розповіли в університеті. </p>\n\n<p><img src=\"https://s.dou.ua/storage-files/image_11086907041776254455108_opt.jpg\" /><em><small>Фото над",
+    "published": "2026-04-15T12:07:18",
+    "fetched": "2026-04-15T14:24:37.136556"
+  },
+  {
+    "id": "8ed31917493f",
+    "source": "🇺🇦 DOU.ua",
+    "category": "UA_TECH",
+    "title": "Внаслідок російської атаки постраждав кампус Дніпровської політехніки",
+    "link": "https://dou.ua/lenta/news/dnipro-university-russian-attack/",
+    "summary": "<p>У ніч на 15 квітня росія завдала ударів по Дніпру, внаслідок чого постраждали два університети. Зокрема були пошкоджені корпуси та гуртожитки НТУ «Дніпровська політехніка» та Українського державного університету науки. </p>\n\n<div class=\"fotorama-wrap\"><div class=\"fotorama\"><br /><img src=\"https:/",
+    "published": "2026-04-15T09:45:58",
+    "fetched": "2026-04-15T14:24:37.136571"
+  },
+  {
+    "id": "6a47c23567c2",
+    "source": "🇺🇦 DOU.ua",
+    "category": "UA_TECH",
+    "title": "Шість українських виробників зброї створять спільні підприємства з німецькими компаніями",
+    "link": "https://dou.ua/lenta/news/joint-ventures-with-german-companies/",
+    "summary": "<p>Українські та німецькі компанії підписали шість угод про співпрацю у сфері оборонних технологій. Вони створюватимуть спільні виробництва та розвиватимуть рішення для дронів та ракетних систем.</p>\n\n<p>Про це <a href=\"https://www.facebook.com/story.php?story_fbid=3904920026314566&amp;id=1000038982",
+    "published": "2026-04-15T08:19:09",
+    "fetched": "2026-04-15T14:24:37.136581"
+  },
+  {
+    "id": "87de26795ebd",
+    "source": "🇺🇦 DOU.ua",
+    "category": "UA_TECH",
+    "title": "ЗП падають? | 132 людини на місце | Бронювання в ІТ 2026 📈",
+    "link": "https://dou.ua/lenta/articles/analytics-youtube-25/",
+    "summary": "<p>📊 Чи правда, що розробники стають «дешевшими», чому фронтенд переживає найважчі часи та де в Україні зараз ринок на $7 мільярдів? У ювілейному 25-му випуску «<a href=\"https://dou.ua/lenta/tags/%D0%A9%D0%BE%20%D0%BF%D0%BE%20%D0%86%D0%A2-%D1%80%D0%B8%D0%BD%D0%BA%D1%83/\" target=\"_blank\">Що по ІТ-рин",
+    "published": "2026-04-15T07:00:05",
+    "fetched": "2026-04-15T14:24:37.136592"
+  },
+  {
+    "id": "5d3bdb2a77af",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Новий ігровий монітор від Philips має відгук до 1 мс: скільки коштуватиме в Україні",
+    "link": "https://speka.ua/news/novii-igrovii-monitor-vid-philips-maje-vidguk-do-1-ms-skilki-kostuvatime-v-ukrayini-9gxg66",
+    "summary": "Philips виводить на ринок новий ігровий монітор Evnia 27M2N5201P. Він має екран 27 дюймів, швидку IPS-матрицю, роздільну здатність 260 кадрів на секунду і підсвічування, яке змінює колір залежно від того, що відбувається на екрані, повідомляють у компанії.",
+    "published": "2026-04-15T14:18:22",
+    "fetched": "2026-04-15T14:24:43.940094"
+  },
+  {
+    "id": "2d538949dbb0",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Птахи Мадяра долетіли до Башкортостану: під удар потрапив ще один російський завод",
+    "link": "https://speka.ua/news/ptahi-madyara-doletili-do-bashkortostanu-pid-udar-potrapiv-she-odin-rosijskij-zavod-v5xn71",
+    "summary": "Українські далекобійні безпілотники знову показали можливості глибоких ударів. У ніч на 15 квітня дрони Сил безпілотних систем уразили нафтохімічний завод у місті Стерлітамак у Башкортостані за понад 1500 км від України. Про це повідомив Мадяр.",
+    "published": "2026-04-15T13:45:43",
+    "fetched": "2026-04-15T14:24:43.940132"
+  },
+  {
+    "id": "1fcdf41093c5",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Податки з’їдають зарплати: що не так із військовим збором",
+    "link": "https://speka.ua/business/podatki-zyidayut-zarplati-shho-ne-tak-iz-viiskovim-zborom-po3865",
+    "summary": "Сьогодні сума податків на заробітну плату сягає близько 45%.\nІз них 5% – це військовий збір, який, за поточними рішеннями, діятиме ще три\nроки після завершення війни.",
+    "published": "2026-04-15T10:37:15",
+    "fetched": "2026-04-15T14:24:43.940145"
+  },
+  {
+    "id": "b219decff07f",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Британія передасть Україні найбільший пакет допомоги: скільки дронів отримаємо",
+    "link": "https://speka.ua/news/britaniya-peredast-ukrayini-naibilsii-paket-dopomogi-skilki-droniv-otrimajemo-9wrm43",
+    "summary": "Велика Британія оголосила про рекордний пакет військової допомоги для України. Цього року ЗСУ отримають щонайменше 120 тис. безпілотників, щоб посилити оборону, про це йдеться на сайті британського уряду.",
+    "published": "2026-04-15T13:02:36",
+    "fetched": "2026-04-15T14:24:43.940155"
+  },
+  {
+    "id": "d5b32b706c61",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Кадровий голод — це вже реальність. І без жінок ми його не закриємо",
+    "link": "https://speka.ua/business/kadrovii-golod-ce-vze-realnist-i-bez-zinok-mi-iogo-ne-zakrijemo-9elmyl",
+    "summary": "Кадровий дефіцит — одна з ключових проблем, з якою вже сьогодні стикається український бізнес. І це лише початок. Відбудова країни після війни вимагатиме ще більше людей, ще більше компетенцій і ще більше швидких рішень.",
+    "published": "2026-04-15T09:55:50",
+    "fetched": "2026-04-15T14:24:43.940164"
+  },
+  {
+    "id": "1d845176a2b0",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Токсичний кешбек: як роздача грошей розганяє інфляцію",
+    "link": "https://speka.ua/life/toksicnii-kesbek-yak-rozdaca-grosei-rozganyaje-inflyaciyu-pl5rjq",
+    "summary": "Останні місяці держава активно роздає гроші: кешбеки, компенсації, одноразові виплати. З одного боку, це виглядає як підтримка людей. З іншого — це додаткові мільярди, які вливаються в економіку без створення нової вартості.",
+    "published": "2026-04-15T12:35:40",
+    "fetched": "2026-04-15T14:24:43.940173"
+  },
+  {
+    "id": "7321f0034098",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "У Bolt тепер є рейтинг водія самокату: що буде за недотримання правил",
+    "link": "https://speka.ua/news/u-bolt-teper-je-reiting-vodiya-samokatu-shho-bude-za-nedotrimannya-pravil-p21kj2",
+    "summary": "У Bolt зʼявилася функція оцінки їзди на електросамокатах. Це інструмент, який у режимі реального часу фіксує поведінку водія й автоматично оновлює його бал після кожної поїздки. У компанії розповіли, як це працює і що буде за недотримання правил.&nbsp;",
+    "published": "2026-04-15T12:26:30",
+    "fetched": "2026-04-15T14:24:43.940183"
+  },
+  {
+    "id": "bfd159eac5ee",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Ці популярні продукти можуть шкодити серцю — нові дані вчених",
+    "link": "https://speka.ua/news/ci-populyarni-produkti-mozut-skoditi-sercyu-novi-dani-vcenix-9xkj5r",
+    "summary": "Кімчі, чайний гриб (або ж комбуча), квашена капуста і смузі — продукти, які мільйони людей свідомо обирають їсти щодня заради здоров'я. Але в тому вигляді, у якому ці продукти продаються в магазинах, вони можуть завдавати серйозної шкоди серцево-судинній системі, пише Medical News Today.",
+    "published": "2026-04-15T11:37:44",
+    "fetched": "2026-04-15T14:24:43.940193"
+  },
+  {
+    "id": "fbcf4e3df566",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Чому клієнти повертаються до PUMA знову і знову? Секрети успішної retention-стратегії",
+    "link": "https://speka.ua/business/comu-klijenti-povertayutsya-do-puma-znovu-i-znovu-sekreti-uspisnoyi-retention-strategiyi-98j3xz",
+    "summary": "PUMA — бренд одягу зі світовим імʼям, що поєднує онлайн- та офлайн-магазини, роблячи ставку на глибоку персоналізацію. Їхні сенси транслюють локальні амбасадори спорту й культури.",
+    "published": "2026-04-15T12:55:23",
+    "fetched": "2026-04-15T14:24:43.940203"
+  },
+  {
+    "id": "cdc06acf3850",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Світове меню в McDonalds: які страви дають \"гастролі\" в Україні",
+    "link": "https://speka.ua/news/svitove-menyu-v-mcdonalds-yaki-stravi-dayut-gastroli-v-ukrayini-936q04",
+    "summary": "У українському McDonalds зʼявляться смаки Японії, Канади, Сінгапуру і ще п'яти країн. З 15 квітня 2026 року в усіх відкритих ресторанах мережі з'явиться 13 нових позицій у рамках першої загальноєвропейської кампанії «Пограбування світового меню», повідомляють у компанії.",
+    "published": "2026-04-15T11:09:51",
+    "fetched": "2026-04-15T14:24:43.940211"
+  },
+  {
+    "id": "fe1817dd89a0",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Чому ви постійно втомлені: 8 неочевидних причин",
+    "link": "https://speka.ua/news/comu-vi-postiino-vtomleni-8-neocevidnix-pricin-p01jdl",
+    "summary": "Постійна&nbsp;втома&nbsp;— це не завжди про недосип. Часто організм подає сигнали про приховані проблеми, які ми ігноруємо, пише Express.&nbsp;",
+    "published": "2026-04-15T11:04:59",
+    "fetched": "2026-04-15T14:24:43.940220"
+  },
+  {
+    "id": "ece01410e84b",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "В Одесі відбудеться всеукраїнський ресторанний форум ProResto’26",
+    "link": "https://speka.ua/business/proresto26-vseukrayinskii-restorannii-forum-v-odesi-pnn327",
+    "summary": "В Одесі 27 квітня 2026 року відбудеться всеукраїнський ресторанний форум ProResto’26, який об’єднає рестораторів, керуючих і команди закладів з різних міст України. Подія стане платформою для обміну досвідом, пошуку нових партнерств і обговорення актуальних викликів у сфері HoReCa.",
+    "published": "2026-04-15T10:20:53",
+    "fetched": "2026-04-15T14:24:43.940229"
+  },
+  {
+    "id": "37b2351cf96f",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "FRACTAL запустила власний застосунок для розвитку і кар’єрного зростання: що відомо",
+    "link": "https://speka.ua/news/fractal-zapustila-vlasnii-zastosunok-dlya-rozvitku-i-karjernogo-zrostannya-shho-vidomo-vr8e23",
+    "summary": "Група компаній FRACTAL&nbsp;презентувала новий безоплатний мобільний застосунок FRACTAL PLUS, який допомагає користувачам краще зрозуміти себе, оцінити професійний потенціал і побудувати індивідуальний план розвитку, йдеться у прес-релізі.&nbsp;",
+    "published": "2026-04-15T11:04:40",
+    "fetched": "2026-04-15T14:24:43.940239"
+  },
+  {
+    "id": "cd9d4be06f9e",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "РФ продолжает поставлять LNG в Китай с завода, который находится под санкциями США",
+    "link": "https://biz.liga.net/all/energy/novosti/rf-prodolzhaet-postavlyat-lng-v-kitai-s-zavoda-kotoryi-nahoditsya-pod-sanktsiyami-ssha",
+    "summary": "Китай получил очередную партию сжиженного природного газа с завода \"Портовая\"",
+    "published": "2026-04-15T13:50:00",
+    "fetched": "2026-04-15T14:24:45.170769"
+  },
+  {
+    "id": "04e2a246c85f",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Крупнейшая кондитерская компания Европы стала объектом антимонопольной проверки",
+    "link": "https://biz.liga.net/all/fmcg/novosti/krupneishaya-konditerskaya-kompaniya-evropy-stala-obektom-antimonopolnoi-proverki",
+    "summary": "Еврокомиссия провела выездные инспекции в офисах Ferrero",
+    "published": "2026-04-15T13:43:06",
+    "fetched": "2026-04-15T14:24:45.170782"
+  },
+  {
+    "id": "8fc710488bc3",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "FT: Uber вложит $10 млрд в роботакси и откажется от \"гиг-экономики\"",
+    "link": "https://biz.liga.net/all/transport/novosti/ft-uber-vlozhit-10-mlrd-v-robotaksi-i-otkazhetsya-ot-gig-ekonomiki",
+    "summary": "Сервис вызова такси пытается наверстать упущенное с помощью инвестиций в акции и заказов на поставку транспортных средств",
+    "published": "2026-04-15T13:19:58",
+    "fetched": "2026-04-15T14:24:45.170792"
+  },
+  {
+    "id": "fe80409fb226",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Ужгород с большим отрывом возглавил рейтинг городов с самой обременительной арендой",
+    "link": "https://biz.liga.net/all/nedvizhimost/novosti/uzhgorod-s-bolshim-otryvom-vozglavil-reiting-gorodov-s-samoi-obremenitelnoi-arendoi",
+    "summary": "В Ужгороде на аренду однокомнатной квартиры в среднем тратится 92% дохода",
+    "published": "2026-04-15T12:45:06",
+    "fetched": "2026-04-15T14:24:45.170800"
+  },
+  {
+    "id": "a81420d5438d",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Трамп заявил, что \"навсегда открывает\" Ормуз. До этого США хвастались морской блокадой Ирана",
+    "link": "https://biz.liga.net/all/energy/novosti/tramp-zayavil-chto-navsegda-otkryvaet-ormuz-do-etogo-ssha-hvastalis-polnoi-morskoi-blokadoi-irana",
+    "summary": "По словам президента США, Китай согласился не поставлять оружие Ирану",
+    "published": "2026-04-15T12:40:00",
+    "fetched": "2026-04-15T14:24:45.170809"
+  },
+  {
+    "id": "46481e8e95a8",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "ФК \"Шахтер\" оштрафовали на более 5 млн грн за нарушения в рекламе азартных игр",
+    "link": "https://biz.liga.net/all/all/novosti/fk-shahter-oshtrafovali-na-bolee-5-mln-grn-za-narusheniya-v-reklame-azartnyh-igr",
+    "summary": "Публикацию с нарушением законодательства о рекламе азартных игр PlayCity обнаружило на сайте футбольного клуба",
+    "published": "2026-04-15T12:14:00",
+    "fetched": "2026-04-15T14:24:45.170817"
+  },
+  {
+    "id": "26b62f36b310",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Два предприятия Коломойского заключили мировое соглашение на 42 млн грн",
+    "link": "https://biz.liga.net/all/industry/novosti/dva-predpriyatiya-kolomoiskogo-zaklyuchili-mirovoe-soglashenie-na-42-mln-grn",
+    "summary": "Хозяйственный суд Днепропетровской области утвердил мировое соглашение между Запорожским заводом ферросплавов и Марганецким ГОКом",
+    "published": "2026-04-15T12:08:02",
+    "fetched": "2026-04-15T14:24:45.170825"
+  },
+  {
+    "id": "d17c90ded562",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Американский штат запретил строить дата-центры для искусственного интеллекта",
+    "link": "https://biz.liga.net/all/it/novosti/amerikanskii-shtat-zapretil-stroit-data-tsentry-dlya-iskusstvennogo-intellekta",
+    "summary": "Законодатели в Мэне ввели временный мораторий на создание крупных центров обработки данных",
+    "published": "2026-04-15T11:22:51",
+    "fetched": "2026-04-15T14:24:45.170833"
+  },
+  {
+    "id": "fb1129c832b5",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "США заявили о полной блокаде морской торговли Ирана",
+    "link": "https://biz.liga.net/all/all/novosti/ssha-zayavili-o-polnoi-blokade-morskoi-torgovli-irana",
+    "summary": "Ирану придется сократить добычу нефти, если морская блокада США продлится две недели",
+    "published": "2026-04-15T10:51:00",
+    "fetched": "2026-04-15T14:24:45.170841"
+  },
+  {
+    "id": "2a1521790ed3",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Криппа создает холдинг под названием ARS Capital",
+    "link": "https://biz.liga.net/all/economic-policy/novosti/krippa-sozdaet-holding-pod-nazvaniem-ars-capital",
+    "summary": "Владелец NaVi, GSC Game World и большого количества знаковой киевской недвижимости решил объединить активы в единую структуру",
+    "published": "2026-04-15T10:22:40",
+    "fetched": "2026-04-15T14:24:45.170849"
+  },
+  {
+    "id": "ea7b79d0e99f",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Nikkei: Suntory Holdings покупает подразделение крупнейшей японской фармкомпании за $1,2 млрд",
+    "link": "https://biz.liga.net/all/fmcg/novosti/nikkei-odin-iz-krupneishih-proizvoditelei-alkogolya-pokupaet-podrazdelenie-farmkompanii-za-1-2-mlrd",
+    "summary": "Один из крупнейших производителей алкоголя хочет диверсифицировать бизнес, потому что японцы стали мало пить",
+    "published": "2026-04-15T10:10:29",
+    "fetched": "2026-04-15T14:24:45.170857"
+  },
+  {
+    "id": "f8979bd03879",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "США не продлили исключение из санкций для российской нефти. Так же будет с иранской – Reuters",
+    "link": "https://biz.liga.net/all/energy/novosti/ssha-ne-prodlili-isklyuchenie-iz-sanktsii-dlya-rossiiskoi-nefti-tak-zhe-budet-s-iranskoi-reuters",
+    "summary": "Администрация Трампа отказалась от противоречивой практики использования санкционных исключений для увеличения предложения нефти",
+    "published": "2026-04-15T08:54:29",
+    "fetched": "2026-04-15T14:24:45.170870"
+  },
+  {
+    "id": "78dee8c2b26e",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Мадьяр ожидает, что Орбан перестанет блокировать кредит ЕС для Украины еще до отставки",
+    "link": "https://biz.liga.net/all/energy/novosti/madyar-ozhidaet-chto-orban-perestanet-blokirovat-kredit-es-dlya-ukrainy-eshte-do-otstavki",
+    "summary": "Венгрия не будет участвовать в обеспечении кредита для Украины, заявил будущий премьер",
+    "published": "2026-04-15T08:46:00",
+    "fetched": "2026-04-15T14:24:45.170880"
+  },
+  {
+    "id": "85625c80828b",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Мадьяр пообещал приостановить новостное вещание госмедиа в Венгрии: назвал пропагандой",
+    "link": "https://biz.liga.net/all/other-industries/novosti/madyar-poobeshtal-priostanovit-novostnoe-veshtanie-gossmi-v-vengrii-nazval-propagandoi",
+    "summary": "Будущий венгерский премьер анонсировал новый закон о медиа",
+    "published": "2026-04-15T07:11:45",
+    "fetched": "2026-04-15T14:24:45.170889"
+  },
+  {
+    "id": "388f9e6a6f03",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "\"Недружественный шаг\". Польша раскритиковала Львов за разрыв контракта с Control Process",
+    "link": "https://biz.liga.net/all/industry/novosti/nedruzhestvennyi-shag-polsha-raskritikovala-lvov-za-razryv-kontrakta-s-control-process",
+    "summary": "Заместитель министра иностранных дел Польши хочет, чтобы Садовый пересмотрел свое решение",
+    "published": "2026-04-15T06:31:41",
+    "fetched": "2026-04-15T14:24:45.170896"
+  },
+  {
+    "id": "6834b5f73e89",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Євро встановив новий рекорд щодо гривні – понад 51 грн",
+    "link": "https://mind.ua/news/20303834-evro-vstanoviv-novij-rekord-shchodo-grivni-ponad-51-grn",
+    "summary": "Офіційний курс долара – 43,49 грн, готівковий ринок демонструє незначні коливання",
+    "published": "2026-04-15T14:20:00",
+    "fetched": "2026-04-15T14:24:48.239640"
+  },
+  {
+    "id": "a1c125871c01",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "АРМА інвентаризувало понад 60 000 активів: п’ята частина має високий потенціал",
+    "link": "https://mind.ua/news/20303833-arma-inventarizuvalo-ponad-60-000-aktiviv-p-yata-chastina-mae-visokij-potencial",
+    "summary": "Агентство переходить до моделі економічного управління арештованим майном",
+    "published": "2026-04-15T14:14:00",
+    "fetched": "2026-04-15T14:24:48.239656"
+  },
+  {
+    "id": "1b41416e5ac5",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Український агрохолдинг Kernel разом з NASA буде моніторити урожаї",
+    "link": "https://mind.ua/news/20303832-ukrayinskij-agroholding-kernel-razom-z-nasa-bude-monitoriti-urozhayi",
+    "summary": "Така співпраця допоможе готувати український агросектор до вимог ЄС і розвивати сучасні фінансові інструменти",
+    "published": "2026-04-15T13:52:00",
+    "fetched": "2026-04-15T14:24:48.239665"
+  },
+  {
+    "id": "c52f9b7431b5",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Регулятор PlayCity оштрафував ФК \t«Шахтар» на понад 5 млн грн через рекламу азартних ігор",
+    "link": "https://mind.ua/news/20303830-regulyator-playcity-oshtrafuvav-fk-shahtar-na-ponad-5-mln-grn-cherez-reklamu-azartnih-igor",
+    "summary": "Державне агентство виявило у промоматеріалах клубу осіб, які не досягли 21 року",
+    "published": "2026-04-15T13:52:00",
+    "fetched": "2026-04-15T14:24:48.239674"
+  },
+  {
+    "id": "dff1c3ef4389",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Олександр Краковецький: регулювання ШІ не встигає за темпами розвитку технологій",
+    "link": "https://mind.ua/news/20303829-oleksandr-krakoveckij-regulyuvannya-shi-ne-vstigae-za-tempami-rozvitku-tehnologij",
+    "summary": "Закони створюють правила гри, але часто орієнтовані на минулі рішення, а не майбутні виклики",
+    "published": "2026-04-15T13:45:00",
+    "fetched": "2026-04-15T14:24:48.239683"
+  },
+  {
+    "id": "b627bf688452",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Виробник Iris-T разом з Україною модернізує «Нептун» і створюватиме дешевшу систему ППО",
+    "link": "https://mind.ua/news/20303831-virobnik-iris-t-razom-z-ukrayinoyu-modernizue-neptun-i-stvoryuvatime-deshevshu-sistemu-ppo",
+    "summary": "До кооперації також залучена компанія Fire Point, яка працює над ударними дронами та новими типами ракет",
+    "published": "2026-04-15T13:29:00",
+    "fetched": "2026-04-15T14:24:48.239692"
+  },
+  {
+    "id": "8789bfccc3f7",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Roshen готується до виходу на ринок Великої Британії",
+    "link": "https://mind.ua/news/20303828-roshen-gotuetsya-do-vihodu-na-rinok-velikoyi-britaniyi",
+    "summary": "Кондитерська корпорація планує масштабну експансію в сектор обсягом майже $7 млрд",
+    "published": "2026-04-15T13:08:00",
+    "fetched": "2026-04-15T14:24:48.239701"
+  },
+  {
+    "id": "0964f4765f6a",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Сергій Мартинчук: головна помилка – впроваджувати ШІ без розуміння навіщо",
+    "link": "https://mind.ua/news/20303825-sergij-martinchuk-golovna-pomilka-vprovadzhuvati-shi-bez-rozuminnya-navishcho",
+    "summary": "За його словами, компанії тестують інструменти, але не можуть виміряти їхню ефективність",
+    "published": "2026-04-15T12:54:00",
+    "fetched": "2026-04-15T14:24:48.239710"
+  },
+  {
+    "id": "7778578f5432",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Країни Європи склали план розблокування Ормузької протоки без США",
+    "link": "https://mind.ua/news/20303827-krayini-evropi-sklali-plan-rozblokuvannya-ormuzkoyi-protoki-bez-ssha",
+    "summary": "План, який має три етапи, передбачається реалізувати лише після завершення воєнних дій",
+    "published": "2026-04-15T12:50:00",
+    "fetched": "2026-04-15T14:24:48.239718"
+  },
+  {
+    "id": "fb09fc4b4e07",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "CEO DevRain: від Copilot до AI-first – три етапи еволюції бізнесу",
+    "link": "https://mind.ua/news/20303824-ceo-devrain-vid-copilot-do-ai-first-tri-etapi-evolyuciyi-biznesu",
+    "summary": "Компанії проходять шлях від економії часу до повної перебудови процесів",
+    "published": "2026-04-15T12:43:00",
+    "fetched": "2026-04-15T14:24:48.239727"
+  },
+  {
+    "id": "4ed80a29fc1c",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Прибутки українського агросектору перевищили 200 млрд грн у 2025 році",
+    "link": "https://mind.ua/news/20303823-pributki-ukrayinskogo-agrosektoru-perevishchili-200-mlrd-grn-u-2025-roci",
+    "summary": "Фінансові результати галузі збільшилися на 21%, проте реальні обсяги виробництва продовжують скорочуватися",
+    "published": "2026-04-15T12:41:00",
+    "fetched": "2026-04-15T14:24:48.239736"
+  },
+  {
+    "id": "bddd070fa8cc",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Мерц різко змінив позицію: Європа готується до сценарію без США в НАТО – WSJ",
+    "link": "https://mind.ua/news/20303826-merc-rizko-zminiv-poziciyu-evropa-gotuetsya-do-scenariyu-bez-ssha-v-nato-wsj",
+    "summary": "Німеччина приєдналася до ініціативи Франції про «європейське НАТО» на випадок виходу Трампа з Альянсу",
+    "published": "2026-04-15T12:24:00",
+    "fetched": "2026-04-15T14:24:48.239744"
+  },
+  {
+    "id": "43dcc6829361",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Сирський озвучив площу звільненої від росіян території України за березень",
+    "link": "https://mind.ua/news/20303821-sirskij-ozvuchiv-ploshchu-zvilnenoyi-vid-rosiyan-teritoriyi-ukrayini-za-berezen",
+    "summary": "Найгарячішими напрямками впродовж місяця були Олександрівський, Покровський, Костянтинівський і Лиманський",
+    "published": "2026-04-15T12:17:00",
+    "fetched": "2026-04-15T14:24:48.239753"
+  },
+  {
+    "id": "67269a8ab10f",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Raytheon виготовить ракети для Patriot на понад $3 млрд у межах прямого контракту з Україною",
+    "link": "https://mind.ua/news/20303820-raytheon-vigotovit-raketi-dlya-patriot-na-ponad-3-mlrd-u-mezhah-pryamogo-kontraktu-z-ukrayinoyu",
+    "summary": "Американська корпорація розширює виробництво в Німеччині, щоб подолати дефіцит перехоплювачів GEM-T",
+    "published": "2026-04-15T12:08:00",
+    "fetched": "2026-04-15T14:24:48.239762"
+  },
+  {
+    "id": "36ea7e6755e8",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Китай продав Ірану супутник для наведення ударів по американських авіабазах",
+    "link": "https://mind.ua/news/20303822-kitaj-prodav-iranu-suputnik-dlya-navedennya-udariv-po-amerikanskih-aviabazah",
+    "summary": "Власні іранські супутники набагато менш точні, ніж китайський",
+    "published": "2026-04-15T11:52:00",
+    "fetched": "2026-04-15T14:24:48.239771"
   }
 ]

@@ -21,11 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install feedparser
 
-      - name: Collect articles
-        run: python3 rss_collector.py
-
-      - name: Send to Telegram
-        if: env.TELEGRAM_BOT_TOKEN != ''
+      - name: Collect and send to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

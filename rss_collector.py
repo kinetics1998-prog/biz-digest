@@ -128,59 +128,6 @@ FEEDS = {
         "category": "UA_BIZ",
         "desc": "Аналітика для бізнесу",
     },
-
-    # === МИР: БИЗНЕС И ПРЕДПРИНИМАТЕЛЬСТВО ===
-    "🌍 TechCrunch": {
-        "urls": [
-            "https://techcrunch.com/feed/",
-        ],
-        "category": "WORLD_TECH",
-        "desc": "Стартапи, венчур, tech",
-    },
-    "🌍 Entrepreneur": {
-        "urls": [
-            "https://www.entrepreneur.com/latest.rss",
-        ],
-        "category": "WORLD_BIZ",
-        "desc": "Поради підприємцям",
-    },
-    "🌍 HBR": {
-        "urls": [
-            "https://feeds.hbr.org/harvardbusiness",
-        ],
-        "category": "WORLD_BIZ",
-        "desc": "Harvard Business Review",
-    },
-    "🌍 Inc.": {
-        "urls": [
-            "https://www.inc.com/rss",
-            "https://www.inc.com/rss/",
-        ],
-        "category": "WORLD_BIZ",
-        "desc": "Малий та середній бізнес",
-    },
-    "🌍 Forbes": {
-        "urls": [
-            "https://www.forbes.com/innovation/feed/",
-            "https://www.forbes.com/entrepreneurs/feed/",
-        ],
-        "category": "WORLD_BIZ",
-        "desc": "Інновації та підприємництво",
-    },
-    "🌍 Y Combinator (HN)": {
-        "urls": [
-            "https://news.ycombinator.com/rss",
-        ],
-        "category": "WORLD_TECH",
-        "desc": "Hacker News — топ стартап-спільнота",
-    },
-    "🌍 Product Hunt": {
-        "urls": [
-            "https://www.producthunt.com/feed",
-        ],
-        "category": "WORLD_TECH",
-        "desc": "Нові продукти та сервіси",
-    },
 }
 
 # ============================================================

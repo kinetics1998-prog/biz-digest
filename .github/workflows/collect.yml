@@ -1,0 +1,40 @@
+name: Biz Digest RSS Collector
+
+on:
+  schedule:
+    - cron: '30 4 * * *'
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Collect articles
+        run: python3 rss_collector.py
+
+      - name: Send to Telegram
+        if: env.TELEGRAM_BOT_TOKEN != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 rss_collector.py --telegram
+
+      - name: Commit new data
+        run: |
+          git config user.name "BizDigest Bot"
+          git config user.email "bot@biz-digest"
+          git add data/
+          git diff --staged --quiet || git commit -m "Digest $(date +'%Y-%m-%d %H:%M')"
+          git push

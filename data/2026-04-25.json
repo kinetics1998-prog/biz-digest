@@ -168,5 +168,245 @@
     "summary": "Головною проблемою залишається їх виявлення — через постійну зміну частот",
     "published": "2026-04-24T18:46:00",
     "fetched": "2026-04-25T08:12:03.013841"
+  },
+  {
+    "id": "dbfd6d7fe0ca",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "У Сан-Франциско відкрили магазин, яким керує штучний інтелект. Як він працює?",
+    "link": "https://ain.ua/2026/04/24/u-san-francisko-vidkrili-magazin-iakim-keruje-stucnii-intelekt/",
+    "summary": "Роль керівника виконує ШІ-агент на ім’я Луна. Вона визначає, які товари продавати та за якою ціною, а також ухвалює рішення щодо роботи персоналу. Працівники спілкуються з нею через Slack.",
+    "published": "2026-04-25T12:05:00",
+    "fetched": "2026-04-25T17:59:37.379879"
+  },
+  {
+    "id": "0cfd1f1b57ca",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "ШІ змінює ринок праці у PR та маркетингу. Які навички зараз шукають роботодавці та що відбувається із зарплатами?",
+    "link": "https://ain.ua/2026/04/24/iak-si-vplinuv-na-marketing-ta-pr/",
+    "summary": "Кількість вакансій у сфері зменшується, проте заробітні плати зростають. Розвиток ШІ витіснив з переліку найзатребуваніших навичок копірайтинг та грамотну мову, змусивши фахівців фокусуватися на стратегії, проактивності та гібридних вміннях.",
+    "published": "2026-04-25T09:30:00",
+    "fetched": "2026-04-25T17:59:37.379895"
+  },
+  {
+    "id": "864416e437ca",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "XChat офіційно вийшов на iOS: як Маск вбиває свої Communities і що кажуть про безпеку месенджера",
+    "link": "https://speka.ua/news/xchat-x-ios-zapusk-shifruvannya-bezpeka-strategiya-maska-2026n38616-pj27mq",
+    "summary": "Соцмережа Ілона Маска X офіційно запустила XChat, окремий месенджер для iOS, повідомив TechCrunch. Застосунок доступний публічно після кількох місяців закритого бета-тестування і пропонує повідомлення, дзвінки, групові чати та обмін файлами. Паралельно X оголосив про закриття Communities через відсу",
+    "published": "2026-04-25T13:11:39",
+    "fetched": "2026-04-25T17:59:47.000161"
+  },
+  {
+    "id": "656d25e949dd",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Операція «Бабуся, сідай!»: НРК, Mavic і 4 години координації, щоб врятувати одну людину",
+    "link": "https://speka.ua/news/nrk-3ak-evakuatsiya-stavkove-lymanske-operatsiya-25-kvitnya-2026n38615-vm47rl",
+    "summary": "Дрон аеророзвідки Третього корпусу побачив стареньку на дорозі під обстрілом. Погода виключала стандартну евакуацію. У “Трійці” вирішили надіслати наземний роботизований комплекс із ковдрою і написом «Бабуся, сідай!». Вона сіла. Так виглядала реальна евакуаційна операція Третього армійського корпусу",
+    "published": "2026-04-25T12:17:45",
+    "fetched": "2026-04-25T17:59:47.000177"
+  },
+  {
+    "id": "02501bec9054",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Вчені з'ясували, чому довго сидіти в туалеті з телефоном насправді шкідливо для здоров'я",
+    "link": "https://speka.ua/news/chas-u-tualeti-mikrobim-zdorovya-doslidzhennya-gut-2026n38614-v5xelz",
+    "summary": "Поки ви сидите в туалеті зі смартфоном і гортаєте стрічку, ваш кишківник вирішує, хто живе у вашому мікробіомі. І дослідники з Університету Копенгагена дійшли до висновку, що ця «оренда» залежить від часу набагато більше, ніж від дієти. Огляд опублікований у журналі Gut, одному з найавторитетніших в",
+    "published": "2026-04-25T11:15:53",
+    "fetched": "2026-04-25T17:59:47.000188"
+  },
+  {
+    "id": "0c827dcef561",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Google вливає $40 млрд в Anthropic — і одночасно боїться її успіхів у кодуванні",
+    "link": "https://speka.ua/news/google-investuye-40-mlrd-anthropic-claude-code-tpu-350-mlrd-2026n38613-9wrk51",
+    "summary": "Google інвестує в Anthropic до $40 млрд при оцінці компанії $350 млрд. $10 млрд — прямо зараз живими грошима, і ще $30 млрд, якщо Anthropic досягне узгоджених цільових показників. Про це повідомив Bloomberg. Угода закріплює одночасно найдивніший і найлогічніший альянс у поточній ШІ-гонці: Google вли",
+    "published": "2026-04-25T09:17:53",
+    "fetched": "2026-04-25T17:59:47.000198"
+  },
+  {
+    "id": "a87161661baf",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Здание Кабмина, поврежденное российской ракетой, планируют восстанавливать по принципу кинцуги",
+    "link": "https://biz.liga.net/all/nedvizhimost/novosti/zdanie-kabmina-povrezhdennoe-rossiiskoi-raketoi-planiruyut-vosstanavlivat-po-printsipu-kintsugi",
+    "summary": "Реставрацию здания украинского правительства после атаки 7 сентября 2025 года обсудили с польскими экспертами",
+    "published": "2026-04-25T16:34:26",
+    "fetched": "2026-04-25T17:59:48.105314"
+  },
+  {
+    "id": "e9772a5c12b0",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "В Украине отремонтировали 5,7 млн кв. м дорог. Это рекорд за шесть лет – фото, видео",
+    "link": "https://biz.liga.net/all/transport/novosti/v-ukraine-otremontirovali-5-7-mln-kv-m-dorog-eto-rekord-za-shest-let-foto-video",
+    "summary": "Текущие ремонты на трассах международного значения должны быть завершены до 1 мая, национального значения – до 1 июня",
+    "published": "2026-04-25T15:44:52",
+    "fetched": "2026-04-25T17:59:48.105329"
+  },
+  {
+    "id": "c5d4fd0205d8",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "\"Масштабируем партнерство\". Эстония будет финансировать дроны и цифровые решения для ВСУ",
+    "link": "https://biz.liga.net/all/other-industries/novosti/masshtabiruem-partnerstvo-estoniya-budet-finansirovat-drony-dlya-ukrainy-i-tsifrovye-resheniya-dlya-vsu",
+    "summary": "Министры обороны стран договорились о новых оборонных проектах, производстве оружия и обмене технологиями",
+    "published": "2026-04-25T12:41:38",
+    "fetched": "2026-04-25T17:59:48.105338"
+  },
+  {
+    "id": "31994894dc06",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Nikkei: Импорт российской нефти в Индию удвоился и, вероятно, останется высоким в мае",
+    "link": "https://biz.liga.net/all/energy/novosti/nikkei-import-rossiiskoi-nefti-v-indiyu-udvoilsya-i-veroyatno-ostanetsya-vysokim-v-mae",
+    "summary": "Импорт российской нефти в Индию в марте удвоился в объеме и почти вчетверо вырос в стоимости, достигнув 5,3 млрд евро",
+    "published": "2026-04-25T10:33:32",
+    "fetched": "2026-04-25T17:59:48.105346"
+  },
+  {
+    "id": "bc323ee628c2",
+    "source": "🇺🇦 Liga.Бізнес",
+    "category": "UA_BIZ",
+    "title": "Бессент заявил, что США не планируют в третий раз ослаблять санкции против российской нефти",
+    "link": "https://biz.liga.net/all/energy/novosti/bessent-zayavil-chto-ssha-ne-planiruyut-v-tretii-raz-oslablyat-sanktsii-protiv-rossiiskoi-nefti",
+    "summary": "Продление разового разрешения по иранской нефти \"полностью исключено\", заявил министр финансов США",
+    "published": "2026-04-25T09:41:54",
+    "fetched": "2026-04-25T17:59:48.105355"
+  },
+  {
+    "id": "2602f705eeab",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "«Як шкода, що ви нарешті нас покидаєте» - Орбан іде з угорського парламенту",
+    "link": "https://mind.ua/news/20304333-yak-shkoda-shcho-vi-nareshti-nas-pokidaete-orban-ide-z-ugorskogo-parlamentu",
+    "summary": "Його фокус зміщується на внутрішню перебудову «Фідес» та спробу зберегти вплив у нових умовах",
+    "published": "2026-04-25T17:31:00",
+    "fetched": "2026-04-25T17:59:51.622447"
+  },
+  {
+    "id": "f57a5db1b282",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Україна і Азербайджан домовилися разом виробляти зброю",
+    "link": "https://mind.ua/news/20304332-ukrayina-i-azerbajdzhan-domovilisya-razom-viroblyati-zbroyu",
+    "summary": "Існують «великі можливості» для спільного українсько-азербайджанського виробництва, зазначив Алієв",
+    "published": "2026-04-25T16:20:00",
+    "fetched": "2026-04-25T17:59:51.622460"
+  },
+  {
+    "id": "3e589cacc530",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "США завдяки війнам стали отримувати найбільші прибутки від нафти й газу - FT",
+    "link": "https://mind.ua/news/20304331-ssha-zavdyaki-vijnam-stali-otrimuvati-najbilshi-pributki-vid-nafti-j-gazu-ft",
+    "summary": "Геополітичні потрясіння перетворили США на головного енергетичного гравця світу",
+    "published": "2026-04-25T15:58:00",
+    "fetched": "2026-04-25T17:59:51.622470"
+  },
+  {
+    "id": "4f293c153f95",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "У Конгрес США подали законопроект проти знищення росією свободи віросповідання на ТОТ",
+    "link": "https://mind.ua/news/20304330-u-kongres-ssha-podali-zakonoproekt-proti-znishchennya-rosieyu-svobodi-virospovidannya-na-tot",
+    "summary": "За словами конгресменів, росія веде цілеспрямовану кампанію проти незалежних релігійних громад",
+    "published": "2026-04-25T15:07:00",
+    "fetched": "2026-04-25T17:59:51.622478"
+  },
+  {
+    "id": "b74c6f89cb27",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Маск запустив власний месенджер XChat",
+    "link": "https://mind.ua/news/20304329-mask-zapustiv-vlasnij-mesendzher-xchat",
+    "summary": "Поки що він доступний лише на iPhone і лише для користувачів соцмережі X",
+    "published": "2026-04-25T14:17:00",
+    "fetched": "2026-04-25T17:59:51.622486"
+  },
+  {
+    "id": "86533cfc41cb",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "У Європи закінчуються сили протистояти рекордній енергетичній кризі",
+    "link": "https://mind.ua/news/20304328-u-evropi-zakinchuyutsya-sili-protistoyati-rekordnij-energetichnij-krizi",
+    "summary": "Ситуацію погіршує і дефіцит ресурсів – запаси газу в Європі впали до найнижчого рівня за останні дев’ять років",
+    "published": "2026-04-25T13:22:00",
+    "fetched": "2026-04-25T17:59:51.622495"
+  },
+  {
+    "id": "4817f6f8fe11",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Мерц пропонує для України «поетапний шлях» до Євросоюзу — Київ виступає проти",
+    "link": "https://mind.ua/news/20304327-merc-proponue-dlya-ukrayini-poetapnij-shlyah-do-evrosoyuzu-kiyiv-vistupae-proti",
+    "summary": "Мерц запропонував модель, за якою Україна могла б приєднуватися до конкретних політичних сфер на основі прогресу в реформах",
+    "published": "2026-04-25T12:30:00",
+    "fetched": "2026-04-25T17:59:51.622504"
+  },
+  {
+    "id": "d659d1468abc",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "У Харкові енергетики відновлюють високовольтну лінію після нічної атаки",
+    "link": "https://mind.ua/news/20304326-u-harkovi-energetiki-vidnovlyuyut-visokovoltnu-liniyu-pislya-nichnoyi-ataki",
+    "summary": "Фахівці «Харківобленерго» працюють над поверненням світла в Немишлянському районі",
+    "published": "2026-04-25T11:26:00",
+    "fetched": "2026-04-25T17:59:51.622512"
+  },
+  {
+    "id": "c5aca9915f13",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Зеленський запропонував Азербайджан як майданчик для тристоронніх переговорів із США та рф",
+    "link": "https://mind.ua/news/20304325-zelenskij-zaproponuvav-azerbajdzhan-yak-majdanchik-dlya-tristoronnih-peregovoriv-iz-ssha-ta-rf",
+    "summary": "Президент заявив про готовність до дипломатії в Баку за умови зустрічних кроків з боку росії",
+    "published": "2026-04-25T10:20:00",
+    "fetched": "2026-04-25T17:59:51.622520"
+  },
+  {
+    "id": "0cb2035e4b1a",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Британські Eurofighter Typhoon переслідували російські дрони біля кордону з Румунією",
+    "link": "https://mind.ua/news/20304324-britanski-eurofighter-typhoon-peresliduvali-rosijski-droni-bilya-kordonu-z-rumunieyu",
+    "summary": "Наземні радари зафіксували падіння об'єкта на румунській території під час масованої атаки на українське місто Рені",
+    "published": "2026-04-25T09:26:00",
+    "fetched": "2026-04-25T17:59:51.622529"
+  },
+  {
+    "id": "b4d5944416f0",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Володимир Зеленський прибув до Азербайджану для посилення безпекової та енергетичної співпраці",
+    "link": "https://mind.ua/news/20304323-volodimir-zelenskij-pribuv-do-azerbajdzhanu-dlya-posilennya-bezpekovoyi-ta-energetichnoyi-spivpraci",
+    "summary": "Президент обговорив із Ільхамом Алієвим передачу українського досвіду в захисті неба та економічну взаємодію",
+    "published": "2026-04-25T09:20:00",
+    "fetched": "2026-04-25T17:59:51.622538"
+  },
+  {
+    "id": "96b35c8f98f5",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Обстріл Білоцерківщини: пошкоджено критичну інфраструктуру та техніку ДСНС",
+    "link": "https://mind.ua/news/20304322-obstril-bilocerkivshchini-poshkodzheno-kritichnu-infrastrukturu-ta-tehniku-dsns",
+    "summary": "Унаслідок атаки зафіксовано руйнування складів і виробничих цехів, проте обійшлося без жертв",
+    "published": "2026-04-25T08:39:00",
+    "fetched": "2026-04-25T17:59:51.622546"
+  },
+  {
+    "id": "d20e79e4f32a",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "росія атакувала порти Одещини та судно під прапором Панами",
+    "link": "https://mind.ua/news/20304321-rosiya-atakuvala-porti-odeshchini-ta-sudno-pid-praporom-panami",
+    "summary": "На цивільному кораблі виникла пожежа, проте екіпажу вдалося самостійно ліквідувати вогонь",
+    "published": "2026-04-25T08:35:00",
+    "fetched": "2026-04-25T17:59:51.622554"
   }
 ]

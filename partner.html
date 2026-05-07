@@ -2,656 +2,315 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIGNAL — Партнерська мережа UA · PL · RO · TR</title>
-<meta name="description" content="Закрита B2B мережа підприємців. Знайди партнера за 48 годин.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0e0e0c">
+<title>SIGNAL — Знайди B2B партнера за 48 годин</title>
+<meta name="description" content="Закрита B2B мережа підприємців UA · PL · RO · TR. AI-матчинг постачальників, дистриб'юторів, байєрів.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --black:#0e0e0c;
-  --white:#ffffff;
-  --off:#f8f6f1;
-  --red:#c0392b;
-  --red-light:#fdf0ef;
-  --muted:#8a8880;
-  --border:rgba(14,14,12,0.1);
-  --serif:'Cormorant Garamond',Georgia,serif;
-  --sans:'DM Sans',sans-serif;
-  --mono:'DM Mono',monospace;
-  --transition:all .35s cubic-bezier(.4,0,.2,1);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{height:100%;scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--white);color:var(--black);min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-
-/* ─── LANG SWITCHER ──────────────── */
-.lang-bar{position:fixed;top:0;left:0;right:0;z-index:200;height:52px;background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 40px}
-.lang-logo{font-family:var(--mono);font-size:14px;font-weight:500;letter-spacing:0.18em;color:var(--black);text-decoration:none}
-.lang-logo span{color:var(--red)}
-.lang-flags{display:flex;gap:4px}
-.lang-btn{display:flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid transparent;border-radius:4px;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:0.06em;color:var(--muted);background:none;transition:var(--transition)}
-.lang-btn:hover{border-color:var(--border);color:var(--black)}
-.lang-btn.active{border-color:var(--red);color:var(--red);background:var(--red-light)}
-.lang-flag{font-size:14px}
-
-/* ─── LAYOUT ─────────────────────── */
-.page{min-height:100vh;padding-top:52px;display:grid;grid-template-columns:1fr 1fr}
-
-/* ─── LEFT — STATIC ─────────────── */
-.left{background:var(--black);position:sticky;top:52px;height:calc(100vh - 52px);display:flex;flex-direction:column;justify-content:space-between;padding:56px 48px;overflow:hidden}
-.left-noise{position:absolute;inset:0;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")}
-.left-inner{position:relative;z-index:1}
-.left-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);margin-bottom:24px;display:flex;align-items:center;gap:10px}
-.left-eyebrow::before{content:'';width:28px;height:1px;background:var(--red)}
-.left-title{font-family:var(--serif);font-size:clamp(48px,5vw,72px);font-weight:600;line-height:0.95;color:var(--white);letter-spacing:-0.01em;margin-bottom:28px}
-.left-title em{font-style:italic;color:var(--red)}
-.left-desc{font-size:15px;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300;max-width:360px}
-.left-desc strong{color:rgba(255,255,255,0.8);font-weight:400}
-.left-bottom{position:relative;z-index:1}
-.left-stats{display:flex;gap:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.08)}
-.stat-num{font-family:var(--serif);font-size:36px;font-weight:600;color:var(--white);line-height:1}
-.stat-label{font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-top:4px}
-.markets-row{display:flex;gap:12px;margin-bottom:28px}
-.market-chip{font-family:var(--mono);font-size:10px;letter-spacing:0.08em;color:rgba(255,255,255,0.3);display:flex;align-items:center;gap:5px}
-.market-chip.active-market{color:rgba(255,255,255,0.7)}
-
-/* ─── RIGHT — QUIZ ───────────────── */
-.right{padding:56px 48px;display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - 52px)}
-
-/* Progress */
-.quiz-progress{display:flex;gap:6px;margin-bottom:48px}
-.qp-dot{height:3px;flex:1;background:var(--border);border-radius:2px;transition:var(--transition)}
-.qp-dot.done{background:var(--red)}
-.qp-dot.active{background:var(--black)}
-
-/* Step */
-.quiz-step{display:none;animation:stepIn .4s ease}
-.quiz-step.active{display:block}
-@keyframes stepIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-
-.step-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.step-eyebrow::before{content:'';width:20px;height:1px;background:var(--red)}
-.step-q{font-family:var(--serif);font-size:clamp(28px,3.5vw,42px);font-weight:600;line-height:1.1;letter-spacing:-0.01em;margin-bottom:8px}
-.step-sub{font-size:14px;color:var(--muted);margin-bottom:32px;font-weight:300;line-height:1.5}
-
-/* Options */
-.options{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
-.option{display:flex;align-items:center;gap:16px;padding:16px 20px;border:1px solid var(--border);cursor:pointer;transition:var(--transition);position:relative;overflow:hidden}
-.option::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--red);transition:width .25s ease}
-.option:hover{border-color:rgba(14,14,12,0.3)}
-.option:hover::before,.option.sel::before{width:3px}
-.option.sel{border-color:var(--red);background:var(--red-light)}
-.opt-icon{font-size:22px;flex-shrink:0;width:32px;text-align:center}
-.opt-body{}
-.opt-title{font-size:15px;font-weight:500;color:var(--black);margin-bottom:2px}
-.opt-desc{font-size:12px;color:var(--muted);font-weight:300;line-height:1.4}
-.opt-check{margin-left:auto;width:20px;height:20px;border:1px solid var(--border);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;transition:var(--transition)}
-.option.sel .opt-check{background:var(--red);border-color:var(--red);color:#fff}
-
-/* Market grid */
-.market-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:32px}
-.market-opt{border:1px solid var(--border);padding:20px;cursor:pointer;transition:var(--transition);display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;position:relative}
-.market-opt:hover{border-color:rgba(14,14,12,0.3)}
-.market-opt.sel{border-color:var(--red);background:var(--red-light)}
-.market-opt.sel::after{content:'✓';position:absolute;top:8px;right:10px;font-size:10px;color:var(--red);font-family:var(--mono)}
-.mo-flag{font-size:32px;line-height:1}
-.mo-name{font-size:13px;font-weight:500;color:var(--black)}
-.mo-desc{font-size:11px;color:var(--muted);font-weight:300;line-height:1.4}
-
-/* Nav */
-.quiz-nav{display:flex;align-items:center;justify-content:space-between}
-.btn-back{font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);background:none;border:none;cursor:pointer;transition:color .2s;display:flex;align-items:center;gap:6px}
-.btn-back:hover{color:var(--black)}
+:root{--ink:#0e0e0c;--paper:#fff;--soft:#faf8f4;--line:rgba(14,14,12,0.09);--line-2:rgba(14,14,12,0.18);--muted:#6e6c64;--red:#c0392b;--red-h:#a02520;--red-s:#fdf0ee;--wa:#25d366;--tg:#0088cc;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;--r:8px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.94);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.brand{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:0.18em;color:var(--ink);text-decoration:none;flex-shrink:0}
+.brand b{color:var(--red);font-weight:500}
+.langs{display:flex;gap:2px;background:var(--soft);padding:3px;border-radius:99px}
+.langs button{border:none;background:none;cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:500;padding:6px 10px;border-radius:99px;color:var(--muted);transition:background .2s,color .2s}
+.langs button.on{background:var(--ink);color:#fff}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+.hero{padding:36px 0 24px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;color:var(--red);display:flex;align-items:center;gap:10px;margin-bottom:18px;text-transform:uppercase}
+.eyebrow::before{content:'';display:block;width:22px;height:1px;background:var(--red)}
+.hero h1{font-family:var(--serif);font-size:clamp(38px,9vw,64px);font-weight:700;line-height:1;letter-spacing:-0.02em;margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--red);font-weight:700}
+.hero p{font-size:16px;color:var(--muted);max-width:540px;margin-bottom:24px;line-height:1.6}
+.hero p strong{color:var(--ink);font-weight:500}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0}
+.hs{padding:0 14px;border-right:1px solid var(--line)}
+.hs:first-child{padding-left:0}
+.hs:last-child{border-right:none;padding-right:0}
+.hs-num{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1}
+.hs-lab{font-family:var(--mono);font-size:9px;letter-spacing:0.1em;color:var(--muted);margin-top:4px;text-transform:uppercase;line-height:1.3}
+.quiz{padding:28px 0 40px;border-top:1px solid var(--line);margin-top:24px}
+.qprog{display:flex;gap:6px;margin-bottom:28px}
+.qprog .d{flex:1;height:3px;background:var(--line);border-radius:2px;transition:background .3s}
+.qprog .d.done{background:var(--red)}
+.qprog .d.now{background:var(--ink)}
+.step{display:none;animation:in .35s ease}
+.step.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.s-eye{font-family:var(--mono);font-size:10px;letter-spacing:0.16em;color:var(--red);text-transform:uppercase;margin-bottom:10px}
+.s-q{font-family:var(--serif);font-size:clamp(28px,6.5vw,38px);font-weight:700;line-height:1.1;margin-bottom:8px;letter-spacing:-0.01em}
+.s-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.55}
+.markets{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px}
+.m-card{border:1px solid var(--line);border-radius:var(--r);padding:18px 14px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;position:relative;background:var(--paper)}
+.m-card:active{transform:scale(0.98)}
+.m-card.sel{border-color:var(--red);background:var(--red-s)}
+.m-card.sel::after{content:'✓';position:absolute;top:6px;right:8px;font-size:11px;color:var(--red);font-family:var(--mono);font-weight:600}
+.m-flag{font-size:28px;line-height:1}
+.m-name{font-size:13px;font-weight:500;color:var(--ink)}
+.m-sub{font-size:11px;color:var(--muted);font-weight:400;line-height:1.4}
+.opts{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--r);cursor:pointer;transition:border-color .15s,background .15s,transform .1s;background:var(--paper)}
+.opt:active{transform:scale(0.99)}
+.opt.sel{border-color:var(--red);background:var(--red-s)}
+.opt-ic{font-size:22px;flex-shrink:0;line-height:1;margin-top:2px}
+.opt-body{flex:1;min-width:0}
+.opt-t{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:2px}
+.opt-d{font-size:12px;color:var(--muted);line-height:1.45}
+.opt-ck{flex-shrink:0;width:18px;height:18px;border:1px solid var(--line-2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:transparent;transition:all .15s;margin-top:2px}
+.opt.sel .opt-ck{background:var(--red);border-color:var(--red);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;border-top:1px solid var(--line)}
+.btn{font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;font-weight:500;transition:background .15s,color .15s,transform .1s}
+.btn:active{transform:scale(0.97)}
+.btn-back{background:none;color:var(--muted);padding:12px 0;display:flex;align-items:center;gap:6px}
 .btn-back:disabled{opacity:0;pointer-events:none}
-.btn-next{font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;background:var(--black);color:#fff;border:none;padding:14px 32px;cursor:pointer;transition:background .2s,transform .1s;display:flex;align-items:center;gap:8px}
-.btn-next:hover{background:#222}
-.btn-next:active{transform:scale(0.98)}
-.btn-next:disabled{opacity:0.35;pointer-events:none}
-
-/* ─── RESULT STEP ─────────────────── */
-.result-box{border:1px solid var(--border);padding:28px;margin-bottom:28px;position:relative;overflow:hidden}
+.btn-next{background:var(--ink);color:#fff;padding:14px 28px;border-radius:var(--r);display:flex;align-items:center;gap:8px;text-decoration:none}
+.btn-next:disabled{opacity:0.3;pointer-events:none}
+.result-box{border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;margin-bottom:20px;position:relative;overflow:hidden;background:var(--paper)}
 .result-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red)}
-.result-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
-.result-headline{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1.2;margin-bottom:12px;letter-spacing:-0.01em}
-.result-body{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:20px}
-.result-matches{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
-.match-chip{font-family:var(--mono);font-size:10px;letter-spacing:0.06em;padding:5px 12px;border:1px solid var(--border);color:var(--muted);display:flex;align-items:center;gap:6px}
-.match-chip::before{content:'↔';color:var(--red)}
-.result-cta-label{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
-.email-row{display:flex;gap:0}
-.email-input{flex:1;border:1px solid var(--border);border-right:none;font-family:var(--sans);font-size:14px;padding:13px 16px;outline:none;color:var(--black);transition:border-color .2s;background:var(--white)}
-.email-input::placeholder{color:#ccc}
-.email-input:focus{border-color:var(--red)}
-.email-submit{background:var(--red);color:#fff;border:1px solid var(--red);font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;cursor:pointer;transition:background .2s;white-space:nowrap}
-.email-submit:hover{background:#a02520}
-.form-note{font-family:var(--mono);font-size:10px;color:#bbb;margin-top:8px;letter-spacing:0.04em}
-.success-block{display:none;text-align:center;padding:32px;border:1px solid var(--border)}
-.success-block.show{display:block}
-.success-icon{font-size:40px;margin-bottom:12px}
-.success-title{font-family:var(--serif);font-size:28px;font-weight:600;margin-bottom:8px}
-.success-sub{font-size:13px;color:var(--muted);line-height:1.6}
-
-/* ─── FOOTER ─────────────────────── */
-.site-footer{background:var(--off);border-top:1px solid var(--border);padding:24px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-logo{font-family:var(--mono);font-size:12px;letter-spacing:0.18em;color:var(--muted);text-decoration:none}
-.footer-logo span{color:var(--red)}
-.footer-links{display:flex;gap:20px}
-.footer-links a{font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
-.footer-links a:hover{color:var(--black)}
-
-/* ─── RESPONSIVE ─────────────────── */
-@media(max-width:860px){
-  .page{grid-template-columns:1fr}
-  .left{position:static;height:auto;padding:40px 24px 36px}
-  .left-title{font-size:48px}
-  .right{padding:40px 24px;min-height:auto}
-  .lang-bar{padding:0 20px}
-  .market-grid{grid-template-columns:1fr 1fr}
-  .site-footer{padding:20px 24px;flex-direction:column;align-items:flex-start}
-}
+.r-eye{font-family:var(--mono);font-size:9px;letter-spacing:0.16em;color:var(--red);text-transform:uppercase;margin-bottom:10px}
+.r-h{font-family:var(--serif);font-size:26px;font-weight:700;line-height:1.15;letter-spacing:-0.01em;margin-bottom:12px}
+.r-h .num{color:var(--red);font-style:italic}
+.r-body{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:18px}
+.r-matches{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.r-chip{font-family:var(--mono);font-size:10px;padding:5px 11px;border:1px solid var(--line-2);border-radius:99px;color:var(--muted);letter-spacing:0.04em}
+.r-cta-lab{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin-bottom:10px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.field label{font-family:var(--mono);font-size:9px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.field input{font-family:var(--sans);font-size:15px;padding:13px 14px;border:1px solid var(--line);border-radius:var(--r);outline:none;background:var(--paper);color:var(--ink);width:100%;transition:border-color .15s;-webkit-appearance:none}
+.field input:focus{border-color:var(--red)}
+.field input::placeholder{color:#c0bdb5}
+.chans{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;margin-bottom:16px}
+.chan{display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--line);border-radius:99px;cursor:pointer;transition:all .15s;font-size:12px;font-weight:500;user-select:none}
+.chan input{display:none}
+.chan-ic{font-size:14px;line-height:1}
+.chan.sel{border-color:var(--ink);background:var(--ink);color:#fff}
+.chan.wa.sel{background:var(--wa);border-color:var(--wa)}
+.chan.tg.sel{background:var(--tg);border-color:var(--tg)}
+.r-submit{width:100%;background:var(--red);color:#fff;border:none;padding:16px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;border-radius:var(--r);cursor:pointer;transition:background .15s,transform .1s}
+.r-submit:active{transform:scale(0.98)}
+.r-submit:hover{background:var(--red-h)}
+.r-note{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:10px;text-align:center;letter-spacing:0.04em}
+.success{display:none;text-align:center;padding:24px 18px;background:var(--soft);border-radius:var(--r);border:1px solid var(--line)}
+.success.show{display:block}
+.success-ic{width:48px;height:48px;background:var(--red);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px}
+.success h3{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:6px}
+.success p{font-size:13px;color:var(--muted);line-height:1.5}
+.sec-links{margin-top:24px;padding:18px;background:var(--soft);border-radius:var(--r)}
+.sec-h{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+.sec-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sec-item{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:var(--ink);transition:border-color .15s,transform .1s}
+.sec-item:active{transform:scale(0.98)}
+.sec-item:hover{border-color:var(--ink)}
+.sec-ic{font-size:18px}
+.sec-body{flex:1;min-width:0}
+.sec-t{font-size:13px;font-weight:500;line-height:1.2}
+.sec-d{font-size:11px;color:var(--muted);margin-top:2px;line-height:1.3}
+footer{border-top:1px solid var(--line);padding:24px 18px 32px;margin-top:32px;background:var(--soft)}
+.foot-inner{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.foot-row{display:flex;gap:18px;flex-wrap:wrap}
+.foot-row a{font-family:var(--mono);font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase;text-decoration:none;transition:color .15s}
+.foot-row a:hover{color:var(--ink)}
+.foot-meta{font-family:var(--mono);font-size:10px;color:#b8b6ae;letter-spacing:0.06em}
+@media(min-width:720px){.topbar{padding:14px 28px}.wrap{padding:0 28px}.hero{padding:56px 0 32px}.markets{grid-template-columns:repeat(4,1fr)}.sec-grid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
 
-<!-- LANG BAR -->
-<div class="lang-bar">
-  <a href="index.html" class="lang-logo">SIG<span>·</span>NAL</a>
-  <div class="lang-flags">
-    <button class="lang-btn active" data-lang="uk" onclick="setLang('uk')"><span class="lang-flag">🇺🇦</span> UA</button>
-    <button class="lang-btn" data-lang="pl" onclick="setLang('pl')"><span class="lang-flag">🇵🇱</span> PL</button>
-    <button class="lang-btn" data-lang="ro" onclick="setLang('ro')"><span class="lang-flag">🇷🇴</span> RO</button>
-    <button class="lang-btn" data-lang="tr" onclick="setLang('tr')"><span class="lang-flag">🇹🇷</span> TR</button>
+<div class="topbar">
+  <a href="index.html" class="brand">SIG<b>·</b>NAL</a>
+  <div class="langs">
+    <button class="on" data-l="uk" onclick="setLang('uk')">🇺🇦 UA</button>
+    <button data-l="pl" onclick="setLang('pl')">🇵🇱 PL</button>
+    <button data-l="ro" onclick="setLang('ro')">🇷🇴 RO</button>
+    <button data-l="tr" onclick="setLang('tr')">🇹🇷 TR</button>
   </div>
 </div>
 
-<!-- MAIN -->
-<div class="page">
-
-  <!-- LEFT -->
-  <div class="left">
-    <div class="left-noise"></div>
-    <div class="left-inner">
-      <div class="left-eyebrow" id="l-eyebrow">Закрита мережа · B2B</div>
-      <h1 class="left-title" id="l-title">Твій<br>наступний<br><em>партнер</em><br>вже тут.</h1>
-      <p class="left-desc" id="l-desc">Виробники, дистриб'ютори, байєри і інвестори з <strong>України, Польщі, Румунії і Туреччини</strong> — в одній закритій мережі. AI знаходить потрібний контакт за 48 годин.</p>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow" id="t-eye">Закрита B2B мережа</div>
+    <h1 id="t-h1">Знайди<br><em>партнера</em><br>за 48 годин.</h1>
+    <p id="t-desc"></p>
+    <div class="hero-stats">
+      <div class="hs"><div class="hs-num">100k+</div><div class="hs-lab" id="t-s1"></div></div>
+      <div class="hs"><div class="hs-num">48h</div><div class="hs-lab" id="t-s2"></div></div>
+      <div class="hs"><div class="hs-num">4</div><div class="hs-lab" id="t-s3"></div></div>
     </div>
-    <div class="left-bottom">
-      <div class="markets-row" id="markets-row">
-        <div class="market-chip active-market">🇺🇦 UA</div>
-        <div class="market-chip active-market">🇵🇱 PL</div>
-        <div class="market-chip active-market">🇷🇴 RO</div>
-        <div class="market-chip active-market">🇹🇷 TR</div>
-      </div>
-      <div class="left-stats">
-        <div>
-          <div class="stat-num">100k+</div>
-          <div class="stat-label" id="l-stat1">UA бізнесів у Польщі</div>
-        </div>
-        <div>
-          <div class="stat-num">48h</div>
-          <div class="stat-label" id="l-stat2">До першого матчу</div>
-        </div>
-        <div>
-          <div class="stat-num">4</div>
-          <div class="stat-label" id="l-stat3">Ринки в мережі</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
-  <!-- RIGHT QUIZ -->
-  <div class="right">
-    <div class="quiz-progress" id="quiz-progress">
-      <div class="qp-dot active" id="qp1"></div>
-      <div class="qp-dot" id="qp2"></div>
-      <div class="qp-dot" id="qp3"></div>
-    </div>
+  <section class="quiz" id="quiz">
+    <div class="qprog"><div class="d now" id="d1"></div><div class="d" id="d2"></div><div class="d" id="d3"></div></div>
 
-    <!-- STEP 1: Ринок -->
-    <div class="quiz-step active" id="step-1">
-      <div class="step-eyebrow" id="s1-eyebrow">Крок 01 з 03</div>
-      <div class="step-q" id="s1-q">Який твій основний ринок?</div>
-      <div class="step-sub" id="s1-sub">Обери ринок — і ми покажемо релевантні можливості саме для тебе.</div>
-      <div class="market-grid" id="market-grid">
-        <div class="market-opt" data-market="ua" onclick="selectMarket(this)">
-          <div class="mo-flag">🇺🇦</div>
-          <div class="mo-name" id="mn-ua">Україна</div>
-          <div class="mo-desc" id="md-ua">Виробник або бренд що шукає вихід на EU</div>
-        </div>
-        <div class="market-opt" data-market="pl" onclick="selectMarket(this)">
-          <div class="mo-flag">🇵🇱</div>
-          <div class="mo-name" id="mn-pl">Польща</div>
-          <div class="mo-desc" id="md-pl">Байєр або дистриб'ютор що шукає постачальника</div>
-        </div>
-        <div class="market-opt" data-market="ro" onclick="selectMarket(this)">
-          <div class="mo-flag">🇷🇴</div>
-          <div class="mo-name" id="mn-ro">Румунія</div>
-          <div class="mo-desc" id="md-ro">Імпортер або рітейлер що розширює асортимент</div>
-        </div>
-        <div class="market-opt" data-market="tr" onclick="selectMarket(this)">
-          <div class="mo-flag">🇹🇷</div>
-          <div class="mo-name" id="mn-tr">Туреччина</div>
-          <div class="mo-desc" id="md-tr">Виробник що шукає EU дистриб'ютора</div>
-        </div>
-      </div>
-      <div class="quiz-nav">
-        <button class="btn-back" disabled>← <span id="s1-back">Назад</span></button>
-        <button class="btn-next" id="btn-1" disabled onclick="goStep(2)"><span id="s1-next">Далі</span> →</button>
+    <div class="step on" id="step-1">
+      <div class="s-eye" id="s1-e">Крок 01 з 03</div>
+      <div class="s-q" id="s1-q">Який твій ринок?</div>
+      <div class="s-sub" id="s1-s">Обери один — підлаштуємо матчинг під тебе.</div>
+      <div class="markets" id="m-grid"></div>
+      <div class="nav">
+        <button class="btn btn-back" disabled><span id="b1-back">Назад</span></button>
+        <button class="btn btn-next" id="next-1" disabled onclick="go(2)"><span id="b1-next">Далі</span> →</button>
       </div>
     </div>
 
-    <!-- STEP 2: Роль -->
-    <div class="quiz-step" id="step-2">
-      <div class="step-eyebrow" id="s2-eyebrow">Крок 02 з 03</div>
-      <div class="step-q" id="s2-q">Хто ти в бізнесі?</div>
-      <div class="step-sub" id="s2-sub">Оберіть роль — і ми підберемо матчі що актуальні саме для вас.</div>
-      <div class="options" id="role-options"></div>
-      <div class="quiz-nav">
-        <button class="btn-back" onclick="goStep(1)">← <span id="s2-back">Назад</span></button>
-        <button class="btn-next" id="btn-2" disabled onclick="goStep(3)"><span id="s2-next">Далі</span> →</button>
+    <div class="step" id="step-2">
+      <div class="s-eye" id="s2-e">Крок 02 з 03</div>
+      <div class="s-q" id="s2-q">Хто ти в бізнесі?</div>
+      <div class="s-sub" id="s2-s">Знайдемо партнерів які шукають саме тебе.</div>
+      <div class="opts" id="r-opts"></div>
+      <div class="nav">
+        <button class="btn btn-back" onclick="go(1)">← <span id="b2-back">Назад</span></button>
+        <button class="btn btn-next" id="next-2" disabled onclick="go(3)"><span id="b2-next">Далі</span> →</button>
       </div>
     </div>
 
-    <!-- STEP 3: Результат -->
-    <div class="quiz-step" id="step-3">
-      <div class="step-eyebrow" id="s3-eyebrow">Твій результат</div>
-      <div class="result-box" id="result-box">
-        <div class="result-eyebrow" id="r-eyebrow">SIGNAL · Персональний профіль</div>
-        <div class="result-headline" id="r-headline">Ми знайшли партнерів для тебе</div>
-        <div class="result-body" id="r-body">У мережі SIGNAL є учасники що активно шукають саме твій профіль.</div>
-        <div class="result-matches" id="r-matches"></div>
-        <div class="result-cta-label" id="r-cta-label">Залиш email — надішлемо перші 3 матчі</div>
-        <form id="result-form" onsubmit="submitEmail(event)">
-          <div class="email-row">
-            <input class="email-input" type="email" id="email-inp" placeholder="твій@email.com" required>
-            <button type="submit" class="email-submit" id="r-btn">Отримати матчі →</button>
+    <div class="step" id="step-3">
+      <div class="s-eye" id="s3-e">Твій результат</div>
+      <div class="result-box">
+        <div class="r-eye" id="r-eye">SIGNAL · Персональний матчинг</div>
+        <div class="r-h" id="r-h">У мережі є <span class="num" id="r-num">17</span> партнерів для тебе</div>
+        <div class="r-body" id="r-body">Залиш контакт — надішлемо перші 3 матчі за 24 години.</div>
+        <div class="r-matches" id="r-matches"></div>
+
+        <form id="cform" onsubmit="submitContact(event)">
+          <div class="r-cta-lab" id="r-cta-lab">Як з тобою зв'язатися?</div>
+          <div class="field"><label id="f-name-l">Ім'я</label><input type="text" id="f-name" placeholder="Іван" required></div>
+          <div class="field"><label id="f-email-l">Email</label><input type="email" id="f-email" placeholder="ivan@company.com" required></div>
+          <div class="field"><label id="f-phone-l">Телефон / WhatsApp / Telegram</label><input type="tel" id="f-phone" placeholder="+380 50 123 4567"></div>
+
+          <div class="r-cta-lab" id="r-chan-lab">Канали зв'язку (обери)</div>
+          <div class="chans">
+            <label class="chan wa sel" data-c="whatsapp"><input type="checkbox" checked><span class="chan-ic">📱</span><span>WhatsApp</span></label>
+            <label class="chan tg sel" data-c="telegram"><input type="checkbox" checked><span class="chan-ic">✈</span><span>Telegram</span></label>
+            <label class="chan sel" data-c="email"><input type="checkbox" checked><span class="chan-ic">✉</span><span>Email</span></label>
           </div>
-          <div class="form-note" id="r-note">Без спаму. Тільки 3 релевантних контакти.</div>
+
+          <button type="submit" class="r-submit" id="r-btn">Отримати 3 матчі →</button>
+          <div class="r-note" id="r-note">Без спаму. Тільки релевантні контакти.</div>
         </form>
-        <div class="success-block" id="success-block">
-          <div class="success-icon">◆</div>
-          <div class="success-title" id="s-title">Заявку прийнято</div>
-          <div class="success-sub" id="s-sub">Перші матчі — в Telegram або email протягом 24 годин.</div>
+
+        <div class="success" id="success">
+          <div class="success-ic">✓</div>
+          <h3 id="suc-h">Заявку прийнято</h3>
+          <p id="suc-p">Перші 3 матчі — протягом 24 годин.</p>
         </div>
       </div>
-      <div class="quiz-nav">
-        <button class="btn-back" onclick="goStep(2)">← <span id="s3-back">Назад</span></button>
-        <a href="orbit/onboarding.html" class="btn-next" id="s3-full" style="text-decoration:none"><span id="s3-next">Повний профіль</span> →</a>
+
+      <div class="nav">
+        <button class="btn btn-back" onclick="go(2)">← <span id="b3-back">Назад</span></button>
+        <a href="orbit/onboarding.html" class="btn btn-next"><span id="b3-full">Повний профіль</span> →</a>
       </div>
     </div>
+  </section>
 
+  <div class="sec-links">
+    <div class="sec-h" id="sec-h">Що ще є на SIGNAL</div>
+    <div class="sec-grid">
+      <a href="catalog/lime.html" class="sec-item"><span class="sec-ic">📦</span><div class="sec-body"><div class="sec-t" id="sec1-t">Каталог</div><div class="sec-d" id="sec1-d">Товари партнерів</div></div></a>
+      <a href="news/index.html" class="sec-item"><span class="sec-ic">📰</span><div class="sec-body"><div class="sec-t" id="sec2-t">Новини</div><div class="sec-d" id="sec2-d">Бізнес-дайджест</div></div></a>
+      <a href="orbit/onboarding.html" class="sec-item"><span class="sec-ic">👤</span><div class="sec-body"><div class="sec-t" id="sec3-t">Профіль</div><div class="sec-d" id="sec3-d">Повне налаштування</div></div></a>
+      <a href="https://t.me/signal_ua" target="_blank" class="sec-item"><span class="sec-ic">✈</span><div class="sec-body"><div class="sec-t" id="sec4-t">Telegram</div><div class="sec-d" id="sec4-d">Канал дайджесту</div></div></a>
+    </div>
   </div>
 </div>
 
-<footer class="site-footer">
-  <a href="index.html" class="footer-logo">SIG<span>·</span>NAL</a>
-  <div class="footer-links">
-    <a href="index.html" id="f-home">Головна</a>
-    <a href="orbit/onboarding.html" id="f-join">Приєднатись</a>
-    <a href="https://t.me/signal_ua" target="_blank">Telegram</a>
+<footer>
+  <div class="foot-inner">
+    <a href="index.html" class="brand">SIG<b>·</b>NAL</a>
+    <div class="foot-row">
+      <a href="index.html" id="f-home">Головна</a>
+      <a href="orbit/onboarding.html" id="f-join">Приєднатись</a>
+      <a href="catalog/lime.html" id="f-cat">Каталог</a>
+      <a href="news/index.html" id="f-news">Новини</a>
+    </div>
+    <div class="foot-meta">UA · PL · RO · TR · © 2026 SIGNAL</div>
   </div>
 </footer>
 
 <script>
-// ─── i18n ────────────────────────────────────────────────────────────────────
-const i18n = {
-  uk: {
-    htmlLang: 'uk',
-    lEyebrow: 'Закрита мережа · B2B',
-    lTitle: 'Твій<br>наступний<br><em>партнер</em><br>вже тут.',
-    lDesc: 'Виробники, дистриб\'ютори, байєри і інвестори з <strong>України, Польщі, Румунії і Туреччини</strong> — в одній закритій мережі. AI знаходить потрібний контакт за 48 годин.',
-    lStat1: 'UA бізнесів у Польщі', lStat2: 'До першого матчу', lStat3: 'Ринки в мережі',
-    s1Eyebrow: 'Крок 01 з 03', s1Q: 'Який твій основний ринок?', s1Sub: 'Обери ринок — і ми покажемо релевантні можливості саме для тебе.',
-    s2Eyebrow: 'Крок 02 з 03', s2Q: 'Хто ти в бізнесі?', s2Sub: 'Оберіть роль — і ми підберемо матчі що актуальні саме для вас.',
-    s3Eyebrow: 'Твій результат', rEyebrow: 'SIGNAL · Персональний профіль',
-    rCtaLabel: 'Залиш email — надішлемо перші 3 матчі',
-    rNote: 'Без спаму. Тільки 3 релевантних контакти.',
-    rBtn: 'Отримати матчі →',
-    sTitle: 'Заявку прийнято', sSub: 'Перші матчі — в Telegram або email протягом 24 годин.',
-    back: 'Назад', next: 'Далі', fullProfile: 'Повний профіль',
-    fHome: 'Головна', fJoin: 'Приєднатись',
-    mnUA: 'Україна', mdUA: 'Виробник або бренд що шукає вихід на EU',
-    mnPL: 'Польща', mdPL: 'Байєр або дистриб\'ютор що шукає постачальника',
-    mnRO: 'Румунія', mdRO: 'Імпортер або рітейлер що розширює асортимент',
-    mnTR: 'Туреччина', mdTR: 'Виробник що шукає EU дистриб\'ютора',
-  },
-  pl: {
-    htmlLang: 'pl',
-    lEyebrow: 'Zamknięta sieć · B2B',
-    lTitle: 'Twój<br>następny<br><em>partner</em><br>już tu jest.',
-    lDesc: 'Producenci, dystrybutorzy, kupcy i inwestorzy z <strong>Ukrainy, Polski, Rumunii i Turcji</strong> — w jednej zamkniętej sieci. AI znajdzie właściwy kontakt w 48 godzin.',
-    lStat1: 'Firm UA w Polsce', lStat2: 'Do pierwszego matchu', lStat3: 'Rynki w sieci',
-    s1Eyebrow: 'Krok 01 z 03', s1Q: 'Jaki jest Twój główny rynek?', s1Sub: 'Wybierz rynek — pokażemy możliwości dopasowane właśnie do Ciebie.',
-    s2Eyebrow: 'Krok 02 z 03', s2Q: 'Kim jesteś w biznesie?', s2Sub: 'Wybierz rolę — dobierzemy matche odpowiednie dla Ciebie.',
-    s3Eyebrow: 'Twój wynik', rEyebrow: 'SIGNAL · Profil personalny',
-    rCtaLabel: 'Zostaw email — wyślemy 3 pierwsze matche',
-    rNote: 'Bez spamu. Tylko 3 dopasowane kontakty.',
-    rBtn: 'Otrzymaj matche →',
-    sTitle: 'Zgłoszenie przyjęte', sSub: 'Pierwsze matche — na Telegram lub email w ciągu 24 godzin.',
-    back: 'Wstecz', next: 'Dalej', fullProfile: 'Pełny profil',
-    fHome: 'Strona główna', fJoin: 'Dołącz',
-    mnUA: 'Ukraina', mdUA: 'Producent lub marka szukająca wejścia na rynek EU',
-    mnPL: 'Polska', mdPL: 'Nabywca lub dystrybutor szukający dostawcy',
-    mnRO: 'Rumunia', mdRO: 'Importer lub detalista rozszerzający asortyment',
-    mnTR: 'Turcja', mdTR: 'Producent szukający dystrybutora EU',
-  },
-  ro: {
-    htmlLang: 'ro',
-    lEyebrow: 'Rețea închisă · B2B',
-    lTitle: 'Următorul<br>tău<br><em>partener</em><br>e deja aici.',
-    lDesc: 'Producători, distribuitori, cumpărători și investitori din <strong>Ucraina, Polonia, România și Turcia</strong> — într-o singură rețea închisă. AI găsește contactul potrivit în 48 de ore.',
-    lStat1: 'Firme UA în Polonia', lStat2: 'Până la primul match', lStat3: 'Piețe în rețea',
-    s1Eyebrow: 'Pasul 01 din 03', s1Q: 'Care este piața ta principală?', s1Sub: 'Alege piața — îți vom arăta oportunități relevante pentru tine.',
-    s2Eyebrow: 'Pasul 02 din 03', s2Q: 'Cine ești în afaceri?', s2Sub: 'Alege rolul — vom găsi match-uri potrivite pentru tine.',
-    s3Eyebrow: 'Rezultatul tău', rEyebrow: 'SIGNAL · Profil personal',
-    rCtaLabel: 'Lasă emailul — trimitem primele 3 match-uri',
-    rNote: 'Fără spam. Doar 3 contacte relevante.',
-    rBtn: 'Primesc match-uri →',
-    sTitle: 'Cerere acceptată', sSub: 'Primele match-uri — pe Telegram sau email în 24 de ore.',
-    back: 'Înapoi', next: 'Înainte', fullProfile: 'Profil complet',
-    fHome: 'Acasă', fJoin: 'Alătură-te',
-    mnUA: 'Ucraina', mdUA: 'Producător sau brand care caută ieșire pe piața EU',
-    mnPL: 'Polonia', mdPL: 'Cumpărător sau distribuitor care caută furnizor',
-    mnRO: 'România', mdRO: 'Importator sau retailer care extinde sortimentul',
-    mnTR: 'Turcia', mdTR: 'Producător care caută distribuitor EU',
-  },
-  tr: {
-    htmlLang: 'tr',
-    lEyebrow: 'Kapalı ağ · B2B',
-    lTitle: 'Bir sonraki<br><em>ortağın</em><br>zaten<br>burada.',
-    lDesc: '<strong>Ukrayna, Polonya, Romanya ve Türkiye\'den</strong> üreticiler, distribütörler, alıcılar ve yatırımcılar — tek bir kapalı ağda. AI 48 saat içinde doğru kişiyi buluyor.',
-    lStat1: 'Polonya\'da UA şirketi', lStat2: 'İlk eşleşmeye', lStat3: 'Ağdaki pazar',
-    s1Eyebrow: 'Adım 01 / 03', s1Q: 'Ana pazarın hangisi?', s1Sub: 'Pazarını seç — sana özel fırsatları gösterelim.',
-    s2Eyebrow: 'Adım 02 / 03', s2Q: 'İş hayatında kimsin?', s2Sub: 'Rolünü seç — sana uygun eşleşmeleri bulalım.',
-    s3Eyebrow: 'Sonucun', rEyebrow: 'SIGNAL · Kişisel profil',
-    rCtaLabel: 'E-posta bırak — ilk 3 eşleşmeyi gönderelim',
-    rNote: 'Spam yok. Sadece 3 ilgili kişi.',
-    rBtn: 'Eşleşmeleri al →',
-    sTitle: 'Başvuru alındı', sSub: 'İlk eşleşmeler — 24 saat içinde Telegram veya e-posta ile.',
-    back: 'Geri', next: 'İleri', fullProfile: 'Tam profil',
-    fHome: 'Ana sayfa', fJoin: 'Katıl',
-    mnUA: 'Ukrayna', mdUA: 'AB pazarına giriş arayan üretici veya marka',
-    mnPL: 'Polonya', mdPL: 'Tedarikçi arayan alıcı veya distribütör',
-    mnRO: 'Romanya', mdRO: 'Çeşitliliğini genişleten ithalatçı veya perakendeci',
-    mnTR: 'Türkiye', mdTR: 'AB distribütörü arayan üretici',
-  }
-};
+const i18n={
+uk:{eye:"Закрита B2B мережа",h1:"Знайди<br><em>партнера</em><br>за 48 годин.",desc:"Виробники, дистриб'ютори, байєри і інвестори з <strong>4 ринків</strong> — UA · PL · RO · TR. AI знаходить релевантний контакт без LinkedIn і холодних дзвінків.",s1:"UA бізнесів<br>у Польщі",s2:"До першого<br>матчу",s3:"Ринки<br>в мережі",s1e:"Крок 01 з 03",s1q:"Який твій ринок?",s1s:"Обери один — підлаштуємо матчинг під тебе.",s2e:"Крок 02 з 03",s2q:"Хто ти в бізнесі?",s2s:"Знайдемо партнерів які шукають саме тебе.",s3e:"Твій результат",rEye:"SIGNAL · Персональний матчинг",rBody:"Залиш контакт — надішлемо перші 3 матчі за 24 години. Без спаму, без обов'язків.",rCtaLab:"Як з тобою зв'язатися?",fNameLab:"Ім'я",fNameP:"Іван",fEmailLab:"Email",fEmailP:"ivan@company.com",fPhoneLab:"Телефон / WhatsApp / Telegram",fPhoneP:"+380 50 123 4567",rChanLab:"Канали зв'язку (обери)",rBtn:"Отримати 3 матчі →",rNote:"Без спаму. Тільки релевантні контакти.",sucH:"Заявку прийнято",sucP:"Перші 3 матчі — протягом 24 годин обраним каналом.",back:"Назад",next:"Далі",full:"Повний профіль",secH:"Що ще є на SIGNAL",sec1t:"Каталог",sec1d:"Товари партнерів",sec2t:"Новини",sec2d:"Бізнес-дайджест",sec3t:"Профіль",sec3d:"Повне налаштування",sec4t:"Telegram",sec4d:"Канал дайджесту",fHome:"Головна",fJoin:"Приєднатись",fCat:"Каталог",fNews:"Новини",
+markets:[{code:'ua',flag:'🇺🇦',name:'Україна',sub:'Виробник, бренд, e-com'},{code:'pl',flag:'🇵🇱',name:'Польща',sub:'Байєр, дистриб\'ютор, рітейл'},{code:'ro',flag:'🇷🇴',name:'Румунія',sub:'Імпортер, дистриб\'ютор'},{code:'tr',flag:'🇹🇷',name:'Туреччина',sub:'Виробник, експортер'}],
+roles:{ua:[{id:'producer',icon:'🏭',t:'Виробник / Бренд',d:'Маєш продукт — шукаєш вихід в EU рітейл'},{id:'distributor',icon:'🚚',t:'Дистриб\'ютор / Імпортер',d:'Маєш канали — шукаєш нові SKU'},{id:'ecom',icon:'💻',t:'E-commerce',d:'Шукаєш фулфілмент або партнера на EU'},{id:'investor',icon:'💰',t:'Інвестор',d:'Шукаєш проєкт у регіоні'}],pl:[{id:'buyer',icon:'🏪',t:'Байєр / Рітейлер',d:'Шукаєш UA/TR постачальника'},{id:'distributor',icon:'🚚',t:'Дистриб\'ютор',d:'Шукаєш нові бренди для полиці'},{id:'horeca',icon:'🏨',t:'HoReCa',d:'Постачальник або канал збуту'},{id:'ecom',icon:'💻',t:'E-commerce',d:'Шукаєш нові продукти для Allegro'}],ro:[{id:'importer',icon:'📦',t:'Імпортер',d:'Шукаєш постачальників EU/UA/TR'},{id:'buyer',icon:'🏪',t:'Рітейлер / Байєр',d:'Шукаєш унікальні продукти'},{id:'distributor',icon:'🚚',t:'Дистриб\'ютор',d:'Шукаєш бренди для партнерства'}],tr:[{id:'producer',icon:'🏭',t:'Виробник / Експортер',d:'Шукаєш дистриб\'ютора в EU'},{id:'agent',icon:'🤝',t:'Торговий агент',d:'Шукаєш EU партнерів'},{id:'logistics',icon:'📦',t:'Логістика TR-EU',d:'Шукаєш клієнтів'}]},
+results:{producer:{n:17,m:['UA виробник ↔ PL байєр','UA бренд ↔ RO дистриб\'ютор','UA продукт ↔ TR канал']},distributor:{n:23,m:['UA дистриб\'ютор ↔ TR виробник','UA канал ↔ PL бренд']},ecom:{n:14,m:['UA e-com ↔ PL фулфілмент','UA магазин ↔ EU постачальник']},investor:{n:9,m:['Інвестор ↔ UA стартап','Капітал ↔ PL зростаючий бізнес']},buyer:{n:31,m:['PL байєр ↔ UA виробник','PL мережа ↔ TR бренд']},horeca:{n:12,m:['HoReCa ↔ UA food виробник','Ресторан ↔ TR постачальник']},importer:{n:19,m:['RO імпортер ↔ UA виробник','RO ринок ↔ TR бренд']},agent:{n:16,m:['TR агент ↔ PL байєр','TR бренд ↔ RO дистриб\'ютор']},logistics:{n:8,m:['TR логістика ↔ UA вантаж']}}},
+pl:{eye:"Zamknięta sieć B2B",h1:"Znajdź<br><em>partnera</em><br>w 48 godzin.",desc:"Producenci, dystrybutorzy, kupcy i inwestorzy z <strong>4 rynków</strong> — UA · PL · RO · TR. AI znajdzie kontakt bez LinkedIn i zimnych telefonów.",s1:"Firm UA<br>w Polsce",s2:"Do pierwszego<br>matchu",s3:"Rynki<br>w sieci",s1e:"Krok 01 z 03",s1q:"Jaki jest Twój rynek?",s1s:"Wybierz jeden lub kilka.",s2e:"Krok 02 z 03",s2q:"Kim jesteś w biznesie?",s2s:"Znajdziemy partnerów dla Ciebie.",s3e:"Twój wynik",rEye:"SIGNAL · Personalny matching",rBody:"Zostaw kontakt — wyślemy pierwsze 3 matche w ciągu 24h.",rCtaLab:"Jak się skontaktować?",fNameLab:"Imię",fNameP:"Jan",fEmailLab:"Email",fEmailP:"jan@firma.pl",fPhoneLab:"Telefon / WhatsApp / Telegram",fPhoneP:"+48 500 123 456",rChanLab:"Kanały kontaktu",rBtn:"Otrzymaj 3 matche →",rNote:"Bez spamu.",sucH:"Zgłoszenie przyjęte",sucP:"Pierwsze matche — w ciągu 24 godzin.",back:"Wstecz",next:"Dalej",full:"Pełny profil",secH:"Co jeszcze jest",sec1t:"Katalog",sec1d:"Towary partnerów",sec2t:"Wiadomości",sec2d:"Digest",sec3t:"Profil",sec3d:"Konfiguracja",sec4t:"Telegram",sec4d:"Kanał",fHome:"Główna",fJoin:"Dołącz",fCat:"Katalog",fNews:"Wiadomości",
+markets:[{code:'ua',flag:'🇺🇦',name:'Ukraina',sub:'Producent, marka'},{code:'pl',flag:'🇵🇱',name:'Polska',sub:'Nabywca, dystrybutor'},{code:'ro',flag:'🇷🇴',name:'Rumunia',sub:'Importer'},{code:'tr',flag:'🇹🇷',name:'Turcja',sub:'Producent'}],
+roles:{ua:[{id:'producer',icon:'🏭',t:'Producent / Marka',d:'Szukasz EU retailu'},{id:'distributor',icon:'🚚',t:'Dystrybutor',d:'Szukasz SKU'},{id:'ecom',icon:'💻',t:'E-commerce',d:'Szukasz partnera EU'}],pl:[{id:'buyer',icon:'🏪',t:'Nabywca / Retailer',d:'Szukasz dostawcy UA/TR'},{id:'distributor',icon:'🚚',t:'Dystrybutor',d:'Szukasz nowych marek'},{id:'horeca',icon:'🏨',t:'HoReCa',d:'Dostawca lub kanał'}],ro:[{id:'importer',icon:'📦',t:'Importer',d:'Szukasz dostawców'},{id:'buyer',icon:'🏪',t:'Retailer',d:'Szukasz unikalnych produktów'}],tr:[{id:'producer',icon:'🏭',t:'Producent',d:'Szukasz dystrybutora EU'},{id:'agent',icon:'🤝',t:'Agent',d:'Szukasz partnerów EU'}]},
+results:{producer:{n:17,m:['UA producent ↔ PL nabywca']},distributor:{n:23,m:['Dystrybutor ↔ TR producent']},buyer:{n:31,m:['PL nabywca ↔ UA producent']},importer:{n:19,m:['RO importer ↔ UA producent']},agent:{n:16,m:['TR agent ↔ PL nabywca']},ecom:{n:14,m:['UA e-com ↔ PL fulfillment']},horeca:{n:12,m:['HoReCa ↔ UA food']}}},
+ro:{eye:"Rețea B2B închisă",h1:"Găsește<br><em>partener</em><br>în 48 de ore.",desc:"Producători, distribuitori, cumpărători din <strong>4 piețe</strong> — UA · PL · RO · TR.",s1:"Firme UA<br>în Polonia",s2:"Până la<br>primul match",s3:"Piețe<br>în rețea",s1e:"Pasul 01 / 03",s1q:"Care e piața ta?",s1s:"Alege una sau mai multe.",s2e:"Pasul 02 / 03",s2q:"Cine ești în afaceri?",s2s:"Găsim partenerii potriviți.",s3e:"Rezultatul tău",rEye:"SIGNAL · Match personal",rBody:"Lasă contactul — trimitem primele 3 match-uri în 24 de ore.",rCtaLab:"Cum te contactăm?",fNameLab:"Nume",fNameP:"Ion",fEmailLab:"Email",fEmailP:"ion@firma.ro",fPhoneLab:"Telefon / WhatsApp / Telegram",fPhoneP:"+40 700 123 456",rChanLab:"Canale de contact",rBtn:"Primesc 3 match-uri →",rNote:"Fără spam.",sucH:"Cerere acceptată",sucP:"Primele match-uri — în 24 de ore.",back:"Înapoi",next:"Înainte",full:"Profil complet",secH:"Ce mai e pe SIGNAL",sec1t:"Catalog",sec1d:"Produse parteneri",sec2t:"Știri",sec2d:"Digest business",sec3t:"Profil",sec3d:"Configurare",sec4t:"Telegram",sec4d:"Canal digest",fHome:"Acasă",fJoin:"Înscriere",fCat:"Catalog",fNews:"Știri",
+markets:[{code:'ua',flag:'🇺🇦',name:'Ucraina',sub:'Producător, brand'},{code:'pl',flag:'🇵🇱',name:'Polonia',sub:'Cumpărător'},{code:'ro',flag:'🇷🇴',name:'România',sub:'Importator'},{code:'tr',flag:'🇹🇷',name:'Turcia',sub:'Producător'}],
+roles:{ua:[{id:'producer',icon:'🏭',t:'Producător',d:'Cauți retail EU'},{id:'distributor',icon:'🚚',t:'Distribuitor',d:'Cauți noi SKU'}],pl:[{id:'buyer',icon:'🏪',t:'Cumpărător',d:'Cauți furnizor UA/TR'},{id:'distributor',icon:'🚚',t:'Distribuitor',d:'Cauți noi mărci'}],ro:[{id:'importer',icon:'📦',t:'Importator',d:'Cauți furnizori'},{id:'buyer',icon:'🏪',t:'Retailer',d:'Cauți produse unice'},{id:'distributor',icon:'🚚',t:'Distribuitor',d:'Cauți mărci'}],tr:[{id:'producer',icon:'🏭',t:'Producător',d:'Cauți distribuitor EU'},{id:'agent',icon:'🤝',t:'Agent',d:'Cauți parteneri EU'}]},
+results:{producer:{n:17,m:['Producător UA ↔ Cumpărător PL']},distributor:{n:23,m:['Distribuitor ↔ Producător TR']},buyer:{n:31,m:['Cumpărător PL ↔ Producător UA']},importer:{n:19,m:['Importator RO ↔ Producător UA']},agent:{n:16,m:['Agent TR ↔ Cumpărător PL']}}},
+tr:{eye:"Kapalı B2B ağı",h1:"<em>Ortağını</em><br>48 saatte<br>bul.",desc:"<strong>4 pazardan</strong> üreticiler, distribütörler, alıcılar — UA · PL · RO · TR.",s1:"Polonya'da<br>UA şirketi",s2:"İlk<br>eşleşmeye",s3:"Ağdaki<br>pazar",s1e:"Adım 01 / 03",s1q:"Pazarın hangisi?",s1s:"Bir veya birkaçını seç.",s2e:"Adım 02 / 03",s2q:"İşte kimsin?",s2s:"Sana uygun ortakları bulalım.",s3e:"Sonucun",rEye:"SIGNAL · Kişisel eşleştirme",rBody:"İletişim bırak — ilk 3 eşleşmeyi 24 saat içinde göndereceğiz.",rCtaLab:"Sana nasıl ulaşalım?",fNameLab:"Ad",fNameP:"Mehmet",fEmailLab:"E-posta",fEmailP:"mehmet@firma.com",fPhoneLab:"Telefon / WhatsApp / Telegram",fPhoneP:"+90 532 123 4567",rChanLab:"İletişim kanalları",rBtn:"3 eşleşmeyi al →",rNote:"Spam yok.",sucH:"Başvuru alındı",sucP:"İlk eşleşmeler — 24 saat içinde.",back:"Geri",next:"İleri",full:"Tam profil",secH:"SIGNAL'da neler var",sec1t:"Katalog",sec1d:"Ortak ürünleri",sec2t:"Haberler",sec2d:"İş özeti",sec3t:"Profil",sec3d:"Tam kurulum",sec4t:"Telegram",sec4d:"Özet kanalı",fHome:"Ana sayfa",fJoin:"Katıl",fCat:"Katalog",fNews:"Haberler",
+markets:[{code:'ua',flag:'🇺🇦',name:'Ukrayna',sub:'Üretici, marka'},{code:'pl',flag:'🇵🇱',name:'Polonya',sub:'Alıcı'},{code:'ro',flag:'🇷🇴',name:'Romanya',sub:'İthalatçı'},{code:'tr',flag:'🇹🇷',name:'Türkiye',sub:'Üretici'}],
+roles:{tr:[{id:'producer',icon:'🏭',t:'Üretici / İhracatçı',d:'AB distribütörü arıyorum'},{id:'agent',icon:'🤝',t:'Ticari temsilci',d:'AB partnerleri'},{id:'logistics',icon:'📦',t:'Lojistik',d:'TR-AB müşterileri'}],ua:[{id:'producer',icon:'🏭',t:'Üretici',d:'AB pazarına giriş'},{id:'distributor',icon:'🚚',t:'Distribütör',d:'Yeni SKU'}],pl:[{id:'buyer',icon:'🏪',t:'Alıcı',d:'UA/TR tedarikçi'}],ro:[{id:'importer',icon:'📦',t:'İthalatçı',d:'AB/UA/TR tedarikçi'}]},
+results:{producer:{n:17,m:['TR üretici ↔ AB distribütör']},agent:{n:16,m:['TR temsilci ↔ AB ortak']},logistics:{n:8,m:['TR lojistik ↔ AB müşteri']},distributor:{n:23,m:['Distribütör ↔ TR üretici']},buyer:{n:31,m:['Alıcı ↔ Üretici']},importer:{n:19,m:['İthalatçı ↔ Üretici']}}}};
 
-// ─── Roles per market ────────────────────────────────────────────────────────
-const roles = {
-  uk: {
-    ua: [
-      { icon:'🏭', title:'Виробник / Бренд', desc:'Маєш продукт — шукаєш вихід у польський або румунський рітейл', id:'producer' },
-      { icon:'🚚', title:'Дистриб\'ютор / Імпортер', desc:'Маєш канали в Україні — шукаєш нові SKU від іноземних виробників', id:'distributor' },
-      { icon:'💻', title:'E-commerce / Маркетплейс', desc:'Продаєш онлайн — шукаєш фулфілмент або партнера на EU', id:'ecom' },
-      { icon:'💰', title:'Інвестор / Партнер', desc:'Є капітал — шукаєш проєкт для входу в регіоні', id:'investor' },
-    ],
-    pl: [
-      { icon:'🏪', title:'Байєр / Рітейлер', desc:'Управляєш категорією або мережею — шукаєш UA/TR постачальника', id:'buyer' },
-      { icon:'🚚', title:'Дистриб\'ютор', desc:'Маєш логістику і склад — шукаєш нові бренди для полиці', id:'distributor' },
-      { icon:'🏨', title:'HoReCa / Food service', desc:'Ресторан або food-виробник — шукаєш постачальника чи канал', id:'horeca' },
-      { icon:'💻', title:'E-commerce', desc:'Продаєш на Allegro або локально — шукаєш нові продукти', id:'ecom' },
-    ],
-    ro: [
-      { icon:'📦', title:'Імпортер', desc:'Ввозиш товари в Румунію — шукаєш нових постачальників EU/UA/TR', id:'importer' },
-      { icon:'🏪', title:'Рітейлер / Байєр', desc:'Управляєш магазинами або мережею — шукаєш унікальні продукти', id:'buyer' },
-      { icon:'🚚', title:'Дистриб\'ютор', desc:'Покриваєш румунський ринок — шукаєш бренди для партнерства', id:'distributor' },
-      { icon:'💻', title:'E-commerce', desc:'Продаєш онлайн в Румунії — шукаєш постачальника або партнера', id:'ecom' },
-    ],
-    tr: [
-      { icon:'🏭', title:'Виробник / Експортер', desc:'Виробляєш в Туреччині — шукаєш дистриб\'ютора в EU', id:'producer' },
-      { icon:'🤝', title:'Торговий агент', desc:'Представляєш турецькі бренди — шукаєш партнерів в EU', id:'agent' },
-      { icon:'📦', title:'Логістичний оператор', desc:'Маєш логістику між TR і EU — шукаєш клієнтів', id:'logistics' },
-    ],
-  },
-  pl: {
-    ua: [
-      { icon:'🏭', title:'Producent / Marka', desc:'Masz produkt — szukasz wejścia do polskiego lub rumuńskiego retailu', id:'producer' },
-      { icon:'🚚', title:'Dystrybutor / Importer', desc:'Masz kanały — szukasz nowych SKU od zagranicznych producentów', id:'distributor' },
-      { icon:'💻', title:'E-commerce', desc:'Sprzedajesz online — szukasz fulfillmentu lub partnera EU', id:'ecom' },
-      { icon:'💰', title:'Inwestor / Partner', desc:'Masz kapitał — szukasz projektu w regionie', id:'investor' },
-    ],
-    pl: [
-      { icon:'🏪', title:'Nabywca / Retailer', desc:'Zarządzasz kategorią lub siecią — szukasz dostawcy UA/TR', id:'buyer' },
-      { icon:'🚚', title:'Dystrybutor', desc:'Masz logistykę i magazyn — szukasz nowych marek', id:'distributor' },
-      { icon:'🏨', title:'HoReCa', desc:'Restauracja lub producent food — szukasz dostawcy lub kanału', id:'horeca' },
-      { icon:'💻', title:'E-commerce', desc:'Sprzedajesz na Allegro — szukasz nowych produktów', id:'ecom' },
-    ],
-    ro: [
-      { icon:'📦', title:'Importer', desc:'Importujesz towary do Rumunii — szukasz nowych dostawców', id:'importer' },
-      { icon:'🏪', title:'Retailer / Nabywca', desc:'Zarządzasz sklepami — szukasz unikalnych produktów', id:'buyer' },
-      { icon:'🚚', title:'Dystrybutor', desc:'Obsługujesz rynek rumuński — szukasz marek do partnerstwa', id:'distributor' },
-    ],
-    tr: [
-      { icon:'🏭', title:'Producent / Eksporter', desc:'Produkujesz w Turcji — szukasz dystrybutora EU', id:'producer' },
-      { icon:'🤝', title:'Agent handlowy', desc:'Reprezentujesz tureckie marki — szukasz partnerów EU', id:'agent' },
-      { icon:'📦', title:'Operator logistyczny', desc:'Masz logistykę TR-EU — szukasz klientów', id:'logistics' },
-    ],
-  },
-  ro: {
-    ua: [
-      { icon:'🏭', title:'Producător / Brand', desc:'Ai un produs — cauți intrarea în retailul polonez sau român', id:'producer' },
-      { icon:'🚚', title:'Distribuitor / Importator', desc:'Ai canale — cauți noi SKU de la producători străini', id:'distributor' },
-      { icon:'💻', title:'E-commerce', desc:'Vinzi online — cauți fulfillment sau partener EU', id:'ecom' },
-    ],
-    pl: [
-      { icon:'🏪', title:'Cumpărător / Retailer', desc:'Gestionezi o categorie sau rețea — cauți furnizor UA/TR', id:'buyer' },
-      { icon:'🚚', title:'Distribuitor', desc:'Ai logistică și depozit — cauți noi branduri', id:'distributor' },
-      { icon:'🏨', title:'HoReCa', desc:'Restaurant sau producător food — cauți furnizor sau canal', id:'horeca' },
-    ],
-    ro: [
-      { icon:'📦', title:'Importator', desc:'Importi mărfuri în România — cauți noi furnizori EU/UA/TR', id:'importer' },
-      { icon:'🏪', title:'Retailer / Cumpărător', desc:'Gestionezi magazine sau rețea — cauți produse unice', id:'buyer' },
-      { icon:'🚚', title:'Distribuitor', desc:'Acoperi piața română — cauți branduri pentru parteneriat', id:'distributor' },
-      { icon:'💻', title:'E-commerce', desc:'Vinzi online în România — cauți furnizor sau partener', id:'ecom' },
-    ],
-    tr: [
-      { icon:'🏭', title:'Producător / Exportator', desc:'Produci în Turcia — cauți distribuitor EU', id:'producer' },
-      { icon:'🤝', title:'Agent comercial', desc:'Reprezinți branduri turcești — cauți parteneri EU', id:'agent' },
-    ],
-  },
-  tr: {
-    ua: [
-      { icon:'🏭', title:'Üretici / Marka', desc:'Ürününüz var — Polonya veya Romanya perakende pazarına girmek istiyorsunuz', id:'producer' },
-      { icon:'🚚', title:'Distribütör / İthalatçı', desc:'Kanallarınız var — yabancı üreticilerden yeni SKU arıyorsunuz', id:'distributor' },
-    ],
-    pl: [
-      { icon:'🏪', title:'Alıcı / Perakendeci', desc:'Kategori veya zincir yönetiyorsunuz — UA/TR tedarikçi arıyorsunuz', id:'buyer' },
-      { icon:'🚚', title:'Distribütör', desc:'Lojistik ve depounuz var — yeni markalar arıyorsunuz', id:'distributor' },
-    ],
-    ro: [
-      { icon:'📦', title:'İthalatçı', desc:'Romanya\'ya mal ithal ediyorsunuz — yeni tedarikçi arıyorsunuz', id:'importer' },
-      { icon:'🏪', title:'Perakendeci / Alıcı', desc:'Mağaza veya zincir yönetiyorsunuz — benzersiz ürün arıyorsunuz', id:'buyer' },
-    ],
-    tr: [
-      { icon:'🏭', title:'Üretici / İhracatçı', desc:'Türkiye\'de üretiyorsunuz — AB distribütörü arıyorsunuz', id:'producer' },
-      { icon:'🤝', title:'Ticari temsilci', desc:'Türk markaları temsil ediyorsunuz — AB partnerleri arıyorsunuz', id:'agent' },
-      { icon:'📦', title:'Lojistik operatör', desc:'TR-AB arasında lojistiğiniz var — müşteri arıyorsunuz', id:'logistics' },
-    ],
-  }
-};
-
-// ─── Result texts ────────────────────────────────────────────────────────────
-const results = {
-  uk: {
-    producer: {
-      headline: 'Є виробник — шукаємо байєра.',
-      body: 'У SIGNAL є дистриб\'ютори і байєри з Польщі, Румунії та EU які активно шукають нових постачальників. Серед них — представники рітейл-мереж і маркетплейсів.',
-      matches: ['UA виробник ↔ PL байєр', 'UA бренд ↔ RO дистриб\'ютор', 'UA продукт ↔ TR канал']
-    },
-    distributor: {
-      headline: 'Є канал — знайдемо чим заповнити.',
-      body: 'Виробники з України і Туреччини шукають дистриб\'юторів з готовими каналами. Ми з\'єднуємо напряму — без посередників.',
-      matches: ['UA дистриб\'ютор ↔ TR виробник', 'UA канал ↔ PL бренд', 'UA мережа ↔ RO продукт']
-    },
-    ecom: {
-      headline: 'E-commerce — знайдемо партнера для масштабування.',
-      body: 'Фулфілмент-партнери, маркетологи і постачальники для Allegro, Amazon EU і Rozetka — в мережі SIGNAL.',
-      matches: ['UA e-com ↔ PL фулфілмент', 'UA магазин ↔ EU постачальник']
-    },
-    investor: {
-      headline: 'Є капітал — є проєкти.',
-      body: 'Підприємці UA/PL/RO активно шукають партнерів з капіталом або операційною експертизою для масштабування.',
-      matches: ['Інвестор ↔ UA стартап', 'Капітал ↔ PL зростаючий бізнес']
-    },
-    buyer: {
-      headline: 'Є полиця — знайдемо чим заповнити.',
-      body: 'Виробники і бренди з України і Туреччини шукають вхід у польський і румунський рітейл. Ексклюзивні SKU — без конкурентів.',
-      matches: ['PL байєр ↔ UA виробник', 'PL мережа ↔ TR бренд']
-    },
-    horeca: {
-      headline: 'HoReCa — знайдемо постачальника або канал.',
-      body: 'Надійні постачальники food-продукції і нові канали збуту в Польщі та Україні — в мережі SIGNAL.',
-      matches: ['HoReCa ↔ UA food виробник', 'Ресторан ↔ TR постачальник']
-    },
-    importer: {
-      headline: 'Імпортер — знайдемо нові бренди для тебе.',
-      body: 'Виробники і бренди з України і Туреччини активно шукають дистриб\'юторів в Румунії. Прямий контакт без посередників.',
-      matches: ['RO імпортер ↔ UA виробник', 'RO ринок ↔ TR бренд']
-    },
-    agent: {
-      headline: 'Торговий агент — знайдемо EU партнерів.',
-      body: 'Байєри і дистриб\'ютори з Польщі і Румунії активно шукають турецькі бренди. Ми з\'єднуємо напряму.',
-      matches: ['TR агент ↔ PL байєр', 'TR бренд ↔ RO дистриб\'ютор']
-    },
-    logistics: {
-      headline: 'Логістика TR-EU — є кому це потрібно.',
-      body: 'Виробники і дистриб\'ютори що торгують між Туреччиною і EU постійно шукають надійного логістичного партнера.',
-      matches: ['TR логістика ↔ UA вантаж', 'TR оператор ↔ PL імпортер']
-    },
-  }
-};
-
-// ─── State ───────────────────────────────────────────────────────────────────
-let state = { lang: 'uk', market: null, role: null, step: 1 };
-
-// ─── Init ────────────────────────────────────────────────────────────────────
-function applyLang(lang) {
-  const t = i18n[lang];
-  document.documentElement.lang = t.htmlLang;
-  document.getElementById('l-eyebrow').textContent = t.lEyebrow;
-  document.getElementById('l-title').innerHTML = t.lTitle;
-  document.getElementById('l-desc').innerHTML = t.lDesc;
-  document.getElementById('l-stat1').textContent = t.lStat1;
-  document.getElementById('l-stat2').textContent = t.lStat2;
-  document.getElementById('l-stat3').textContent = t.lStat3;
-  document.getElementById('s1-eyebrow').textContent = t.s1Eyebrow;
-  document.getElementById('s1-q').textContent = t.s1Q;
-  document.getElementById('s1-sub').textContent = t.s1Sub;
-  document.getElementById('s2-eyebrow').textContent = t.s2Eyebrow;
-  document.getElementById('s2-q').textContent = t.s2Q;
-  document.getElementById('s2-sub').textContent = t.s2Sub;
-  document.getElementById('s3-eyebrow').textContent = t.s3Eyebrow;
-  document.getElementById('r-eyebrow').textContent = t.rEyebrow;
-  document.getElementById('r-cta-label').textContent = t.rCtaLabel;
-  document.getElementById('r-note').textContent = t.rNote;
-  document.getElementById('r-btn').textContent = t.rBtn;
-  document.getElementById('s-title').textContent = t.sTitle;
-  document.getElementById('s-sub').textContent = t.sSub;
-  ['s1-back','s2-back','s3-back'].forEach(id => { const el=document.getElementById(id); if(el) el.textContent=t.back; });
-  ['s1-next','s2-next'].forEach(id => { const el=document.getElementById(id); if(el) el.textContent=t.next; });
-  document.getElementById('s3-next').textContent = t.fullProfile;
-  document.getElementById('f-home').textContent = t.fHome;
-  document.getElementById('f-join').textContent = t.fJoin;
-  document.getElementById('mn-ua').textContent = t.mnUA;
-  document.getElementById('md-ua').textContent = t.mdUA;
-  document.getElementById('mn-pl').textContent = t.mnPL;
-  document.getElementById('md-pl').textContent = t.mdPL;
-  document.getElementById('mn-ro').textContent = t.mnRO;
-  document.getElementById('md-ro').textContent = t.mdRO;
-  document.getElementById('mn-tr').textContent = t.mnTR;
-  document.getElementById('md-tr').textContent = t.mdTR;
-  // email placeholder
-  document.getElementById('email-inp').placeholder = lang === 'tr' ? 'e-posta@firma.com' : lang === 'pl' ? 'twój@email.com' : lang === 'ro' ? 'email@firma.ro' : 'твій@email.com';
+let state={lang:'uk',market:null,role:null,step:1};
+function $(id){return document.getElementById(id)}
+function applyLang(L){
+  const t=i18n[L];document.documentElement.lang=L;
+  $('t-eye').textContent=t.eye;$('t-h1').innerHTML=t.h1;$('t-desc').innerHTML=t.desc;
+  $('t-s1').innerHTML=t.s1;$('t-s2').innerHTML=t.s2;$('t-s3').innerHTML=t.s3;
+  $('s1-e').textContent=t.s1e;$('s1-q').textContent=t.s1q;$('s1-s').textContent=t.s1s;
+  $('s2-e').textContent=t.s2e;$('s2-q').textContent=t.s2q;$('s2-s').textContent=t.s2s;
+  $('s3-e').textContent=t.s3e;$('r-eye').textContent=t.rEye;$('r-body').textContent=t.rBody;
+  $('r-cta-lab').textContent=t.rCtaLab;
+  $('f-name-l').textContent=t.fNameLab;$('f-name').placeholder=t.fNameP;
+  $('f-email-l').textContent=t.fEmailLab;$('f-email').placeholder=t.fEmailP;
+  $('f-phone-l').textContent=t.fPhoneLab;$('f-phone').placeholder=t.fPhoneP;
+  $('r-chan-lab').textContent=t.rChanLab;$('r-btn').textContent=t.rBtn;$('r-note').textContent=t.rNote;
+  $('suc-h').textContent=t.sucH;$('suc-p').textContent=t.sucP;
+  ['b1-back','b2-back','b3-back'].forEach(id=>$(id)&&($(id).textContent=t.back));
+  ['b1-next','b2-next'].forEach(id=>$(id)&&($(id).textContent=t.next));
+  $('b3-full').textContent=t.full;$('sec-h').textContent=t.secH;
+  $('sec1-t').textContent=t.sec1t;$('sec1-d').textContent=t.sec1d;
+  $('sec2-t').textContent=t.sec2t;$('sec2-d').textContent=t.sec2d;
+  $('sec3-t').textContent=t.sec3t;$('sec3-d').textContent=t.sec3d;
+  $('sec4-t').textContent=t.sec4t;$('sec4-d').textContent=t.sec4d;
+  $('f-home').textContent=t.fHome;$('f-join').textContent=t.fJoin;
+  $('f-cat').textContent=t.fCat;$('f-news').textContent=t.fNews;
+  renderMarkets();
+  if(state.market)renderRoles();
+  if(state.step===3)renderResult();
 }
-
-function setLang(lang) {
-  state.lang = lang;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-  applyLang(lang);
-  // re-render roles if market selected
-  if (state.market) renderRoles();
+function setLang(L){state.lang=L;document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===L));applyLang(L)}
+function renderMarkets(){
+  const t=i18n[state.lang];
+  $('m-grid').innerHTML=t.markets.map(m=>`<div class="m-card${state.market===m.code?' sel':''}" data-m="${m.code}" onclick="selMarket('${m.code}')"><div class="m-flag">${m.flag}</div><div class="m-name">${m.name}</div><div class="m-sub">${m.sub}</div></div>`).join('');
 }
-
-function selectMarket(el) {
-  document.querySelectorAll('.market-opt').forEach(o => o.classList.remove('sel'));
-  el.classList.add('sel');
-  state.market = el.dataset.market;
-  state.role = null;
-  document.getElementById('btn-1').disabled = false;
+function selMarket(c){state.market=c;state.role=null;document.querySelectorAll('.m-card').forEach(x=>x.classList.toggle('sel',x.dataset.m===c));$('next-1').disabled=false}
+function renderRoles(){
+  const t=i18n[state.lang];const roles=(t.roles[state.market])||(i18n.uk.roles[state.market])||[];
+  $('r-opts').innerHTML=roles.map(r=>`<div class="opt${state.role===r.id?' sel':''}" data-r="${r.id}" onclick="selRole('${r.id}')"><div class="opt-ic">${r.icon}</div><div class="opt-body"><div class="opt-t">${r.t}</div><div class="opt-d">${r.d}</div></div><div class="opt-ck">✓</div></div>`).join('');
+  $('next-2').disabled=!state.role;
 }
-
-function renderRoles() {
-  const lang = state.lang;
-  const market = state.market;
-  const roleList = (roles[lang] && roles[lang][market]) ? roles[lang][market] : (roles['uk'][market] || []);
-  const container = document.getElementById('role-options');
-  container.innerHTML = roleList.map(r => `
-    <div class="option" data-role="${r.id}" onclick="selectRole(this)">
-      <div class="opt-icon">${r.icon}</div>
-      <div class="opt-body"><div class="opt-title">${r.title}</div><div class="opt-desc">${r.desc}</div></div>
-      <div class="opt-check">✓</div>
-    </div>
-  `).join('');
-  document.getElementById('btn-2').disabled = true;
+function selRole(id){state.role=id;document.querySelectorAll('.opt').forEach(o=>o.classList.toggle('sel',o.dataset.r===id));$('next-2').disabled=false}
+function renderResult(){
+  const t=i18n[state.lang];
+  const r=(t.results&&t.results[state.role])||(i18n.uk.results[state.role])||{n:12,m:['Релевантні партнери']};
+  $('r-num').textContent=r.n;$('r-matches').innerHTML=r.m.map(m=>`<div class="r-chip">${m}</div>`).join('');
 }
-
-function selectRole(el) {
-  document.querySelectorAll('.option').forEach(o => o.classList.remove('sel'));
-  el.classList.add('sel');
-  state.role = el.dataset.role;
-  document.getElementById('btn-2').disabled = false;
+function go(n){
+  if(n===2)renderRoles();if(n===3)renderResult();
+  document.querySelectorAll('.step').forEach(s=>s.classList.remove('on'));
+  $('step-'+n).classList.add('on');state.step=n;
+  for(let i=1;i<=3;i++){const d=$('d'+i);d.classList.remove('done','now');if(i<n)d.classList.add('done');else if(i===n)d.classList.add('now')}
+  window.scrollTo({top:$('quiz').offsetTop-60,behavior:'smooth'});
 }
-
-function renderResult() {
-  const lang = state.lang;
-  const role = state.role;
-  // get result text — fallback chain: lang → uk
-  const res = (results[lang] && results[lang][role]) ? results[lang][role] : (results['uk'][role] || {
-    headline: 'Знайдено партнерів для тебе.',
-    body: 'У мережі SIGNAL є учасники що шукають саме твій профіль. Залиш email — надішлемо перші контакти.',
-    matches: []
-  });
-  document.getElementById('r-headline').textContent = res.headline;
-  document.getElementById('r-body').textContent = res.body;
-  const mEl = document.getElementById('r-matches');
-  mEl.innerHTML = res.matches.map(m => `<div class="match-chip">${m}</div>`).join('');
-  document.getElementById('result-form').style.display = '';
-  document.getElementById('success-block').classList.remove('show');
+document.querySelectorAll('.chan').forEach(c=>c.addEventListener('click',e=>{e.preventDefault();c.classList.toggle('sel');c.querySelector('input').checked=c.classList.contains('sel')}));
+function submitContact(e){
+  e.preventDefault();const btn=$('r-btn');btn.textContent='...';btn.disabled=true;
+  const channels=[...document.querySelectorAll('.chan.sel')].map(c=>c.dataset.c);
+  const payload={name:$('f-name').value,email:$('f-email').value,phone:$('f-phone').value,market:state.market,role:state.role,channels,lang:state.lang};
+  console.log('SIGNAL lead:',payload);
+  // TODO: fetch('save_lead.php', {method:'POST', body: JSON.stringify(payload)})
+  setTimeout(()=>{$('cform').style.display='none';$('success').classList.add('show')},800);
 }
-
-function goStep(n) {
-  if (n === 2) renderRoles();
-  if (n === 3) renderResult();
-  document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
-  document.getElementById(`step-${n}`).classList.add('active');
-  state.step = n;
-  // progress dots
-  for (let i = 1; i <= 3; i++) {
-    const dot = document.getElementById(`qp${i}`);
-    dot.classList.remove('active', 'done');
-    if (i < n) dot.classList.add('done');
-    else if (i === n) dot.classList.add('active');
-  }
-  // scroll right panel top on mobile
-  document.querySelector('.right').scrollIntoView({behavior:'smooth', block:'start'});
-}
-
-function submitEmail(e) {
-  e.preventDefault();
-  const btn = document.getElementById('r-btn');
-  btn.textContent = '...';
-  btn.disabled = true;
-  // TODO: POST to save_waitlist.php
-  setTimeout(() => {
-    document.getElementById('result-form').style.display = 'none';
-    document.getElementById('success-block').classList.add('show');
-  }, 900);
-}
-
-// Init
 applyLang('uk');
 </script>
 </body>

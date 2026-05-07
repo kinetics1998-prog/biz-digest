@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIME — Каталог 2026 · SIGNAL</title>
+<meta name="description" content="LIME Cleaning Master — професійні засоби прибирання. Виробництво Туреччина. Опт від 2.50€.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0e0c;--paper:#fff;--soft:#faf8f4;--lime:#43A047;--lime-dark:#2d7a32;--lime-soft:#eaf6eb;--line:rgba(14,14,12,0.09);--line-2:rgba(14,14,12,0.18);--muted:#6e6c64;--red:#c0392b;--wa:#25d366;--tg:#0088cc;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;--r:8px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:0.18em;color:var(--ink);text-decoration:none}
+.brand b{color:var(--red)}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.06em}
+.crumb a{color:var(--muted);text-decoration:none}
+.crumb a:hover{color:var(--ink)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+
+/* HERO */
+.hero{padding:48px 0 32px;display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+@media(min-width:760px){.hero{grid-template-columns:1.3fr 1fr;gap:48px;padding:72px 0 48px}}
+.hero-eye{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;color:var(--lime-dark);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.hero-eye::before{content:'';width:22px;height:1px;background:var(--lime)}
+.hero h1{font-family:var(--serif);font-size:clamp(40px,7vw,68px);font-weight:700;line-height:1;letter-spacing:-0.02em;margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--lime);font-weight:700}
+.hero-desc{font-size:16px;color:var(--muted);line-height:1.65;margin-bottom:24px;max-width:520px}
+.hero-desc strong{color:var(--ink);font-weight:500}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px}
+.meta-chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;padding:6px 12px;background:var(--soft);border-radius:99px;color:var(--ink);font-weight:500}
+.meta-chip .dot{width:6px;height:6px;background:var(--lime);border-radius:50%}
+.hero-card{background:var(--lime-soft);border-radius:var(--r);padding:28px;border:1px solid rgba(67,160,71,0.2);position:relative}
+.hc-eye{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;color:var(--lime-dark);text-transform:uppercase;margin-bottom:10px}
+.hc-h{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:8px;line-height:1.2}
+.hc-p{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:18px}
+.hc-actions{display:flex;flex-direction:column;gap:8px}
+.hc-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:1px solid var(--lime);background:#fff;color:var(--lime-dark);font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:var(--r);transition:all .15s}
+.hc-btn:hover{background:var(--lime);color:#fff}
+.hc-btn.primary{background:var(--lime);color:#fff;border-color:var(--lime)}
+.hc-btn.primary:hover{background:var(--lime-dark);border-color:var(--lime-dark)}
+
+/* CATEGORIES BAR */
+.cats{position:sticky;top:55px;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 18px;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;z-index:40}
+.cats::-webkit-scrollbar{display:none}
+.cat-chip{flex-shrink:0;padding:7px 14px;background:none;border:1px solid var(--line);border-radius:99px;cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--muted);transition:all .15s;white-space:nowrap;text-transform:uppercase;letter-spacing:0.06em}
+.cat-chip:hover{border-color:var(--ink);color:var(--ink)}
+.cat-chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* PRODUCTS GRID */
+.products{padding:32px 0 48px}
+.cat-block{margin-bottom:36px}
+.cat-h{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1.1;margin-bottom:6px;letter-spacing:-0.01em}
+.cat-sub{font-size:13px;color:var(--muted);margin-bottom:20px}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:540px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:880px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+.product{border:1px solid var(--line);border-radius:var(--r);padding:0;background:var(--paper);display:flex;flex-direction:column;gap:0;transition:border-color .2s, transform .15s;overflow:hidden}
+.product:hover{border-color:var(--ink)}
+.p-img{width:100%;aspect-ratio:1/1;background:var(--soft);display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.p-img img{width:100%;height:100%;object-fit:contain;padding:14px}
+.p-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:14px;flex:1}
+.p-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.p-sku{font-family:var(--mono);font-size:10px;letter-spacing:0.08em;color:var(--muted);background:var(--soft);padding:3px 8px;border-radius:4px}
+.p-badge{font-family:var(--mono);font-size:9px;letter-spacing:0.08em;padding:3px 8px;border-radius:4px;font-weight:500;text-transform:uppercase}
+.p-badge.new{background:var(--lime);color:#fff}
+.p-badge.pat{background:var(--ink);color:#fff}
+.p-name{font-family:var(--serif);font-size:20px;font-weight:600;line-height:1.2;margin-bottom:4px}
+.p-name-en{font-size:11px;color:var(--muted);font-family:var(--mono);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:14px}
+.p-specs{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;font-size:12px;line-height:1.5}
+.p-spec{display:flex;flex-direction:column;gap:2px}
+.p-spec-l{font-family:var(--mono);font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em}
+.p-spec-v{color:var(--ink);font-weight:500}
+.p-price-row{display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px;margin-top:auto}
+.p-price-l{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase}
+.p-price{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--ink)}
+.p-price small{font-size:11px;color:var(--muted);font-weight:400;font-family:var(--mono);letter-spacing:0.04em}
+.p-actions{display:flex;gap:6px;margin-top:8px}
+.p-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;border-radius:var(--r);transition:all .15s;cursor:pointer}
+.p-btn:hover{border-color:var(--ink)}
+.p-btn.wa:hover{background:var(--wa);color:#fff;border-color:var(--wa)}
+.p-btn.tg:hover{background:var(--tg);color:#fff;border-color:var(--tg)}
+.p-btn.em:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.p-btn-ic{font-size:13px;line-height:1}
+
+/* DOWNLOAD PDF */
+.download{padding:32px 0;background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.download-inner{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+@media(min-width:760px){.download-inner{grid-template-columns:2fr 1fr;gap:40px}}
+.dl-title{font-family:var(--serif);font-size:28px;font-weight:600;margin-bottom:6px;line-height:1.2}
+.dl-sub{font-size:14px;color:var(--muted);line-height:1.6}
+.dl-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;background:var(--ink);color:#fff;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:var(--r);transition:background .15s}
+.dl-btn:hover{background:#000}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:32px 18px;background:var(--soft)}
+.foot-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.foot-inner a{color:var(--muted);text-decoration:none;transition:color .15s}
+.foot-inner a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="../index.html" class="brand">SIG<b>·</b>NAL</a>
+  <div class="crumb"><a href="../index.html">SIGNAL</a> · <a href="index.html">Каталог</a> · LIME</div>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <div class="hero-eye">A Brand of Plus Plastic Metal · Produced in Türkiye</div>
+      <h1>LIME<br><em>Cleaning</em><br>Master 2026</h1>
+      <p class="hero-desc">
+        Професійні системи прибирання — <strong>швабри з відром, спрей-моп, мікрофібра, серветки.</strong> Власне виробництво у Туреччині. 25+ SKU. Опт від <strong>2.50€</strong>. Готові до постачання у 4 країни SIGNAL.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-chip"><span class="dot"></span>25+ SKU в каталозі</span>
+        <span class="meta-chip"><span class="dot"></span>EAN, тех. дані, упаковка</span>
+        <span class="meta-chip"><span class="dot"></span>40' HC контейнер</span>
+        <span class="meta-chip"><span class="dot"></span>Опт від 2.50€</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-eye">Зв'язатися з виробником</div>
+      <div class="hc-h">Прайс і умови оптових поставок</div>
+      <div class="hc-p">Отримай повний прайс-лист, специфікації, умови контейнерних поставок. Відповідь — за 24 години.</div>
+      <div class="hc-actions">
+        <a href="https://wa.me/905320000000?text=Доброго дня! Цікавить прайс LIME Cleaning Master 2026" class="hc-btn primary" target="_blank">📱 WhatsApp · Швидко</a>
+        <a href="https://t.me/lime_cleaning" class="hc-btn" target="_blank">✈ Telegram</a>
+        <a href="mailto:export@pointrade.com.tr?subject=LIME 2026 Inquiry" class="hc-btn">✉ Email · export@pointrade.com.tr</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CATEGORIES -->
+<div class="cats">
+  <button class="cat-chip on" data-cat="all" onclick="filt('all',this)">Всі</button>
+  <button class="cat-chip" data-cat="spinning" onclick="filt('spinning',this)">Spinning Mop</button>
+  <button class="cat-chip" data-cat="flat" onclick="filt('flat',this)">Flat Mop</button>
+  <button class="cat-chip" data-cat="spray" onclick="filt('spray',this)">Spray Mop</button>
+  <button class="cat-chip" data-cat="wipes" onclick="filt('wipes',this)">Wet Wipes</button>
+  <button class="cat-chip" data-cat="window" onclick="filt('window',this)">Window</button>
+  <button class="cat-chip" data-cat="parts" onclick="filt('parts',this)">Запчастини</button>
+</div>
+
+<div class="wrap products">
+
+  <!-- SPINNING MOP -->
+  <div class="cat-block" data-cat="spinning">
+    <h2 class="cat-h">Spinning Mop · Швабри з відром</h2>
+    <div class="cat-sub">Класичні системи з центрифугою. Запатентована педальна система.</div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- FLAT MOP -->
+  <div class="cat-block" data-cat="flat">
+    <h2 class="cat-h">Flat Mop · Плоскі швабри</h2>
+    <div class="cat-sub">Trio Power і Pro Flat — для ламінату, плитки, паркету.</div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- SPRAY -->
+  <div class="cat-block" data-cat="spray">
+    <h2 class="cat-h">Spray Mop · Спрей-моп</h2>
+    <div class="cat-sub">Projet серія — швабра з вбудованим розпилювачем.</div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- WIPES -->
+  <div class="cat-block" data-cat="wipes">
+    <h2 class="cat-h">Wet Wipes · Вологі серветки</h2>
+    <div class="cat-sub">Натуральна формула: сода + білий оцет. Для всіх поверхонь.</div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- WINDOW -->
+  <div class="cat-block" data-cat="window">
+    <h2 class="cat-h">Window · Для скла</h2>
+    <div class="cat-sub">Spray bottle window wiper з мікрофіброю.</div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- PARTS -->
+  <div class="cat-block" data-cat="parts">
+    <h2 class="cat-h">Запчастини</h2>
+    <div class="cat-sub">Йорші, плати, мопи, ручки — для всіх систем.</div>
+    <div class="grid"></div>
+  </div>
+
+</div>
+
+<!-- DOWNLOAD PDF -->
+<section class="download">
+  <div class="wrap">
+    <div class="download-inner">
+      <div>
+        <h3 class="dl-title">Повний каталог PDF · 12 сторінок</h3>
+        <p class="dl-sub">Всі 25+ SKU з фото, специфікаціями, EAN кодами, габаритами упаковки і даними завантаження контейнера.</p>
+      </div>
+      <a href="../assets/lime-katalog-2026.pdf" class="dl-btn" download>📄 Скачати PDF (4 MB)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <a href="../index.html">SIG<b style="color:var(--red)">·</b>NAL</a>
+    <span>LIME · A Brand of Plus Plastic Metal · Made in Türkiye</span>
+    <a href="https://www.pluspm.com.tr" target="_blank">www.pluspm.com.tr</a>
+  </div>
+</footer>
+
+<script>
+const products = [
+  // SPINNING
+  { cat:'spinning', sku:'PS-0002', name:'WOW Clean&Dirty Mop System', en:'with Pedal · 18 LT', new:true, pat:true, price:'12.50', specs:[['Розмір','285×305×310 мм'],['Вага','3.10 кг'],['В упак.','1 шт'],['EAN','8683649126212']] },
+  { cat:'spinning', sku:'PS-0001', name:'Pedal Power Spinning Mop', en:'18 LT', new:true, pat:true, price:'10.20', specs:[['Розмір','285×510×270 мм'],['Вага','2.46 кг'],['В упак.','1 шт'],['EAN','8683649126298']] },
+  { cat:'spinning', sku:'OS-0001', name:'Dark Power Spinning Mop', en:'18 LT', price:'8.90', specs:[['Розмір','285×485×270 мм'],['Вага','2.02 кг'],['В упак.','1 шт'],['EAN','8682472172090']] },
+  { cat:'spinning', sku:'OS-0002', name:'Shadow Spinning Mop', en:'14 LT', price:'7.40', specs:[['Розмір','475×280×230 мм'],['Вага','1.66 кг'],['В упак.','1 шт'],['EAN','8683649126366']] },
+  { cat:'spinning', sku:'CM-0001', name:'Easy Click Hands Free Mop', en:'Без ручок', new:true, price:'9.20', specs:[['Розмір','250×330×250 мм'],['Вага','8.02 кг'],['В упак.','10 шт'],['EAN','8683649126229']] },
+  // FLAT
+  { cat:'flat', sku:'TS-0002', name:'Trio Power Flat Mop', en:'3-в-1 система', price:'9.80', specs:[['Розмір','303×235×445 мм'],['Вага','2.82 кг'],['В упак.','1 шт'],['EAN','8683649126182']] },
+  { cat:'flat', sku:'TS-0001', name:'Pro Flat Mop', en:'Базова модель', price:'5.60', specs:[['Розмір','200×244×388 мм'],['Вага','1.60 кг'],['В упак.','1 шт'],['EAN','8682472172052']] },
+  // SPRAY
+  { cat:'spray', sku:'SM-0004', name:'Spreya New Generation', en:'Spray Mop', new:true, price:'11.40', specs:[['Розмір','240×260×1200 мм'],['Вага','6.72 кг'],['В упак.','4 шт'],['EAN','8683649126250']] },
+  { cat:'spray', sku:'SM-0003', name:'Projet Double Side', en:'Spray Mop', price:'8.20', specs:[['Розмір','240×260×1200 мм'],['Вага','6.30 кг'],['В упак.','8 шт'],['EAN','8683649126151']] },
+  { cat:'spray', sku:'SM-0001', name:'Projet Spray Mop', en:'Класичний', price:'7.40', specs:[['Розмір','1200×260×240 мм'],['Вага','6.30 кг'],['В упак.','8 шт'],['EAN','8682472172021']] },
+  { cat:'spray', sku:'SM-0002', name:'Projet Spray Mop', en:'У кольоровій коробці', price:'8.90', specs:[['Розмір','455×343×687 мм'],['Вага','11.50 кг'],['В упак.','12 шт'],['EAN','8683649126144']] },
+  // X-POWER (FLAT)
+  { cat:'flat', sku:'MM-0001', name:'X-Power Mandallı Mop', en:'Телескопічна ручка', price:'6.80', specs:[['Розмір','1320×280×165 мм'],['Вага','8.80 кг'],['В упак.','16 шт'],['EAN','8684646050517']] },
+  { cat:'flat', sku:'MM-0002', name:'X-Power Mandallı Mop', en:'4-секц. ручка', price:'6.20', specs:[['Розмір','400×290×340 мм'],['Вага','6.78 кг'],['В упак.','12 шт'],['EAN','8684646050616']] },
+  // WINDOW
+  { cat:'window', sku:'SC-0001', name:'Spray Bottle Window Wiper', en:'З мікрофіброю', price:'4.90', specs:[['Розмір','385×290×195 мм'],['Вага','0.88 кг'],['В упак.','4 шт'],['EAN','8683649126069']] },
+  // WIPES
+  { cat:'wipes', sku:'WW-0001', name:'Multi Surface Wet Wipes', en:'100 шт · Універсальні', price:'2.80', specs:[['Розмір','390×265×385 мм'],['Вага','12.00 кг'],['В упак.','12 шт'],['EAN','8684646050593']] },
+  { cat:'wipes', sku:'WW-0002', name:'Floor Cleaning Towel', en:'50 шт · Для підлоги', price:'3.40', specs:[['Розмір','390×350×290 мм'],['Вага','16.30 кг'],['В упак.','12 шт'],['EAN','8684646050579']] },
+  { cat:'wipes', sku:'WW-0003', name:'Classic Surface Towels', en:'100 шт · Лаванда', price:'3.10', specs:[['Розмір','380×260×300 мм'],['Вага','11.20 кг'],['В упак.','24 шт'],['EAN','8684646050531']] },
+  { cat:'wipes', sku:'WW-0004', name:'Degreasing Surface Towel', en:'100 шт · Антижир PRO', price:'3.60', specs:[['Розмір','380×260×330 мм'],['Вага','12.00 кг'],['В упак.','24 шт'],['EAN','8684646050548']] },
+  // PARTS
+  { cat:'parts', sku:'YP-0001', name:'Spinning Handle Refill', en:'Запасна ручка', price:'2.50', specs:[['Вага','20.19 кг'],['В упак.','80 шт'],['EAN','8683649126137']] },
+  { cat:'parts', sku:'YP-0002', name:'Spinning Plate Refill', en:'Запасна плата', price:'2.80', specs:[['Вага','6.96 кг'],['В упак.','80 шт'],['EAN','8682472172076']] },
+  { cat:'parts', sku:'YP-0003', name:'Microfiber Mop Refill', en:'Запасний моп', price:'1.90', specs:[['Вага','7.00 кг'],['В упак.','50 шт'],['EAN','8682472172083']] },
+  { cat:'parts', sku:'YP-0004', name:'Handle for Pedal Mops', en:'Стаціонарна ручка', price:'2.40', specs:[['Вага','19.98 кг'],['В упак.','80 шт'],['EAN','8683649126328']] },
+  { cat:'parts', sku:'YP-0005', name:'Plate for Pedal Mops', en:'Поворотна плата', price:'2.60', specs:[['Вага','8.52 кг'],['В упак.','80 шт'],['EAN','8683649126342']] },
+  { cat:'parts', sku:'YP-0006', name:'Spinning Mop Refill', en:'Запасний моп', price:'1.80', specs:[['Вага','3.00 кг'],['В упак.','24 шт'],['EAN','8683649126304']] },
+  { cat:'parts', sku:'HS-0001', name:'3-in-1 Handle Set', en:'Spinning + Plate', price:'4.90', specs:[['Вага','7.00 кг'],['В упак.','14 шт'],['EAN','8682472172045']] },
+  { cat:'parts', sku:'HS-0002', name:'3-in-1 Handle Set Compact', en:'Spinning + Plate', price:'3.20', specs:[['Вага','0.60 кг'],['В упак.','1 шт'],['EAN','8683649126090']] },
+];
+
+function waLink(sku, name) {
+  const text = encodeURIComponent(`Доброго дня! Цікавить ${sku} — ${name}. Можна прайс і умови?`);
+  return `https://wa.me/905320000000?text=${text}`;
+}
+function emailLink(sku, name) {
+  const subj = encodeURIComponent(`LIME Inquiry: ${sku}`);
+  const body = encodeURIComponent(`Доброго дня!\n\nЦікавить інформація про ${sku} — ${name}.\n\nПросимо надіслати прайс-лист і умови оптової поставки.\n\nДякую!`);
+  return `mailto:export@pointrade.com.tr?subject=${subj}&body=${body}`;
+}
+
+function renderCat(cat) {
+  const block = document.querySelector(`.cat-block[data-cat="${cat}"] .grid`);
+  const items = products.filter(p => p.cat === cat);
+  block.innerHTML = items.map(p => `
+    <div class="product">
+      <div class="p-img"><img src="img/lime/${p.sku}.jpg" alt="${p.name}" loading="lazy"></div>
+      <div class="p-body">
+        <div class="p-head">
+          <span class="p-sku">${p.sku}</span>
+          ${p.new ? '<span class="p-badge new">New</span>' : ''}
+          ${p.pat ? '<span class="p-badge pat">Patent</span>' : ''}
+        </div>
+        <div>
+          <div class="p-name">${p.name}</div>
+          <div class="p-name-en">${p.en}</div>
+        </div>
+        <div class="p-specs">
+          ${p.specs.map(s => `<div class="p-spec"><div class="p-spec-l">${s[0]}</div><div class="p-spec-v">${s[1]}</div></div>`).join('')}
+        </div>
+        <div class="p-price-row">
+          <span class="p-price-l">Опт від</span>
+          <span class="p-price">${p.price}€ <small>/ шт</small></span>
+        </div>
+        <div class="p-actions">
+          <a href="${waLink(p.sku, p.name)}" target="_blank" class="p-btn wa"><span class="p-btn-ic">📱</span> WhatsApp</a>
+          <a href="https://t.me/lime_cleaning" target="_blank" class="p-btn tg"><span class="p-btn-ic">✈</span> Telegram</a>
+          <a href="${emailLink(p.sku, p.name)}" class="p-btn em"><span class="p-btn-ic">✉</span> Email</a>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+['spinning','flat','spray','wipes','window','parts'].forEach(renderCat);
+
+function filt(cat, btn) {
+  document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.cat-block').forEach(b => {
+    b.style.display = (cat === 'all' || b.dataset.cat === cat) ? '' : 'none';
+  });
+  if (cat !== 'all') {
+    const target = document.querySelector(`.cat-block[data-cat="${cat}"]`);
+    if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+}
+</script>
+</body>
+</html>

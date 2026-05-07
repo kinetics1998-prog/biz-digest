@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бізнес-новини — SIGNAL</title>
+<meta name="description" content="Щоденний AI-дайджест бізнес-новин. UA · PL · RO · TR. Коротко, без води, з джерелами.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0e0c;--paper:#fff;--soft:#faf8f4;--line:rgba(14,14,12,0.09);--muted:#6e6c64;--red:#c0392b;--tg:#0088cc;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;--r:8px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:0.18em;color:var(--ink);text-decoration:none}
+.brand b{color:var(--red)}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.06em}
+.crumb a{color:var(--muted);text-decoration:none}
+.wrap{max-width:920px;margin:0 auto;padding:0 18px}
+
+/* HERO */
+.hero{padding:48px 0 24px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;color:var(--red);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--red)}
+h1{font-family:var(--serif);font-size:clamp(40px,7vw,68px);font-weight:700;line-height:1;letter-spacing:-0.02em;margin-bottom:18px}
+h1 em{font-style:italic;color:var(--red)}
+.lead{font-size:16px;color:var(--muted);max-width:600px;line-height:1.65;margin-bottom:24px}
+.lead strong{color:var(--ink);font-weight:500}
+
+.live-info{display:flex;flex-wrap:wrap;gap:18px;padding-top:18px;border-top:1px solid var(--line);margin-top:8px}
+.li-item{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.06em;color:var(--muted)}
+.li-dot{width:8px;height:8px;background:#43A047;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+
+/* CATEGORIES */
+.cats{padding:20px 0;display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;border-bottom:1px solid var(--line)}
+.cats::-webkit-scrollbar{display:none}
+.cat-chip{flex-shrink:0;padding:7px 14px;background:none;border:1px solid var(--line);border-radius:99px;cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--muted);transition:all .15s;white-space:nowrap;text-transform:uppercase;letter-spacing:0.06em}
+.cat-chip:hover{border-color:var(--ink);color:var(--ink)}
+.cat-chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* FEED */
+.feed{padding:32px 0 48px;display:grid;gap:24px}
+.story{padding:20px 0;border-bottom:1px solid var(--line);display:grid;gap:10px}
+.story:last-child{border-bottom:none}
+.story-meta{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;color:var(--muted);text-transform:uppercase}
+.story-cat{padding:3px 8px;background:var(--soft);border-radius:4px;color:var(--ink);font-weight:500}
+.story-cat.fmcg{background:#fff5e6;color:#a85a00}
+.story-cat.retail{background:#e6f2ff;color:#0050a3}
+.story-cat.ecom{background:#f0e6ff;color:#5500a3}
+.story-cat.food{background:#eaf6eb;color:#2d7a32}
+.story-cat.invest{background:#ffe6e6;color:#a30000}
+.story-cat.logistics{background:#f5e6ff;color:#6600a3}
+.story-h{font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.2;letter-spacing:-0.01em;color:var(--ink)}
+.story-p{font-size:14px;color:var(--muted);line-height:1.65}
+.story-actions{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:6px}
+.story-source{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.story-source a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.story-source a:hover{color:var(--ink);border-color:var(--ink)}
+.story-link{font-family:var(--mono);font-size:11px;color:var(--red);text-decoration:none;display:flex;align-items:center;gap:6px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
+
+/* TELEGRAM CTA */
+.tg-cta{padding:32px 24px;background:var(--ink);border-radius:var(--r);color:#fff;display:grid;grid-template-columns:1fr;gap:20px;align-items:center;margin-bottom:32px}
+@media(min-width:600px){.tg-cta{grid-template-columns:1fr auto}}
+.tg-content h2{font-family:var(--serif);font-size:28px;font-weight:600;margin-bottom:8px;line-height:1.15}
+.tg-content p{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;max-width:440px}
+.tg-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;background:var(--tg);color:#fff;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border-radius:var(--r);transition:background .15s;white-space:nowrap}
+.tg-btn:hover{background:#0073b3}
+
+/* MAGAZINE */
+.magazine{padding:24px 0;border-top:1px solid var(--line)}
+.mg-h{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin-bottom:14px}
+.mg-cards{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:600px){.mg-cards{grid-template-columns:1fr 1fr 1fr}}
+.mg-card{display:block;padding:18px;background:var(--soft);border-radius:var(--r);text-decoration:none;color:var(--ink);transition:background .15s,transform .1s}
+.mg-card:hover{background:#f0ede5;transform:translateY(-1px)}
+.mg-date{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px}
+.mg-title{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.2;color:var(--ink)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:32px 18px;background:var(--soft);margin-top:32px}
+.foot-inner{max-width:920px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.foot-inner a{color:var(--muted);text-decoration:none}
+.foot-inner a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="../index.html" class="brand">SIG<b>·</b>NAL</a>
+  <div class="crumb"><a href="../index.html">SIGNAL</a> · Новини</div>
+</div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Бізнес-дайджест · Оновлюється 2× на день</div>
+    <h1>Бізнес<br><em>новини</em><br>4 ринків.</h1>
+    <p class="lead">AI збирає, фільтрує і скорочує новини бізнесу <strong>UA, PL, RO, TR</strong> з 10+ джерел. Без води. Без жовтої преси. Тільки те що впливає на твої рішення сьогодні.</p>
+    <div class="live-info">
+      <div class="li-item"><div class="li-dot"></div>Live · Останнє оновлення сьогодні</div>
+      <div class="li-item">📰 10+ джерел</div>
+      <div class="li-item">⚡ 2× на день</div>
+      <div class="li-item">🤖 AI-вижимки через Claude</div>
+    </div>
+  </section>
+
+  <div class="cats">
+    <button class="cat-chip on" onclick="filt('all',this)">Всі</button>
+    <button class="cat-chip" onclick="filt('retail',this)">Рітейл</button>
+    <button class="cat-chip" onclick="filt('fmcg',this)">FMCG</button>
+    <button class="cat-chip" onclick="filt('ecom',this)">E-commerce</button>
+    <button class="cat-chip" onclick="filt('food',this)">Food / HoReCa</button>
+    <button class="cat-chip" onclick="filt('logistics',this)">Логістика</button>
+    <button class="cat-chip" onclick="filt('invest',this)">Інвестиції</button>
+  </div>
+
+  <div class="feed" id="feed"></div>
+
+  <!-- TELEGRAM CTA -->
+  <section class="tg-cta">
+    <div class="tg-content">
+      <h2>Дайджест приходить у Telegram</h2>
+      <p>Підпишись на канал — отримуй коротку версію новин 2 рази на день. Безкоштовно, без обов'язків.</p>
+    </div>
+    <a href="https://t.me/signal_ua" target="_blank" class="tg-btn">✈ Підписатись · @signal_ua</a>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section class="magazine">
+    <div class="mg-h">Архів · Повні випуски HTML-журналу</div>
+    <div class="mg-cards">
+      <a href="../magazines/" class="mg-card">
+        <div class="mg-date">Сьогодні · Ранковий</div>
+        <div class="mg-title">Випуск дайджесту</div>
+      </a>
+      <a href="../magazines/" class="mg-card">
+        <div class="mg-date">Сьогодні · Вечірній</div>
+        <div class="mg-title">Випуск дайджесту</div>
+      </a>
+      <a href="../magazines/" class="mg-card">
+        <div class="mg-date">Архів</div>
+        <div class="mg-title">Всі випуски →</div>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <a href="../index.html">SIG<b style="color:var(--red)">·</b>NAL</a>
+    <span>Дайджест працює на Claude AI · 2× на день</span>
+    <a href="../partner.html">Знайти партнера →</a>
+  </div>
+</footer>
+
+<script>
+// Демо-новини. У продакшені тут буде fetch з GitHub Pages magazines/
+const stories = [
+  { cat:'retail', catLabel:'Рітейл', date:'2 год тому', source:'AIN.ua',
+    h:'Biedronka запускає тендер на 50 нових українських брендів у 2026',
+    p:'Польська мережа повідомила про розширення категорії "Made in Ukraine". Байєри готові розглядати продукти зі сертифікацією EU. Дедлайн заявок — кінець березня.',
+    link:'#' },
+  { cat:'fmcg', catLabel:'FMCG', date:'5 год тому', source:'Liga.Бізнес',
+    h:'Експорт української побутової хімії в EU зріс на 34% за квартал',
+    p:'Основні ринки — Польща, Румунія, Чехія. Лідери категорії — засоби для прибирання, серветки, рукавички. Дрібні виробники активно шукають дистриб\'юторів.',
+    link:'#' },
+  { cat:'ecom', catLabel:'E-commerce', date:'8 год тому', source:'SPEKA',
+    h:'Allegro відкрив програму для українських продавців без польської фірми',
+    p:'З 2026 можна продавати на Allegro через свою UA-компанію без реєстрації Sp. z o.o. Комісія — 8-15%. Логістика — через сервіс Allegro Smart!',
+    link:'#' },
+  { cat:'food', catLabel:'Food', date:'12 год тому', source:'DOU.ua',
+    h:'Турецькі food-виробники шукають дистриб\'юторів у Польщі',
+    p:'Pointrade Trading заявив про розширення співпраці з українськими і польськими дистриб\'юторами. Категорії — снеки, заморожена їжа, кондитерка.',
+    link:'#' },
+  { cat:'logistics', catLabel:'Логістика', date:'1 день тому', source:'MC.today',
+    h:'Нова логістична лінія TR-UA-PL запускається в лютому',
+    p:'Pointrade і польський партнер запускають регулярну контейнерну лінію Стамбул — Львів — Варшава. Транзит 7-10 днів. Мінімальна партія — пів-контейнера.',
+    link:'#' },
+  { cat:'invest', catLabel:'Інвестиції', date:'1 день тому', source:'AIN.ua',
+    h:'Польські VC активно інвестують в український e-commerce',
+    p:'За I квартал — 12 угод на загальну суму $45M. Основні напрямки — рітейл-tech, SaaS для дистриб\'юторів, AI-marketing. Чек $500k–$3M.',
+    link:'#' },
+  { cat:'retail', catLabel:'Рітейл', date:'2 дні тому', source:'Liga.Бізнес',
+    h:'Mega Image відкриває B2B-портал для українських постачальників',
+    p:'Румунська мережа Mega Image (Ahold Delhaize) запустила онлайн-портал для постачальників. Українські виробники можуть подати заявку без посередників.',
+    link:'#' },
+  { cat:'fmcg', catLabel:'FMCG', date:'2 дні тому', source:'AIN.ua',
+    h:'Сертифікація CE для турецьких товарів у EU — нові правила 2026',
+    p:'З квітня всі побутові товари з Туреччини потребують оновленої CE-документації для входу в EU. Виробники готуються — попит на тестування зріс на 60%.',
+    link:'#' },
+];
+
+function renderFeed(filter='all') {
+  const f = stories.filter(s => filter === 'all' || s.cat === filter);
+  document.getElementById('feed').innerHTML = f.map(s => `
+    <article class="story" data-cat="${s.cat}">
+      <div class="story-meta">
+        <span class="story-cat ${s.cat}">${s.catLabel}</span>
+        <span>${s.date}</span>
+      </div>
+      <h3 class="story-h">${s.h}</h3>
+      <p class="story-p">${s.p}</p>
+      <div class="story-actions">
+        <span class="story-source">Джерело: <a href="${s.link}">${s.source}</a></span>
+        <a href="${s.link}" class="story-link">Читати повністю →</a>
+      </div>
+    </article>
+  `).join('');
+}
+
+function filt(cat, btn) {
+  document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('on'));
+  btn.classList.add('on');
+  renderFeed(cat);
+}
+
+renderFeed();
+</script>
+</body>
+</html>

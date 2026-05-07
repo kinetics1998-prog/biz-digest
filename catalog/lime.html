@@ -125,12 +125,12 @@ footer{border-top:1px solid var(--line);padding:32px 18px;background:var(--soft)
       </div>
     </div>
     <div class="hero-card">
-      <div class="hc-eye">Зв'язатися з виробником</div>
+      <div class="hc-eye">Зв'язатися напряму</div>
       <div class="hc-h">Прайс і умови оптових поставок</div>
       <div class="hc-p">Отримай повний прайс-лист, специфікації, умови контейнерних поставок. Відповідь — за 24 години.</div>
       <div class="hc-actions">
-        <a href="https://wa.me/905320000000?text=Доброго дня! Цікавить прайс LIME Cleaning Master 2026" class="hc-btn primary" target="_blank">📱 WhatsApp · Швидко</a>
-        <a href="https://t.me/lime_cleaning" class="hc-btn" target="_blank">✈ Telegram</a>
+        <a href="https://wa.me/380952855582?text=Доброго дня! Цікавить прайс LIME Cleaning Master 2026" class="hc-btn primary" target="_blank">📱 WhatsApp · Швидко</a>
+        <a href="https://t.me/signal_ua" class="hc-btn" target="_blank">✈ Telegram</a>
         <a href="mailto:export@pointrade.com.tr?subject=LIME 2026 Inquiry" class="hc-btn">✉ Email · export@pointrade.com.tr</a>
       </div>
     </div>
@@ -254,7 +254,7 @@ const products = [
 
 function waLink(sku, name) {
   const text = encodeURIComponent(`Доброго дня! Цікавить ${sku} — ${name}. Можна прайс і умови?`);
-  return `https://wa.me/905320000000?text=${text}`;
+  return `https://wa.me/380952855582?text=${text}`;
 }
 function emailLink(sku, name) {
   const subj = encodeURIComponent(`LIME Inquiry: ${sku}`);
@@ -287,7 +287,7 @@ function renderCat(cat) {
         </div>
         <div class="p-actions">
           <a href="${waLink(p.sku, p.name)}" target="_blank" class="p-btn wa"><span class="p-btn-ic">📱</span> WhatsApp</a>
-          <a href="https://t.me/lime_cleaning" target="_blank" class="p-btn tg"><span class="p-btn-ic">✈</span> Telegram</a>
+          <a href="https://t.me/signal_ua" target="_blank" class="p-btn tg"><span class="p-btn-ic">✈</span> Telegram</a>
           <a href="${emailLink(p.sku, p.name)}" class="p-btn em"><span class="p-btn-ic">✉</span> Email</a>
         </div>
       </div>

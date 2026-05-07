@@ -4,14 +4,25 @@
 declare(strict_types=1);
 
 function load_config(): array {
-    $configPath = __DIR__ . '/config.php';
-    if (!file_exists($configPath)) {
-        http_response_code(500);
-        error_log('SIGNAL: config.php missing at ' . $configPath);
-        echo json_encode(['error' => 'server_misconfigured']);
-        exit;
+    // Look for config in safe locations, in order of preference.
+    // 1. Explicit env override (for testing or non-standard layouts)
+    // 2. ABOVE public_html (production best practice — not web-accessible)
+    // 3. Same dir as _db.php (dev fallback only)
+    $candidates = array_filter([
+        getenv('SIGNAL_CONFIG') ?: null,
+        __DIR__ . '/../../../signal_config.php',  // ~/public_html/signal/orbit/_db.php → ~/signal_config.php
+        __DIR__ . '/../../signal_config.php',     // alternative depth
+        __DIR__ . '/config.php',                  // dev fallback (gitignored)
+    ]);
+    foreach ($candidates as $path) {
+        if (is_file($path)) {
+            return require $path;
+        }
     }
-    return require $configPath;
+    http_response_code(500);
+    error_log('SIGNAL: no config found. Looked in: ' . implode(', ', $candidates));
+    echo json_encode(['error' => 'server_misconfigured']);
+    exit;
 }
 
 function db_connect(array $cfg): PDO {

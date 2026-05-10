@@ -871,10 +871,13 @@ body {
       <!-- populated by JS -->
     </div>
 
-    <div style="padding: 16px 20px; border: 1px solid var(--border); background: var(--paper2); margin-bottom: 24px;">
-      <div style="font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px;">Угода про конфіденційність</div>
-      <p style="font-size: 12px; color: var(--muted); line-height: 1.6; font-weight: 300;">Твої дані використовуються тільки для матчингу всередині мережі SIGNAL. Ми не передаємо їх третім особам і не використовуємо для реклами.</p>
-    </div>
+    <label style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 20px; border: 1px solid var(--border); background: var(--paper2); margin-bottom: 12px; cursor: pointer;">
+      <input type="checkbox" id="f-consent" required style="margin-top: 3px; flex-shrink: 0; accent-color: var(--accent); width: 16px; height: 16px; cursor: pointer;">
+      <span style="font-size: 13px; color: var(--ink); line-height: 1.55;">
+        Згоден з <a href="../privacy.html" target="_blank" style="color: var(--accent); text-decoration: underline; text-underline-offset: 2px;">обробкою даних</a> для матчингу всередині мережі SIGNAL. Ми не передаємо їх третім особам і не використовуємо для реклами. Можу відкликати в будь-який момент.
+      </span>
+    </label>
+    <div id="submit-error" style="display: none; padding: 12px 16px; background: #fdf0ee; border: 1px solid #c0392b; color: #c0392b; font-size: 13px; margin-bottom: 16px; border-radius: 4px;"></div>
 
     <div class="panel-nav">
       <button class="btn-back" onclick="prevStep()">← Назад</button>
@@ -1026,24 +1029,57 @@ function buildReview() {
 
 function submitProfile() {
   const btn = document.querySelector('.btn-next.submit');
+  const errBox = document.getElementById('submit-error');
+  const consent = document.getElementById('f-consent');
+
+  errBox.style.display = 'none';
+
+  if (!consent.checked) {
+    errBox.textContent = 'Постав галочку згоди з обробкою даних щоб надіслати профіль.';
+    errBox.style.display = 'block';
+    consent.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+
+  const origText = btn.textContent;
   btn.textContent = 'Надсилаємо...';
   btn.disabled = true;
 
-  // TODO: POST to /orbit/save_profile.php
-  // fetch('/orbit/save_profile.php', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify(profile)
-  // });
+  const payload = Object.assign({}, profile, {
+    consent_pdpa: true,
+    lang: 'uk'
+  });
 
-  setTimeout(() => {
-    document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
-    document.getElementById('step-success').classList.add('active');
-    document.getElementById('step-indicator').textContent = 'Готово ✓';
-    document.getElementById('progress-fill').style.width = '100%';
-    document.getElementById('progress-pct').textContent = '100%';
-    document.querySelectorAll('.step-item').forEach(i => i.classList.add('done'));
-  }, 1000);
+  fetch('https://chysto.media/signal/orbit/save_profile.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+    .then(r => r.ok ? r.json() : r.json().then(d => Promise.reject(d)))
+    .then(data => {
+      document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+      document.getElementById('step-success').classList.add('active');
+      document.getElementById('step-indicator').textContent = 'Готово ✓';
+      document.getElementById('progress-fill').style.width = '100%';
+      document.getElementById('progress-pct').textContent = '100%';
+      document.querySelectorAll('.step-item').forEach(i => i.classList.add('done'));
+      // Clear localStorage on success
+      try { localStorage.removeItem('signal_profile'); } catch(e) {}
+    })
+    .catch(err => {
+      btn.textContent = origText;
+      btn.disabled = false;
+      let msg = 'Помилка збереження. ';
+      if (err && err.error === 'validation_failed' && err.fields) {
+        msg += 'Не заповнені або некоректні поля: ' + err.fields.join(', ') + '. ';
+      } else if (err && err.error === 'too_many_requests') {
+        msg += 'Забагато спроб з цього email/IP. Спробуй пізніше. ';
+      }
+      msg += 'Або напиши на kinetics1998@gmail.com.';
+      errBox.textContent = msg;
+      errBox.style.display = 'block';
+      console.error('SIGNAL profile save failed:', err);
+    });
 }
 
 // Load saved data on init

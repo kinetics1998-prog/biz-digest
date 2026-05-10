@@ -1,0 +1,62 @@
+[
+  {
+    "id": "408e40b1aa0c",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Як не втратити фокус у гонитві за масштабом: уроки з експансії на 50 ринків — колонка",
+    "link": "https://ain.ua/2026/05/08/iak-ne-vtratiti-fokus-u-gonitvi-za-masstabom-kolonka/",
+    "summary": "Наталія Бобок, підприємиця та засновниця косметичного бренду Instytutum, у колонці для AIN розповідає, які ключові фактори визначають долю бренду на міжнародних ринках.",
+    "published": "2026-05-10T07:10:45",
+    "fetched": "2026-05-10T07:11:40.522133"
+  },
+  {
+    "id": "b2008c379531",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "SurgeUp — Як ми робимо стартап для YouTube-креаторів.",
+    "link": "https://speka.ua/technologies/surgeup-yak-mi-robimo-startap-dlya-youtube-kreatoriv-p62l7w",
+    "summary": "Як ми робимо стартап для YouTube-креаторів і чому відмовились від ботів",
+    "published": "2026-05-09T20:45:51",
+    "fetched": "2026-05-10T07:11:50.360140"
+  },
+  {
+    "id": "500183f2f8e5",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "AI потіснить навіть найкрутіших фінансових директорів",
+    "link": "https://speka.ua/artificial-intelligence/ai-potisnit-navit-naikrutisix-finansovix-direktoriv-v7l2ky",
+    "summary": "Вже\nдавно зрозуміло: якщо роботу людини можна звести до цифр і алгоритмізувати, то\nштучний інтелект її скоро забере. Світ фінансів – неймовірно складний, і посада\nфінансового директора (фінансового менеджера, консультанта з інвестицій і так\nдалі) завжди була десь на межі між роботою бухгалтера і вис",
+    "published": "2026-05-09T19:57:38",
+    "fetched": "2026-05-10T07:11:50.360153"
+  },
+  {
+    "id": "c29d6ee38b16",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Трамп чекає на рішення Ірану щодо плану припинення воєнних дій",
+    "link": "https://mind.ua/news/20304976-tramp-chekae-na-rishennya-iranu-shchodo-planu-pripinennya-voennih-dij",
+    "summary": "Білий дім ініціює зняття морської блокади задля стабілізації світових цін на пальне",
+    "published": "2026-05-10T07:00:00",
+    "fetched": "2026-05-10T07:11:53.580617"
+  },
+  {
+    "id": "bfca598e0d6f",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Обстріли Харківщини 9 травня: наслідки ворожих атак та ситуація в регіоні",
+    "link": "https://mind.ua/news/20304975-obstrili-harkivshchini-9-travnya-naslidki-vorozhih-atak-ta-situaciya-v-regioni",
+    "summary": "Масовані удари безпілотниками по житлових кварталах та надання допомоги постраждалим",
+    "published": "2026-05-10T06:30:00",
+    "fetched": "2026-05-10T07:11:53.580630"
+  },
+  {
+    "id": "ba2254849bdd",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "У Франції затримали підозрюваного у катуваннях в донецькій «Ізоляції»",
+    "link": "https://mind.ua/news/20304974-u-franciyi-zatrimali-pidozryuvanogo-u-katuvannyah-v-doneckij-izolyaciyi",
+    "summary": "Затримання стало результатом спільної роботи українських прокурорів, французьких правоохоронців та правозахисних організацій",
+    "published": "2026-05-09T18:08:00",
+    "fetched": "2026-05-10T07:11:53.580638"
+  }
+]

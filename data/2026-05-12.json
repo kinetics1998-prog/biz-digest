@@ -318,5 +318,495 @@
     "summary": "У Брюсселі говорять про «позитивний сигнал» від нового уряду Угорщини",
     "published": "2026-05-11T17:26:00",
     "fetched": "2026-05-12T07:23:06.512113"
+  },
+  {
+    "id": "538838db96b2",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Україна та США близькі до укладення Drone Deal. Що про неї відомо?",
+    "link": "https://ain.ua/2026/05/12/ukrayina-ta-ssa-blizki-do-ukladennia-drone-deal-shho-pro-neyi-vidomo/",
+    "summary": "Документ, який опрацьовують Держдеп США та українська сторона, є першим кроком до ширшої домовленості щодо дронової угоди",
+    "published": "2026-05-12T16:10:00",
+    "fetched": "2026-05-12T17:55:34.302882"
+  },
+  {
+    "id": "610db0b3f143",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Німеччина виділить понад €10 млн на військові навчальні центри в Україні",
+    "link": "https://ain.ua/2026/05/12/nimeccina-vidilit-ponad-eur10-mln-na-viiskovi-navcalni-centri-v-ukrayini/",
+    "summary": "Кошти підуть на створення повноцінної інфраструктури для одного з навчальних центрів на території України.",
+    "published": "2026-05-12T15:40:00",
+    "fetched": "2026-05-12T17:55:34.302898"
+  },
+  {
+    "id": "3c29506917f5",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Працівники Amazon використовують ШІ-інструмент для накрутки своєї активності на роботі — FT",
+    "link": "https://ain.ua/2026/05/12/si-v-amazon/",
+    "summary": "Amazon почала відстежувати використання так званих ШІ-токенів (обсяг оброблених даних) і запровадила внутрішні рейтинги активності.",
+    "published": "2026-05-12T14:10:00",
+    "fetched": "2026-05-12T17:55:34.302908"
+  },
+  {
+    "id": "8814a25840cd",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "«Обмежити доступ соцмереж до дітей». ЄС готує нові правила проти дизайну TikTok, Meta та X, який викликає залежність",
+    "link": "https://ain.ua/2026/05/12/jes-gotuje-novi-pravila-proti-zaleznogo-dizainu-socmerez/",
+    "summary": "Нові обмеження готують у межах майбутнього закону Digital Fairness Act (DFA), який мають представити наприкінці року. Він доповнить уже чинний Digital Services Act.",
+    "published": "2026-05-12T13:30:00",
+    "fetched": "2026-05-12T17:55:34.302918"
+  },
+  {
+    "id": "59476ff9d8a3",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Зеленський не фігурує у справі «Династії», а для Єрмака прокуратура проситиме тримання під вартою — головне з брифінгу НАБУ і САП",
+    "link": "https://ain.ua/2026/05/12/golovne-z-brifingu-nabu-i-sap/",
+    "summary": "Під час брифінгу очільники антикорупційних органів розповіли про тиск з боку СБУ, статус Рустема Умєрова як свідка та проблеми у взаємодії зі Службою фінмоніторингу.",
+    "published": "2026-05-12T13:02:00",
+    "fetched": "2026-05-12T17:55:34.302927"
+  },
+  {
+    "id": "7fb94c0678bf",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Anthropic запустила режим Agent View для Claude Code. Це дозволить управляти багатьма ШІ-агентами одночасно",
+    "link": "https://ain.ua/2026/05/12/anthropic-zapustila-rezim-agent-view-dlia-claude-code/",
+    "summary": "Тепер розробники можуть запускати агента, відправляти його працювати у фоновому режимі та втручатися лише тоді, коли системі потрібне підтвердження чи ввід даних.",
+    "published": "2026-05-12T11:22:00",
+    "fetched": "2026-05-12T17:55:34.302938"
+  },
+  {
+    "id": "1855bd86b716",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Німецька Helsing, з якою працюють українські компанії, готується до оцінки $18 млрд",
+    "link": "https://ain.ua/2026/05/12/nimecka-helsing-gotujetsia-do-ocinki-18-mlrd/",
+    "summary": "Раунд інвестицій, за даними джерел, очолює Dragoneer Investment Group, а співлідером виступає Lightspeed Venture Partners.",
+    "published": "2026-05-12T10:20:00",
+    "fetched": "2026-05-12T17:55:34.302946"
+  },
+  {
+    "id": "69ed3a802818",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Україна запропонувала Європі домовитися з росією про «перемир’я для аеропортів»",
+    "link": "https://ain.ua/2026/05/12/ukrayina-zaproponuvala-jevropi-domovitisia-z-rosijeiu-pro-peremiria-dlia-aeroportiv/",
+    "summary": "Глава МЗС Андрій Сибіга у коментарі Politico заявив, що Київ хоче залучити європейські країни до переговорів щодо припинення атак на аеропорти.",
+    "published": "2026-05-12T09:57:00",
+    "fetched": "2026-05-12T17:55:34.302982"
+  },
+  {
+    "id": "8ffb709069f9",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Росіяни атакували залізничну інфраструктуру на Дніпропетровщині. Пошкоджено локомотив і рухомий склад",
+    "link": "https://ain.ua/2026/05/12/rosiiani-atakuvali-zaliznicnu-infrastrukturu-na-dnipropetrovshhini/",
+    "summary": "Внаслідок атаки машиніст зазнав травм від уламків, коли прямував до укриття. За словами міністра розвитку громад та територій Олексія Кулеби, наразі загрози його життю немає.",
+    "published": "2026-05-12T08:43:00",
+    "fetched": "2026-05-12T17:55:34.302992"
+  },
+  {
+    "id": "88c23b93a656",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Сем Альтман під прицілом Конгресу: бізнес-зв'язки очільника OpenAI перевірятимуть перед виходом на IPO",
+    "link": "https://ain.ua/2026/05/12/sem-altman-pid-pricilom-respublikanciv-u-ssa-pered-ipo/",
+    "summary": "Йдеться про розслідування потенційного конфлікту інтересів — зокрема, чи не використовував Альтман OpenAI для підтримки компаній, у які він особисто інвестував.",
+    "published": "2026-05-12T08:27:00",
+    "fetched": "2026-05-12T17:55:34.303003"
+  },
+  {
+    "id": "b61621e683d4",
+    "source": "🇺🇦 AIN.ua",
+    "category": "UA_TECH",
+    "title": "Україна та Німеччина запускають програму Brave Germany — працюватимуть з критичними напрямами Defense Tech",
+    "link": "https://ain.ua/2026/05/12/ukrayina-ta-nimeccina-zapuskaiut-programu-brave-germany/",
+    "summary": "Ініціатива спрямована на грантову підтримку українських і німецьких Defense Tech стартапів та спільну розробку сучасного озброєння.",
+    "published": "2026-05-12T07:30:00",
+    "fetched": "2026-05-12T17:55:34.303011"
+  },
+  {
+    "id": "1b98931588c6",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Коли спадкоємці отримують право вільно продавати нерухомість – пояснення Мін’юсту",
+    "link": "https://mc.today/uk/koli-spadkoyemtsi-otrimuyut-pravo-vilno-prodavati-neruhomist-poyasnennya-min-yustu/",
+    "summary": "<p>Спадкоємець має право розпоряджатися нерухомістю лише після отримання свідоцтва про право на спадщину та реєстрації права власності. Оформлення цих документів стає можливим через шість місяців після відкриття спадщини. Таке роз&#8217;яснення опублікували на сайті Міністерство юстиції України 12 т",
+    "published": "2026-05-12T13:56:55",
+    "fetched": "2026-05-12T17:55:37.576197"
+  },
+  {
+    "id": "64655622dc23",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Логістика без хаосу: які технології та ризик-менеджмент реально працюють? Думка експерта",
+    "link": "https://mc.today/uk/logistika-bez-haosu-yaki-tehnologiyi-ta-rizik-menedzhment-realno-pratsyuyut-dumka-eksperta/",
+    "summary": "<p>Щоб логістика не перетворювалася на щоденний аврал, потрібні не героїчні диспетчери, а системний ризик-менеджмент, контроль відхилень і технології, які підтримують рішення в реальному часі. Про те, як це працює на практиці, говоримо з Андрієм Гончаком, CEO Hugo Hunter INC та експертом, якого нещо",
+    "published": "2026-05-12T12:43:36",
+    "fetched": "2026-05-12T17:55:37.576213"
+  },
+  {
+    "id": "544e2b2e2298",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "ПДВ для ФОПів поки не на часі – економіст назвав умови для компромісу",
+    "link": "https://mc.today/uk/pdv-dlya-fopiv-poki-ne-na-chasi-ekonomist-nazvav-umovi-dlya-kompromisu/",
+    "summary": "<p>Економіст CASE Ukraine, координатор експертних груп «Економічна експертна платформа» Олег Гетман зауважив, що за поточних умов Уряду варто максимально опиратися впровадженню ПДВ для ФОПів. Водночас він назвав компромісні умови для оновлення податкової моделі і потребу в перегляді пріоритетів держ",
+    "published": "2026-05-12T12:36:46",
+    "fetched": "2026-05-12T17:55:37.576223"
+  },
+  {
+    "id": "84bf13006226",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Чому я обрав Google Ads замість докторської. Я не пішов із науки – я переніс лабораторію",
+    "link": "https://mc.today/uk/blogs/chomu-ya-obrav-google-ads-zamist-doktorskoyi-ya-ne-pishov-iz-nauki-ya-perenis-laboratoriyu/",
+    "summary": "<p>Зранку я проводив експерименти з неньютонівськими рідинами, одним із найскладніших об’єктів у фізиці. Це середовища, поведінку яких неможливо описати однією формулою: десятки змінних, жодної лінійної залежності, суцільна непередбачуваність. Уявіть субстанцію, яка то тече, то ні, тільки в моєму ви",
+    "published": "2026-05-12T11:30:48",
+    "fetched": "2026-05-12T17:55:37.576235"
+  },
+  {
+    "id": "02962f6688a1",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Готівка більше не потрібна – «Укрпошта» підключила оплату картками: деталі",
+    "link": "https://mc.today/uk/gotivka-bilshe-ne-potribna-ukrposhta-pidklyuchila-oplatu-kartkami-detali/",
+    "summary": "<p>«Укрпошта» завершила процес розгортання інфраструктури для приймання оплати банківськими картками по всій території країни. Відтепер безготівковий розрахунок доступний як у стаціонарних, так і в пересувних відділеннях. Про це повідомляє пресслужба компанії 12 травня.</p>\nThe post <a href=\"https:/",
+    "published": "2026-05-12T11:20:29",
+    "fetched": "2026-05-12T17:55:37.576244"
+  },
+  {
+    "id": "b5dabbc70b4f",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "На що найбільше скаржиться бізнес в Україні – в Мінекономіки назвали головні проблеми",
+    "link": "https://mc.today/uk/na-shho-najbilshe-skarzhitsya-biznes-v-ukrayini-v-minekonomiki-nazvali-golovni-problemi/",
+    "summary": "<p>У Міністерстві економіки України підбили підсумки роботи платформи «Пульс» за перший квартал 2026-го. Про це повідомляють у виданні The Page. Переповідаємо, з якими викликами зіштовхуються українські підприємці – і що показує позитивну динаміку.</p>\nThe post <a href=\"https://mc.today/uk/na-shho-n",
+    "published": "2026-05-12T10:17:35",
+    "fetched": "2026-05-12T17:55:37.576254"
+  },
+  {
+    "id": "7e77e97b2c94",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Чи заберуть бронювання у критичних підприємств – пояснення Олени Шуляк",
+    "link": "https://mc.today/uk/chi-zaberut-bronyuvannya-u-kritichnih-pidpriyemstv-poyasnennya-oleni-shulyak/",
+    "summary": "<p>Народна депутатка та голова профільного комітету ВРУ Олена Шуляк прокоментувала інформацію про можливе скасування бронювання для критичних підприємств, яка шириться в мережі. Переповідаємо подробиці.</p>\nThe post <a href=\"https://mc.today/uk/chi-zaberut-bronyuvannya-u-kritichnih-pidpriyemstv-poya",
+    "published": "2026-05-12T09:31:28",
+    "fetched": "2026-05-12T17:55:37.576262"
+  },
+  {
+    "id": "9c923b5dd94f",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Кінець безмитних посилок: що зміниться для українських онлайн-покупців",
+    "link": "https://mc.today/uk/kinets-bezmitnih-posilok-shho-zminitsya-dlya-ukrayinskih-onlajn-pokuptsiv/",
+    "summary": "<p>Міністр фінансів Сергій Марченко роз&#8217;яснив деталі майбутнього оподаткування міжнародних посилок вартістю до 150 євро. Нововведення запрацює не раніше 2027 року, а процес стягнення зборів буде автоматизованим без затримок у доставці. Про це міністр розповів у коментарі для каналу ICTV.</p>\nT",
+    "published": "2026-05-12T08:03:05",
+    "fetched": "2026-05-12T17:55:37.576272"
+  },
+  {
+    "id": "11f255ab89a6",
+    "source": "🇺🇦 MC.today",
+    "category": "UA_BIZ",
+    "title": "Як написати авторську колонку для MC: Money & Career – правила",
+    "link": "https://mc.today/uk/yak-napisati-avtorsku-kolonku-dlya-mc-money-career-pravila/",
+    "summary": "<p>Бажаєте створити власний блог на MC: Money &#38; Career і публікувати статті? Ми чекаємо на вас! Ділитися історіями, порадами та думками можна почати вже зараз – у рубриці «Власний досвід».</p>\nThe post <a href=\"https://mc.today/uk/yak-napisati-avtorsku-kolonku-dlya-mc-money-career-pravila/\">Як н",
+    "published": "2026-05-12T04:58:08",
+    "fetched": "2026-05-12T17:55:37.576317"
+  },
+  {
+    "id": "1a0a16092501",
+    "source": "🇺🇦 DOU.ua",
+    "category": "UA_TECH",
+    "title": "Українська розробниця заявила, що колишній роботодавець винний їй $11 тис. Що кажуть в компанії",
+    "link": "https://dou.ua/lenta/news/wage-arrears-near-coast/",
+    "summary": "<p>Колишня співробітниця ІТ-компанії <a href=\"https://jobs.dou.ua/companies/nearcoast/\" target=\"_blank\">NearCoast</a> Еріка Дьєндьєши заявила про багаторічну заборгованість із заробітної плати, яка, за її словами, становить близько $11 тисяч (майже пів мільйона гривень). </p>\n\n<p>Про це вона <a href",
+    "published": "2026-05-12T17:53:16",
+    "fetched": "2026-05-12T17:55:37.853466"
+  },
+  {
+    "id": "5781c8744c59",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Вчені знайшли новий спосіб виявляти інопланетне життя у космосі",
+    "link": "https://speka.ua/news/vceni-znaisli-novii-sposib-viyavlyati-inoplanetne-zittya-u-kosmosi-9gxmx2",
+    "summary": "Дослідники з Каліфорнійського університету запропонували новий спосіб пошуку життя за межами Землі. Замість пошуку окремих молекул вчені будуть шукати приховані хімічні закономірності, пише ScienceDaily.",
+    "published": "2026-05-12T17:50:32",
+    "fetched": "2026-05-12T17:55:45.429919"
+  },
+  {
+    "id": "55d82445526e",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Rheinmetall запускає серійне виробництво дронів-камікадзе на колишньому автозаводі",
+    "link": "https://speka.ua/news/rheinmetall-zapuskaje-seriine-virobnictvo-droniv-kamikadze-na-kolisnyomu-avtozavodi-v5x0wz",
+    "summary": "Найбільша оборонна компанія Німеччини&nbsp;Rheinmetall&nbsp;офіційно входить у серійне виробництво дронів-камікадзе моделі FV-014, відомих як «боєприпаси, що блукають» (loitering munitions).",
+    "published": "2026-05-12T16:41:01",
+    "fetched": "2026-05-12T17:55:45.429935"
+  },
+  {
+    "id": "3475db57ad30",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Скільки всього людей жили на Землі за весь час? Відповідь значно більша, ніж здається",
+    "link": "https://speka.ua/life/skilki-vsyogo-lyudei-zili-na-zemli-za-ves-cas-vidpovid-znacno-bilsa-niz-zdajetsya-9wrln1",
+    "summary": "Існує популярна думка, що кількість людей, які зараз живуть на Землі, вже перевищила кількість усіх померлих за всю історію людства. Звучить правдоподібно — але насправді це дуже далеко від істини.",
+    "published": "2026-05-12T16:01:56",
+    "fetched": "2026-05-12T17:55:45.429948"
+  },
+  {
+    "id": "f99fe03c6b59",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Як налаштувати смартфон для 5G: покрокова інструкція для користувачів",
+    "link": "https://speka.ua/news/yak-nalastuvati-smartfon-dlya-5g-pokrokova-instrukciya-dlya-koristuvaciv-p21dxd",
+    "summary": "Технологія 5G поступово стає доступнішою в Україні, обіцяючи вищу швидкість інтернету, меншу затримку та стабільніше з’єднання навіть у людних місцях. Як правильно налаштувати смартфон для 5G розповідає Comfy.",
+    "published": "2026-05-12T16:05:23",
+    "fetched": "2026-05-12T17:55:45.429972"
+  },
+  {
+    "id": "075e30186fab",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Сила спільної дії: Як благодійні проєкти об’єднують команди",
+    "link": "https://speka.ua/business/sila-spilnoyi-diyi-yak-blagodiini-projekti-objednuyut-komandi-9q30ym",
+    "summary": "Сьогодні команди\nпрацюють у реальності, де класичні інструменти згуртування дедалі частіше не\nспрацьовують. &nbsp;Тривалий період роботи у\nвіддаленому чи гібридному форматі, емоційна виснаженість війною та економічною нестабільністю\nрозмивають відчуття спільності і звичні тімбілдинги вже не дають то",
+    "published": "2026-05-12T13:54:38",
+    "fetched": "2026-05-12T17:55:45.429981"
+  },
+  {
+    "id": "43b292bf763c",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Розробник дрона-перехоплювача UEB-1 OSIRIS AI увійшов до Brave1 і IRON Cluster",
+    "link": "https://speka.ua/news/osiris-ai-brave1-iron-cluster-dron-perekhopliuvach-2026n39200-pkm14e",
+    "summary": "Українська компанія OSIRIS AI оголосила про приєднання одразу до двох оборонних ініціатив: платформи Brave1 і об'єднання IRON Cluster.",
+    "published": "2026-05-12T12:47:02",
+    "fetched": "2026-05-12T17:55:45.429992"
+  },
+  {
+    "id": "6758b5d842c1",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Головна тема Grain Ukraine 2026 — «The New Grain Order». Як змінюється глобальна аграрна реальність?",
+    "link": "https://speka.ua/news/golovna-tema-grain-ukraine-2026-the-new-grain-order-yak-zminyujetsya-globalna-agrarna-realnist-pnnd01",
+    "summary": "4-5 червня у Києві відбудеться міжнародна конференція Grain Ukraine 2026 — одна з ключових подій аграрного ринку, яка цього року проходить під слоганом «The New Grain Order».",
+    "published": "2026-05-12T12:01:33",
+    "fetched": "2026-05-12T17:55:45.430002"
+  },
+  {
+    "id": "e9bf332af956",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Мінцифри без глянцю: Дія, Brave1 і стратегія концентрації",
+    "link": "https://speka.ua/videos-and-podcasts/mincifri-i-diya-2500-brave1-9xkqe3",
+    "summary": "Після переходу Михайла Федорова до Міністерства оборони Мінцифри опинилося в точці стратегічної перевірки: завершити цифровізацію державних послуг, зробити Дію фінансово стійкою та зберегти темп розвитку технологічної економіки під час війни. У розмові на YouTube-каналі Forbes Ukraine заступник міні",
+    "published": "2026-05-12T10:03:14",
+    "fetched": "2026-05-12T17:55:45.430013"
+  },
+  {
+    "id": "7ea75b4bf77c",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "44% айтівців знизили зарплатні очікування: як IT-фахівці шукають роботу в 2026",
+    "link": "https://speka.ua/news/dou-doslidzhennya-poshuk-roboty-it-2026-zarplatni-ochikuvannyan39198-9de2n1",
+    "summary": "IT-ринок праці в Україні не відновився після кризи 2023 року — він трансформувався. Нове дослідження DOU показує: шукати роботу стало не легше, а для деяких спеціалізацій — значно важче.",
+    "published": "2026-05-12T11:47:02",
+    "fetched": "2026-05-12T17:55:45.430022"
+  },
+  {
+    "id": "8839028ff139",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Вчені створили водорості, які можуть очищати питну воду від мікропластику",
+    "link": "https://speka.ua/news/vceni-stvorili-vodorosti-yaki-mozut-ocishhati-pitnu-vodu-vid-mikroplastiku-9q30yk",
+    "summary": "Науковці з&nbsp;Університету Міссурі&nbsp;працюють над новим способом очищення води від мікропластику за допомогою спеціально модифікованих водоростей, пише ScienceDaily.",
+    "published": "2026-05-12T15:01:59",
+    "fetched": "2026-05-12T17:55:45.430032"
+  },
+  {
+    "id": "1441df3c4b43",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Після тижня коливань ринок пального в Україні завмер: що показує 12 травня 2026",
+    "link": "https://speka.ua/news/tsiny-palne-azs-12-travnya-2026-dyzel-a95-stabilizatsiian39196-pkm14w",
+    "summary": "Після кількох днів різноспрямованих рухів ринок пального 12 травня зупинився: більшість мереж АЗС прайс не чіпала, а зниження відбулись лише точково, свідчать дані Консалтингової групи “А-95”.",
+    "published": "2026-05-12T11:06:02",
+    "fetched": "2026-05-12T17:55:45.430041"
+  },
+  {
+    "id": "bd550812d526",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Підхід до Go-to-Market стратегій переписується прямо зараз",
+    "link": "https://speka.ua/business/pidxid-do-go-to-market-strategii-perepisujetsya-pryamo-zaraz-p623mw",
+    "summary": "Компанії які виривають вперед у 2026-му — не просто ростуть швидше. Вони продають інакше. Встановлюють ціни інакше. Будують менші команди з AI вбудованим у кожен етап воронки.",
+    "published": "2026-05-12T11:08:14",
+    "fetched": "2026-05-12T17:55:45.430054"
+  },
+  {
+    "id": "79745f304efb",
+    "source": "🇺🇦 SPEKA",
+    "category": "UA_TECH",
+    "title": "Перший складаний iPhone матиме 2 кольори: що чекати",
+    "link": "https://speka.ua/news/persii-skladanii-iphone-matime-2-kolyori-shho-cekati-pl5knz",
+    "summary": "Перший складаний смартфон Apple, який неофіційно називають iPhone Ultra, може отримати дуже обмежений вибір кольорів на старті продажів, повідомляє MacRumors.&nbsp;",
+    "published": "2026-05-12T11:01:41",
+    "fetched": "2026-05-12T17:55:45.430063"
+  },
+  {
+    "id": "79a4c1f0e616",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "ЄС у червні перерахує Україні перший транш кредиту на 90 млрд євро",
+    "link": "https://mind.ua/news/20305095-es-u-chervni-pererahue-ukrayini-pershij-transh-kreditu-na-90-mlrd-evro",
+    "summary": "Гроші спрямують на закупівлю безпілотників",
+    "published": "2026-05-12T17:52:00",
+    "fetched": "2026-05-12T17:55:48.235731"
+  },
+  {
+    "id": "fc80d2e1931d",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Україна формує антибалістичну коаліцію в Європі – Зеленський",
+    "link": "https://mind.ua/news/20305094-ukrayina-formue-antibalistichnu-koaliciyu-v-evropi-zelenskij",
+    "summary": "За словами очільника України, у зустрічі взяли участь представники 13 країн та офіс генсекретаря НАТО",
+    "published": "2026-05-12T17:19:00",
+    "fetched": "2026-05-12T17:55:48.235746"
+  },
+  {
+    "id": "2a2eccc0e73d",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Затримок із постачанням озброєння зі США в рамках програми PURL немає – Сибіга",
+    "link": "https://mind.ua/news/20305093-zatrimok-iz-postachannyam-ozbroennya-zi-ssha-v-ramkah-programi-purl-nemae-sibiga",
+    "summary": "Голова МЗС також нагадав, що Україна зацікавлена укласти drone deal з ЄС",
+    "published": "2026-05-12T16:47:00",
+    "fetched": "2026-05-12T17:55:48.235756"
+  },
+  {
+    "id": "42ec4841bb20",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "путін знову брязкає ядеркою: кремль анонсував розгортання ракети «Сармат» уже цього року",
+    "link": "https://mind.ua/news/20305092-putin-znovu-bryazkae-yaderkoyu-kreml-anonsuvav-rozgortannya-raketi-sarmat-uzhe-cogo-roku",
+    "summary": "За словами путіна, потужність боєголовки нібито більш ніж у чотири рази перевищує будь-який західний еквівалент",
+    "published": "2026-05-12T16:14:00",
+    "fetched": "2026-05-12T17:55:48.235764"
+  },
+  {
+    "id": "9ba0300a1846",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Канада підписала конвенцію про комісію щодо репарацій для України",
+    "link": "https://mind.ua/news/20305091-kanada-pidpisala-konvenciyu-pro-komisiyu-shchodo-reparacij-dlya-ukrayini",
+    "summary": "Комісія стане частиною міжнародного механізму відповідальності, який має забезпечити компенсації за шкоду та страждання, завдані українцям російською агресією",
+    "published": "2026-05-12T16:11:00",
+    "fetched": "2026-05-12T17:55:48.235772"
+  },
+  {
+    "id": "08a652322c98",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "НБУ оновив офіційні курси валют на 13 травня",
+    "link": "https://mind.ua/news/20305090-nbu-onoviv-oficijni-kursi-valyut-na-13-travnya",
+    "summary": "Євро демонструє падіння, тоді як американський долар незначно додав у ціні",
+    "published": "2026-05-12T15:44:00",
+    "fetched": "2026-05-12T17:55:48.235780"
+  },
+  {
+    "id": "4009375bf877",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "США та Україна наближаються до дронової угоди – CBS News",
+    "link": "https://mind.ua/news/20305089-ssha-ta-ukrayina-nablizhayutsya-do-dronovoyi-ugodi-cbs-news",
+    "summary": "Україна може розпочати експортувати воєнні технології до США, а американське фінансування може допомогти розширити виробництво",
+    "published": "2026-05-12T15:33:00",
+    "fetched": "2026-05-12T17:55:48.235788"
+  },
+  {
+    "id": "ad95aa4a9f51",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Суд над Єрмаком: за словами прокурорки, він має 4 паспорти і може втекти за кордон",
+    "link": "https://mind.ua/news/20305088-sud-nad-ermakom-za-slovami-prokurorki-vin-mae-4-pasporti-i-mozhe-vtekti-za-kordon",
+    "summary": "В САП пояснили, чому кандидатів на посади в Офісі президента підбирали «за датою народження»",
+    "published": "2026-05-12T15:14:00",
+    "fetched": "2026-05-12T17:55:48.235796"
+  },
+  {
+    "id": "9a36e4c259c0",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Меркель розглядають на роль посередника у переговорах Європи з рф",
+    "link": "https://mind.ua/news/20305087-merkel-rozglyadayut-na-rol-poserednika-u-peregovorah-evropi-z-rf",
+    "summary": "У політичних колах екскацлерку називають найкращим кандидатом на роль посередника, оскільки вона особисто знайома з путіним і Зеленським",
+    "published": "2026-05-12T15:10:00",
+    "fetched": "2026-05-12T17:55:48.235804"
+  },
+  {
+    "id": "81d16aa21215",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "«Укрнафта» збільшила міжремонтний період свердловин на 75% завдяки іноземним технологіям",
+    "link": "https://mind.ua/news/20305086-ukrnafta-zbilshila-mizhremontnij-period-sverdlovin-na-75-zavdyaki-inozemnim-tehnologiyam",
+    "summary": "Кількість технічних втручань скоротилася на третину після встановлення обладнання від Baker Hughes та Oil Dynamics",
+    "published": "2026-05-12T15:07:00",
+    "fetched": "2026-05-12T17:55:48.235812"
+  },
+  {
+    "id": "237860ce794d",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "AB InBev Efes Ukraine посіла 7 місце у рейтингу роботодавців Forbes Ukraine",
+    "link": "https://mind.ua/news/20305081-ab-inbev-efes-ukraine-posila-7-misce-u-rejtingu-robotodavciv-forbes-ukraine",
+    "summary": "Церемонія нагородження стала приводом для обговорення фокусу компанії на розвитку людей",
+    "published": "2026-05-12T15:00:00",
+    "fetched": "2026-05-12T17:55:48.235821"
+  },
+  {
+    "id": "792c80f6e443",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Російське судно Ursa Major, що затунуло біля Іспанії, могло везти ядерні реактори для КНДР",
+    "link": "https://mind.ua/news/20305084-rosijske-sudno-ursa-major-shcho-zatunulo-bilya-ispaniyi-moglo-vezti-yaderni-reaktori-dlya-kndr",
+    "summary": "Іспанські слідчі вважають, що, імовірно, для удару застосували високошвидкісний тип торпеди – \t«Барракуда»",
+    "published": "2026-05-12T14:39:00",
+    "fetched": "2026-05-12T17:55:48.235828"
+  },
+  {
+    "id": "933be667ebbe",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "«Україна випереджає росію»: глава Palantir назвав українську військову ШI-систему однією з найкращих у світі",
+    "link": "https://mind.ua/news/20305085-ukrayina-viperedzhae-rosiyu-glava-palantir-nazvav-ukrayinsku-vijskovu-shi-sistemu-odnieyu-z-najkrashchih",
+    "summary": "Зараз лише кілька країн світу мають по-справжньому сучасну defense tech культуру – і серед них Україна",
+    "published": "2026-05-12T14:26:00",
+    "fetched": "2026-05-12T17:55:48.235837"
+  },
+  {
+    "id": "608c72a08110",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Техас позивається до Netflix через таємний збір даних та «залежний» дизайн",
+    "link": "https://mind.ua/news/20305082-tehas-pozivaetsya-do-netflix-cherez-taemnij-zbir-danih-ta-zalezhnij-dizajn",
+    "summary": "Стрімінговий гігант заперечує звинувачення у шпигунстві за користувачами та незаконній монетизації інформації",
+    "published": "2026-05-12T14:14:00",
+    "fetched": "2026-05-12T17:55:48.235844"
+  },
+  {
+    "id": "5894d8b09b79",
+    "source": "🇺🇦 mind.ua",
+    "category": "UA_BIZ",
+    "title": "Rheinmetall переводить автомобільний  завод на масове виробництво ударних дронів",
+    "link": "https://mind.ua/news/20305083-rheinmetall-perevodit-avtomobilnij-zavod-na-masove-virobnictvo-udarnih-droniv",
+    "summary": "Бундесвер уже замовив дронів на 300 мільйонів євро",
+    "published": "2026-05-12T13:53:00",
+    "fetched": "2026-05-12T17:55:48.235852"
   }
 ]

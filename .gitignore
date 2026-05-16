@@ -10,6 +10,12 @@ signal_config.php
 .DS_Store
 Thumbs.db
 
+# Temp / local zip exports
+files.zip
+files/
+files 2/
+news_index.html
+
 # Editor
 .vscode/
 .idea/

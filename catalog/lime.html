@@ -98,7 +98,8 @@ body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-featu
 .showcase h2{font-family:var(--serif);font-size:clamp(28px,4vw,40px);font-weight:600;line-height:1.1;letter-spacing:-0.01em;margin-bottom:8px}
 .showcase-sub{font-size:14px;color:var(--muted);max-width:560px;line-height:1.6;margin-bottom:28px}
 .showcase-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:28px}
-@media(min-width:760px){.showcase-grid{grid-template-columns:repeat(3,1fr);gap:18px}}
+@media(min-width:560px){.showcase-grid{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media(min-width:980px){.showcase-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
 .vcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s}
 .vcard:hover{border-color:var(--ink)}
 .vcard video{width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--soft);display:block}
@@ -183,9 +184,9 @@ footer{border-top:1px solid var(--line);padding:32px 18px;background:var(--soft)
 
   <!-- VIDEO SHOWCASE — 3 hero products -->
   <section class="showcase">
-    <div class="showcase-eye">Топ-3 для дистриб'юторів</div>
+    <div class="showcase-eye">Топ-4 для дистриб'юторів</div>
     <h2>Системи з відео-демонстрацією</h2>
-    <p class="showcase-sub">Три моделі що зібрали найбільше запитів на виставці. Кожна — з власним відео під B2B-презентацію.</p>
+    <p class="showcase-sub">Чотири продукти що зібрали найбільше запитів на виставці. Кожен — з власним відео під B2B-презентацію.</p>
 
     <div class="showcase-grid">
 
@@ -233,6 +234,22 @@ footer{border-top:1px solid var(--line);padding:32px 18px;background:var(--soft)
             <li><strong>18 L</strong> bucket capacity</li>
             <li>Easy hand wringing · hygienic cleaning</li>
             <li>360° rotation head · мікрофібра</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="vcard">
+        <video controls preload="none" poster="../assets/video/lime-floor-towel-poster.jpg" playsinline>
+          <source src="../assets/video/lime-floor-towel.mp4" type="video/mp4">
+        </video>
+        <div class="vcard-body">
+          <span class="vcard-badge">Natural</span>
+          <div class="vcard-eye">Wet Wipes</div>
+          <h3>Floor Cleaning Towel</h3>
+          <ul>
+            <li><strong>Натуральна формула</strong> — сода + білий оцет</li>
+            <li><strong>4× more cleaning</strong> · для всіх поверхонь</li>
+            <li>Tiles · marble · faïence · wood</li>
           </ul>
         </div>
       </div>

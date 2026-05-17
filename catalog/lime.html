@@ -170,6 +170,12 @@ footer{border-top:1px solid var(--line);padding:32px 18px;background:var(--soft)
 .pl-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:32px}
 @media(min-width:640px){.pl-grid{grid-template-columns:1fr 1fr}}
 @media(min-width:960px){.pl-grid{grid-template-columns:1fr 1fr 1fr}}
+.pl-services{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:32px}
+@media(min-width:760px){.pl-services{grid-template-columns:1fr 1fr 1fr;gap:18px}}
+.pl-services-item{padding:24px 26px;background:var(--soft);border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;gap:8px}
+.pl-services-icon{font-size:28px;line-height:1;margin-bottom:4px}
+.pl-services-h{font-family:var(--serif);font-size:19px;font-weight:600;line-height:1.2;letter-spacing:-0.01em;color:var(--ink)}
+.pl-services-p{font-size:13px;color:var(--muted);line-height:1.65;font-weight:400}
 .pl-card{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper);display:flex;flex-direction:column;transition:border-color .2s,transform .15s}
 .pl-card:hover{border-color:var(--lime);transform:translateY(-2px)}
 .pl-card-img{width:100%;aspect-ratio:4/3;background:var(--soft);display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--line)}
@@ -570,107 +576,41 @@ body.lang-en .pl-card-desc.en, body.lang-en .pl-sub.en{display:block!important}
       <p class="pl-sub en">Pointrade Ltd manufactures under private label for retail chains and distributors. Three positions available for private label now — no change to minimum order quantity.</p>
     </div>
 
-    <div class="pl-grid">
-
-      <!-- 1. Spinning Mop -->
-      <div class="pl-card">
-        <div class="pl-card-img">
-          <img src="img/lime/PS-0001.jpg" alt="Spinning Mop система" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=&quot;img-ph&quot;>Spinning Mop</div>'">
-        </div>
-        <div class="pl-card-body">
-          <div class="pl-card-eye ua">01 · Система прибирання</div>
-          <div class="pl-card-eye en">01 · Cleaning System</div>
-          <h3 class="pl-card-name ua">Швабра з відром · Spinning Mop</h3>
-          <h3 class="pl-card-name en">Mop with Bucket · Spinning Mop</h3>
-          <p class="pl-card-desc ua">Педальна або ручна система з відром 13–18 л. Мікрофіброва насадка 360°. Ваш логотип + колір відра + колір насадки — під ваш бренд і формат полиці.</p>
-          <p class="pl-card-desc en">Pedal or manual system with 13–18L bucket. 360° microfiber head. Your logo + bucket color + pad color — tailored to your brand and shelf format.</p>
-          <div class="pl-specs">
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Мін. тираж</span><span class="en">Min. order</span></span>
-              <span class="pl-spec-v"><span class="ua">За домовленістю</span><span class="en">On agreement</span></span>
-            </div>
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Термін</span><span class="en">Lead time</span></span>
-              <span class="pl-spec-v">45–60 <span class="ua">днів</span><span class="en">days</span></span>
-            </div>
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Кастомізація</span><span class="en">Customisation</span></span>
-              <span class="pl-spec-v"><span class="ua">Колір, логотип, упаковка</span><span class="en">Color, logo, packaging</span></span>
-            </div>
-          </div>
-          <a href="https://wa.me/380952855582?text=Доброго%20дня!%20Цікавить%20private%20label%20для%20Spinning%20Mop%20системи.%20Можна%20умови?" target="_blank" rel="noopener noreferrer" class="pl-btn">
-            <span class="ua">📱 Обговорити умови</span>
-            <span class="en">📱 Discuss terms</span>
-          </a>
-        </div>
+    <!-- Розширений опис послуги (без прикладів продуктів) -->
+    <div class="pl-services">
+      <div class="pl-services-item">
+        <div class="pl-services-icon">🏭</div>
+        <h3 class="pl-services-h">
+          <span class="ua">Власне виробництво</span>
+          <span class="en">Own production</span>
+        </h3>
+        <p class="pl-services-p">
+          <span class="ua">Pointrade Ltd має повний виробничий цикл у Туреччині. Виробляємо швабри з відром, плоскі швабри, спрей-мопи, вологі серветки, насадки під ваш дизайн і ваш бренд.</span>
+          <span class="en">Pointrade Ltd has a full production cycle in Turkey. We manufacture mop systems, flat mops, spray mops, wet wipes and refills under your design and your brand.</span>
+        </p>
       </div>
-
-      <!-- 2. Wet Wipes Universal -->
-      <div class="pl-card">
-        <div class="pl-card-img">
-          <img src="img/lime/WW-0001.jpg" alt="Вологі серветки Universal" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=&quot;img-ph&quot;>Wet Wipes Universal</div>'">
-        </div>
-        <div class="pl-card-body">
-          <div class="pl-card-eye ua">02 · Вологі серветки</div>
-          <div class="pl-card-eye en">02 · Wet Wipes</div>
-          <h3 class="pl-card-name ua">Серветки Universal · 100 шт</h3>
-          <h3 class="pl-card-name en">Universal Wipes · 100 pcs</h3>
-          <p class="pl-card-desc ua">Формула: карбонат соди + білий оцет + H₂O₂. 0% алергенів, 0% хлору. Щільність 55 г/м², розмір 22×20 см. Ваш дизайн упаковки, ваша назва — наша формула і якість. TÜV сертифіковано. 36 місяців зберігання.</p>
-          <p class="pl-card-desc en">Formula: baking soda + white vinegar + H₂O₂. 0% allergens, 0% chlorine. Density 55 g/m², size 22×20 cm. Your packaging design, your name — our formula and quality. TÜV certified. 36 months shelf life.</p>
-          <div class="pl-specs">
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Мін. тираж</span><span class="en">Min. order</span></span>
-              <span class="pl-spec-v"><span class="ua">За домовленістю</span><span class="en">On agreement</span></span>
-            </div>
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Термін</span><span class="en">Lead time</span></span>
-              <span class="pl-spec-v">30–45 <span class="ua">днів</span><span class="en">days</span></span>
-            </div>
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Кастомізація</span><span class="en">Customisation</span></span>
-              <span class="pl-spec-v"><span class="ua">Дизайн, аромат, склад</span><span class="en">Design, scent, formula</span></span>
-            </div>
-          </div>
-          <a href="https://wa.me/380952855582?text=Доброго%20дня!%20Цікавить%20private%20label%20для%20вологих%20серветок%20Universal.%20Можна%20умови?" target="_blank" rel="noopener noreferrer" class="pl-btn">
-            <span class="ua">📱 Обговорити умови</span>
-            <span class="en">📱 Discuss terms</span>
-          </a>
-        </div>
+      <div class="pl-services-item">
+        <div class="pl-services-icon">🎨</div>
+        <h3 class="pl-services-h">
+          <span class="ua">Повна кастомізація</span>
+          <span class="en">Full customisation</span>
+        </h3>
+        <p class="pl-services-p">
+          <span class="ua">Ваш логотип, ваш колір, ваша назва, ваш дизайн упаковки. Можемо адаптувати під ваш брендбук або розробити з нуля. Для серветок — власна формула, аромат, концентрація.</span>
+          <span class="en">Your logo, your color, your name, your packaging design. We adapt to your brand guidelines or develop from scratch. For wipes — custom formula, scent, concentration.</span>
+        </p>
       </div>
-
-      <!-- 3. Flat Mop X Power -->
-      <div class="pl-card">
-        <div class="pl-card-img">
-          <img src="img/lime/MM-0001.jpg" alt="Flat Mop X Power" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=&quot;img-ph&quot;>Flat Mop X Power</div>'">
-        </div>
-        <div class="pl-card-body">
-          <div class="pl-card-eye ua">03 · Плоска швабра</div>
-          <div class="pl-card-eye en">03 · Flat Mop</div>
-          <h3 class="pl-card-name ua">Плоска швабра · Flat Mop</h3>
-          <h3 class="pl-card-name en">Flat Mop System</h3>
-          <p class="pl-card-desc ua">Телескопічна або 4-секційна ручка. 100% мікрофіброва насадка 35×23,5 см. Сумісна з серветками для підлоги — anchor-товар для крос-продажу. Ваш колір, ваш логотип на упаковці.</p>
-          <p class="pl-card-desc en">Telescopic or 4-section handle. 100% microfiber pad 35×23.5 cm. Compatible with floor wipes — anchor product for cross-selling. Your color, your logo on packaging.</p>
-          <div class="pl-specs">
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Мін. тираж</span><span class="en">Min. order</span></span>
-              <span class="pl-spec-v"><span class="ua">За домовленістю</span><span class="en">On agreement</span></span>
-            </div>
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Термін</span><span class="en">Lead time</span></span>
-              <span class="pl-spec-v">45–60 <span class="ua">днів</span><span class="en">days</span></span>
-            </div>
-            <div class="pl-spec">
-              <span class="pl-spec-l"><span class="ua">Кастомізація</span><span class="en">Customisation</span></span>
-              <span class="pl-spec-v"><span class="ua">Колір, логотип, ручка</span><span class="en">Color, logo, handle type</span></span>
-            </div>
-          </div>
-          <a href="https://wa.me/380952855582?text=Доброго%20дня!%20Цікавить%20private%20label%20для%20Flat%20Mop.%20Можна%20умови?" target="_blank" rel="noopener noreferrer" class="pl-btn">
-            <span class="ua">📱 Обговорити умови</span>
-            <span class="en">📱 Discuss terms</span>
-          </a>
-        </div>
+      <div class="pl-services-item">
+        <div class="pl-services-icon">📦</div>
+        <h3 class="pl-services-h">
+          <span class="ua">Без зміни MOQ</span>
+          <span class="en">No MOQ change</span>
+        </h3>
+        <p class="pl-services-p">
+          <span class="ua">Мінімальний тираж — за домовленістю. Працюємо з мережами і дистриб'юторами будь-якого формату. Сертифікація, логістика, документи для ввезення — все під ключ.</span>
+          <span class="en">Min order — on agreement. We work with retail chains and distributors of any size. Certification, logistics, import docs — turn-key.</span>
+        </p>
       </div>
-
     </div>
 
     <div class="pl-includes">
@@ -744,7 +684,7 @@ body.lang-en .pl-card-desc.en, body.lang-en .pl-sub.en{display:block!important}
               <span class="p-badge pat">Bestseller</span>
             </div>
             <div>
-              <div class="p-name">X Power Flat Mop</div>
+              <div class="p-name">X Power Telescopic</div>
               <div class="p-name-en">Телескопічна ручка · Мікрофібра</div>
             </div>
             <div class="bs-specs">
@@ -775,7 +715,7 @@ body.lang-en .pl-card-desc.en, body.lang-en .pl-sub.en{display:block!important}
               <span class="p-badge new">Popular</span>
             </div>
             <div>
-              <div class="p-name">X Power Flat Mop</div>
+              <div class="p-name">X Power Steel</div>
               <div class="p-name-en">4-секційна ручка · Нерж. сталь</div>
             </div>
             <div class="bs-specs">
@@ -1049,11 +989,11 @@ const products = [
     desc_en:'Same Projet Spray Mop in a gift color box. Packaging increases perceived value — easier to price higher. 12-unit packing speeds up shelf turnover.',
     specs:[['Розмір','560×415×350 мм'],['Вага','9.55 кг'],['В упак.','12 шт'],['EAN','8682472172021']] },
   // X-POWER (FLAT)
-  { cat:'flat', sku:'MM-0001', name:'X Power Flat Mop', en:'Телескопічна ручка · Мікрофібра', price:'6.80',
+  { cat:'flat', sku:'MM-0001', name:'X Power Telescopic', en:'Телескопічна ручка · Мікрофібра', price:'6.80',
     desc:'Плоска мікрофіброва швабра з телескопічною ручкою. Регулюється під будь-який зріст. Легка та маневрена — швидке прибирання без втоми. №2 по об\'єму замовлень у мережах.',
     desc_en:'Flat microfiber mop with telescopic handle. Adjusts to any height. Light and maneuverable — fast cleaning without fatigue. #2 by order volume in retail chains.',
     specs:[['Розмір','1320×280×165 мм'],['Вага','8.80 кг'],['В упак.','16 шт'],['EAN','8684646050517']] },
-  { cat:'flat', sku:'MM-0002', name:'X Power Flat Mop', en:'4-секц. ручка · Нерж. сталь', price:'6.20',
+  { cat:'flat', sku:'MM-0002', name:'X Power Steel', en:'4-секц. ручка · Нерж. сталь', price:'6.20',
     desc:'Плоска швабра з 4-секційною ручкою з нержавіючої сталі. Компактно складається — зручна для зберігання. Той самий X Power у більш доступному ціновому форматі.',
     desc_en:'Flat mop with 4-section stainless steel handle. Folds compact — easy to store. Same X Power in a more accessible price format.',
     specs:[['Розмір','400×290×340 мм'],['Вага','6.78 кг'],['В упак.','12 шт'],['EAN','8684646050616']] },
@@ -1063,7 +1003,7 @@ const products = [
     desc_en:'Spray window wiper with included microfiber. Dual action: moistens and removes water in one pass. Streak-free result. 4-unit pack — convenient for shelf display.',
     specs:[['Розмір','385×290×195 мм'],['Вага','0.86 кг'],['В упак.','4 шт'],['EAN','8683649126069']] },
   // WIPES
-  { cat:'wipes', sku:'WW-0001', name:'Multi Surface Wet Wipes', en:'100 шт · Універсальні', price:'2.80',
+  { cat:'wipes', sku:'WW-0001', name:'LIME Cleaning Master · Універсальні', en:'100 шт · Універсальні', price:'2.80',
     desc:'Універсальні вологі серветки з формулою сода + білий оцет. 100 шт у упаковці — вистачає надовго. Для кухонних поверхонь, столів, плитки і пластику. Без агресивної хімії.',
     desc_en:'Universal wet wipes with baking soda + white vinegar formula. 100 wipes per pack — long-lasting. For kitchen surfaces, tables, tiles and plastic. No harsh chemicals.',
     specs:[['Розмір','390×265×385 мм'],['Вага','12.00 кг'],['В упак.','12 шт'],['EAN','8684646050593']] },
@@ -1071,11 +1011,11 @@ const products = [
     desc:'Великі серветки для підлоги 50 шт. Формат 35×20 см — більша площа за один прохід. Ідеально сумісні з Easy Click CM-0001 — вставив без рук і прибираєш. Без відра і води.',
     desc_en:'Large floor wipes 50 pcs. 35×20 cm format — more area per pass. Perfect match with Easy Click CM-0001 — insert without hands and clean. No bucket, no water.',
     specs:[['Розмір','390×350×290 мм'],['Вага','16.30 кг'],['В упак.','12 шт'],['EAN','8684646050579']] },
-  { cat:'wipes', sku:'WW-0003', name:'Classic Surface Towels', en:'100 шт · Лаванда', price:'3.10',
+  { cat:'wipes', sku:'WW-0003', name:'LIME Classic Lavender', en:'100 шт · Лаванда', price:'3.10',
     desc:'Серветки з ароматом лаванди — 100 шт. Натуральна формула без агресивної хімії. Лаванда — топ-аромат масового ринку: асоціюється з чистотою, добре сприймається покупцями.',
     desc_en:'Lavender scented wipes — 100 pcs. Natural formula, no harsh chemicals. Lavender is the top mass-market scent: associated with cleanliness, well received by consumers.',
     specs:[['Розмір','380×260×300 мм'],['Вага','11.20 кг'],['В упак.','24 шт'],['EAN','8684646050531']] },
-  { cat:'wipes', sku:'WW-0004', name:'Degreasing Surface Towel', en:'100 шт · Антижир PRO', price:'3.60',
+  { cat:'wipes', sku:'WW-0004', name:'LIME PRO Lemon · Антижир', en:'100 шт · Антижир PRO', price:'3.60',
     desc:'Серветки Антижир PRO — 100 шт. Посилена формула видаляє жировий наліт без зусиль. Для кухонних поверхонь, витяжок, плити. Висока сприйнята цінність — легко ставити преміум-ціну.',
     desc_en:'Anti-grease PRO wipes — 100 pcs. Enhanced formula removes grease effortlessly. For kitchen surfaces, hoods, stove tops. High perceived value — easy to price at premium.',
     specs:[['Розмір','380×260×330 мм'],['Вага','12.00 кг'],['В упак.','24 шт'],['EAN','8684646050548']] },
